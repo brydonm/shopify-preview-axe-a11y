@@ -1,6 +1,6 @@
 name: BrowserStack Shopify Preview Action
 description: Automatically run BrowserStack tests on Shopify preview URLs and post results in the PR.
-author: brydonm
+author: "https://github.com/brydonm/browserstack-shopify-preview"
 inputs:
   preview_url_contains:
     description: "Substring to match a preview URL in the PR body."
@@ -19,4 +19,7 @@ outputs:
   url:
     description: "The preview URL found in the PR body."
     value: ${{ steps.parse_url.outputs.url }}
+branding:
+  icon: "eye"
+  color: "blue"
 repository: "https://github.com/brydonm/browserstack-shopify-preview"
