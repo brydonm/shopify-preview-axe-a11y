@@ -10,8 +10,6 @@ Automatically run [BrowserStack](https://www.browserstack.com/) tests on preview
 - 🧪 Runs BrowserStack CLI tests
 - 💬 Comments the test results directly on the PR
 
----
-
 ## 🚀 Usage
 
 Add this to your workflow in any repo:
@@ -38,8 +36,6 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
 ```
 
----
-
 ## 🔧 Inputs
 
 | Name                    | Required | Description                                                            |
@@ -49,8 +45,6 @@ jobs:
 | browserstack_access_key | ✅ Yes   | Your BrowserStack access key (use a GitHub Secret)                     |
 | github_token            | ✅ Yes   | GitHub token to post PR comment (use secrets.GITHUB_TOKEN)             |
 
----
-
 ## 📝 PR Description Format
 
 Include a preview URL **anywhere** in the PR body like:
@@ -58,8 +52,6 @@ Include a preview URL **anywhere** in the PR body like:
 https://your-site.shopifypreview.com/preview-path
 
 The action will automatically find and test the first matching URL that contains `shopifypreview.com` or whatever value you set via `preview_url_contains`.
-
----
 
 ## 🛡️ Security
 
