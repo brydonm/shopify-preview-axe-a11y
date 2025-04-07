@@ -1,0 +1,83 @@
+name: "BrowserStack Shopify Preview"
+description: "Run BrowserStack tests on Shopify preview URLs from PR description and comment results."
+inputs:
+  preview_url_contains:
+    description: "Part of the URL to look for (e.g., shopifypreview.com)"
+    required: true
+  browserstack_username:
+    description: "BrowserStack username"
+    required: true
+  browserstack_access_key:
+    description: "BrowserStack access key"
+    required: true
+  github_token:
+    description: "GitHub token to post PR comment"
+    required: true
+runs:
+  using: "composite"
+  steps:
+    - name: Extract PR Body
+      id: pr_body
+      shell: bash
+      run: |
+        echo "PR_BODY<<EOF" >> $GITHUB_ENV
+        echo "${{ github.event.pull_request.body }}" >> $GITHUB_ENV
+        echo "EOF" >> $GITHUB_ENV
+
+    - name: Parse preview URL
+      id: parse_url
+      shell: bash
+      run: |
+        MATCHING_URL=$(echo "$PR_BODY" | grep -oE 'https?://[^ )\n]+' | grep "${{ inputs.preview_url_contains }}" | head -n1)
+        echo "Found URL: $MATCHING_URL"
+        if [ -z "$MATCHING_URL" ]; then
+          echo "No matching URL found."
+          echo "url=" >> $GITHUB_OUTPUT
+          exit 1
+        fi
+        echo "url=$MATCHING_URL" >> $GITHUB_OUTPUT
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: "18"
+
+    - name: Install BrowserStack CLI
+      shell: bash
+      run: npm install -g browserstack-cli
+
+    - name: Run BrowserStack test
+      id: run_test
+      shell: bash
+      env:
+        BROWSERSTACK_USERNAME: ${{ inputs.browserstack_username }}
+        BROWSERSTACK_ACCESS_KEY: ${{ inputs.browserstack_access_key }}
+      run: |
+        if [ -z "${{ steps.parse_url.outputs.url }}" ]; then
+          echo "No test run due to missing URL."
+          echo "result=❌ No matching URL found in PR body." >> $GITHUB_OUTPUT
+          exit 0
+        fi
+
+        echo "Running test against ${{ steps.parse_url.outputs.url }}"
+        RESULT=$(browserstack-cypress run --spec ${{ steps.parse_url.outputs.url }} 2>&1)
+        echo "$RESULT"
+        SUMMARY=$(echo "$RESULT" | tail -n 20)
+        echo "result<<EOF" >> $GITHUB_OUTPUT
+        echo "$SUMMARY" >> $GITHUB_OUTPUT
+        echo "EOF" >> $GITHUB_OUTPUT
+
+    - name: Comment on PR with results
+      if: ${{ github.event.pull_request.number }}
+      uses: actions/github-script@v7
+      with:
+        github-token: ${{ inputs.github_token }}
+        script: |
+          const prNumber = context.payload.pull_request.number;
+          const result = `${{ steps.run_test.outputs.result }}`;
+          await github.rest.issues.createComment({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            issue_number: prNumber,
+            body: `🧪 **BrowserStack Test Results:**\n\`\`\`\n${result || 'No test was run.'}\n\`\`\``
+          });
