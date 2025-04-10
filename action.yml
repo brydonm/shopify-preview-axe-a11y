@@ -136,8 +136,8 @@ runs:
       id: download_report
       uses: actions/download-artifact@v4
       with:
-        name: axe-report-${{ github.ref_name }}
-        path: /axe-report-${{ github.ref_name }}.json
+        name: axe-report-${{ github.base_ref }}
+        path: /axe-report-${{ github.base_ref }}.json
       continue-on-error: true
 
     - name: Process Violations and Output in a Separate Table
