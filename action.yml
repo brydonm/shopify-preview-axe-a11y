@@ -28,13 +28,33 @@ runs:
       id: parse_url
       shell: bash
       run: |
-        MATCHING_URL=$(echo "$PR_BODY" | grep -oE 'https?://[^ )\n]+' | grep "${{ inputs.preview_url_contains }}" | head -n1)
-        echo "Found URL: $MATCHING_URL"
+        # Extract all URLs
+        ALL_URLS=$(echo "$PR_BODY" | grep -oE 'https?://[^ )\n]+')
+
+        # Try matching preview_url_contains (if provided)
+        MATCHING_URL=$(echo "$ALL_URLS" | grep "$INPUT_PREVIEW_URL_CONTAINS" | head -n1)
+
+        # If no match yet, try matching ?preview_theme_id=
+        if [ -z "$MATCHING_URL" ]; then
+          MATCHING_URL=$(echo "$ALL_URLS" | grep -E '\?preview_theme_id=' | head -n1)
+        fi
+
+        # Print debug info
+        echo "==== DEBUG INFO ===="
+        echo "All extracted URLs:"
+        echo "$ALL_URLS"
+        echo "Matched URL:"
+        echo "$MATCHING_URL"
+        echo "===================="
+
+        # Exit if no URL found
         if [ -z "$MATCHING_URL" ]; then
           echo "No matching URL found."
           echo "url=" >> $GITHUB_OUTPUT
           exit 1
         fi
+
+        # Output the found URL
         echo "url=$MATCHING_URL" >> $GITHUB_OUTPUT
 
     - name: Set up Node.js
