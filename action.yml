@@ -57,10 +57,6 @@ runs:
       shell: bash
       run: npm install -g @axe-core/cli
 
-    - name: Install browser-driver-manager
-      shell: bash
-      run: npx browser-driver-manager install chrome
-
     - name: Run axe test
       id: run_test
       shell: bash
