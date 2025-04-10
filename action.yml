@@ -1,14 +1,8 @@
-name: "BrowserStack Shopify Preview"
-description: "Run BrowserStack tests on Shopify preview URLs from PR description and comment results."
+name: "Axe Shopify Preview"
+description: "Run axe accessibility tests on Shopify preview URLs from PR description and comment results."
 inputs:
   preview_url_contains:
     description: "Part of the URL to look for (e.g., shopifypreview.com)"
-    required: true
-  browserstack_username:
-    description: "BrowserStack username"
-    required: true
-  browserstack_access_key:
-    description: "BrowserStack access key"
     required: true
   github_token:
     description: "GitHub token to post PR comment"
@@ -39,7 +33,6 @@ runs:
           MATCHING_URL=$(echo "$ALL_URLS" | grep -E '\?preview_theme_id=' | head -n1)
         fi
 
-        # Print debug info
         echo "==== DEBUG INFO ===="
         echo "All extracted URLs:"
         echo "$ALL_URLS"
@@ -47,14 +40,12 @@ runs:
         echo "$MATCHING_URL"
         echo "===================="
 
-        # Exit if no URL found
         if [ -z "$MATCHING_URL" ]; then
           echo "No matching URL found."
           echo "url=" >> $GITHUB_OUTPUT
           exit 1
         fi
 
-        # Output the found URL
         echo "url=$MATCHING_URL" >> $GITHUB_OUTPUT
 
     - name: Set up Node.js
@@ -62,16 +53,13 @@ runs:
       with:
         node-version: "18"
 
-    - name: Install BrowserStack CLI
+    - name: Install axe CLI
       shell: bash
-      run: npm install -g browserstack-cli
+      run: npm install -g @axe-core/cli
 
-    - name: Run BrowserStack test
+    - name: Run axe test
       id: run_test
       shell: bash
-      env:
-        BROWSERSTACK_USERNAME: ${{ inputs.browserstack_username }}
-        BROWSERSTACK_ACCESS_KEY: ${{ inputs.browserstack_access_key }}
       run: |
         if [ -z "${{ steps.parse_url.outputs.url }}" ]; then
           echo "No test run due to missing URL."
@@ -79,10 +67,10 @@ runs:
           exit 0
         fi
 
-        echo "Running test against ${{ steps.parse_url.outputs.url }}"
-        RESULT=$(browserstack-cypress run --spec ${{ steps.parse_url.outputs.url }} 2>&1)
+        echo "Running axe on ${{ steps.parse_url.outputs.url }}"
+        RESULT=$(axe ${{ steps.parse_url.outputs.url }} --no-exit 2>&1)
         echo "$RESULT"
-        SUMMARY=$(echo "$RESULT" | tail -n 20)
+        SUMMARY=$(echo "$RESULT" | tail -n 50)
         echo "result<<EOF" >> $GITHUB_OUTPUT
         echo "$SUMMARY" >> $GITHUB_OUTPUT
         echo "EOF" >> $GITHUB_OUTPUT
@@ -99,5 +87,5 @@ runs:
             owner: context.repo.owner,
             repo: context.repo.repo,
             issue_number: prNumber,
-            body: `🧪 **BrowserStack Test Results:**\n\`\`\`\n${result || 'No test was run.'}\n\`\`\``
+            body: `♿ **Axe Accessibility Test Results:**\n\`\`\`\n${result || 'No test was run.'}\n\`\`\``
           });
