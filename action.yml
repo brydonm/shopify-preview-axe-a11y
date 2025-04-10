@@ -122,32 +122,32 @@ runs:
           echo "Processing downloaded report for target branch..."
 
           # Read the downloaded report
-          node <<'EOF'
-          const fs = require('fs');
-          const path = './axe-report-head/axe-report-${{ github.base_ref }}.json';
-          const report = JSON.parse(fs.readFileSync(path, 'utf8'));
-          const violations = report?.[0].violations || [];
+          node -e "
+            const fs = require('fs');
+            const path = './axe-report-head/axe-report-${{ github.base_ref }}.json';
+            const report = JSON.parse(fs.readFileSync(path, 'utf8'));
+            const violations = report?.[0].violations || [];
 
-          if (violations.length === 0) {
-            console.log("No violations found in downloaded report.");
-            process.exit(0);
-          }
+            if (violations.length === 0) {
+              console.log('No violations found in downloaded report.');
+              process.exit(0);
+            }
 
-          let violationsTable = `### 🧪 Violations from Downloaded Report\n\n`;
-          violationsTable += `| Issue | Impact | Target | Help |\n`;
-          violationsTable += `|-------|--------|--------|------|\n`;
+            let violationsTable = '### 🧪 Violations from Downloaded Report\\n\\n';
+            violationsTable += '| Issue | Impact | Target | Help |\\n';
+            violationsTable += '|-------|--------|--------|------|\\n';
 
-          violations.forEach(v => {
-            const impact = v.impact || "n/a";
-            const help = `[${v.help}](${v.helpUrl})`;
-            v.nodes.forEach(n => {
-              const target = Array.isArray(n.target) ? n.target.join(', ') : 'n/a';
-              violationsTable += `| ${v.id} | ${impact} | \`${target}\` | ${help} |\n`;
+            violations.forEach(v => {
+              const impact = v.impact || 'n/a';
+              const help = \`[${v.help}](${v.helpUrl})\`;
+              v.nodes.forEach(n => {
+                const target = Array.isArray(n.target) ? n.target.join(', ') : 'n/a';
+                violationsTable += \`| ${v.id} | ${impact} | \${target} | ${help} |\\n\`;
+              });
             });
-          });
 
-          fs.writeFileSync('axe-violations-summary.md', violationsTable);
-          EOF
+            fs.writeFileSync('axe-violations-summary.md', violationsTable);
+          "
         else
           echo "No axe-report found for target branch. Skipping violation processing."
           exit 0
