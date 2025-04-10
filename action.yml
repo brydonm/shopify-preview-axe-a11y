@@ -68,7 +68,7 @@ runs:
         fi
 
         echo "Running axe on ${{ steps.parse_url.outputs.url }}"
-        axe ${{ steps.parse_url.outputs.url }} --exit 0 --json > axe-report.json
+        axe ${{ steps.parse_url.outputs.url }} --save axe-report.json
 
         node <<'EOF'
         const fs = require('fs');
