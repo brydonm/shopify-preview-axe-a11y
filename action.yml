@@ -128,7 +128,7 @@ runs:
       if: ${{ github.event_name == 'push' }}
       uses: actions/upload-artifact@v4
       with:
-        name: axe-report-${{ github.ref }}.json
+        name: axe-report-${{ github.ref.split('refs/heads/')[1] }}.json
         path: axe-report.json
 
     - name: Download axe-report.json for target branch (if needed)
