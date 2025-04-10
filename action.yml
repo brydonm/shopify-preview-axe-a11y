@@ -93,6 +93,7 @@ runs:
           });
         });
 
+        // Write the report with violations
         fs.writeFileSync('axe-summary.md', table);
         fs.writeFileSync('axe-report.json', JSON.stringify(report, null, 2));
         EOF
@@ -104,6 +105,48 @@ runs:
         name: axe-report-${{ github.head_ref }}.json
         path: axe-report.json
 
+    - name: Download axe-report.json for head_ref (if needed)
+      id: download_report
+      uses: actions/download-artifact@v2
+      with:
+        name: axe-report-${{ github.head_ref }}.json
+        path: ./axe-report-head
+
+    - name: Process Violations and Output in a Separate Table
+      id: process_violations
+      run: |
+        if [ -f "./axe-report-head/axe-report-${{ github.head_ref }}.json" ]; then
+          echo "Processing downloaded report for head_ref..."
+
+          # Read the downloaded report
+          node <<'EOF'
+          const fs = require('fs');
+          const path = './axe-report-head/axe-report-${{ github.head_ref }}.json';
+          const report = JSON.parse(fs.readFileSync(path, 'utf8'));
+          const violations = report?.[0].violations || [];
+
+          if (violations.length === 0) {
+            console.log("No violations found in downloaded report.");
+            process.exit(0);
+          }
+
+          let violationsTable = `### 🧪 Violations from Downloaded Report\n\n`;
+          violationsTable += `| Issue | Impact | Target | Help |\n`;
+          violationsTable += `|-------|--------|--------|------|\n`;
+
+          violations.forEach(v => {
+            const impact = v.impact || "n/a";
+            const help = `[${v.help}](${v.helpUrl})`;
+            v.nodes.forEach(n => {
+              const target = Array.isArray(n.target) ? n.target.join(', ') : 'n/a';
+              violationsTable += `| ${v.id} | ${impact} | \`${target}\` | ${help} |\n`;
+            });
+          });
+
+          fs.writeFileSync('axe-violations-summary.md', violationsTable);
+          EOF
+        fi
+
     - name: Comment on PR with results (only if PR is open)
       if: ${{ github.event.pull_request.state == 'open' }}
       uses: actions/github-script@v7
@@ -112,10 +155,16 @@ runs:
         script: |
           const fs = require('fs');
           const summary = fs.readFileSync('axe-summary.md', 'utf8');
+          const violationsSummary = fs.existsSync('axe-violations-summary.md') ? fs.readFileSync('axe-violations-summary.md', 'utf8') : '';
+
+          let body = summary;
+          if (violationsSummary) {
+            body += "\n\n" + violationsSummary;
+          }
 
           await github.rest.issues.createComment({
             owner: context.repo.owner,
             repo: context.repo.repo,
             issue_number: context.issue.number,
-            body: summary,
+            body: body,
           });
