@@ -57,6 +57,10 @@ runs:
       shell: bash
       run: npm install -g @axe-core/cli
 
+    - name: Install jq
+      shell: bash
+      run: sudo apt-get update && sudo apt-get install -y jq
+
     - name: Run axe test
       id: run_test
       shell: bash
@@ -68,9 +72,12 @@ runs:
         fi
 
         echo "Running axe on ${{ steps.parse_url.outputs.url }}"
-        RESULT=$(axe ${{ steps.parse_url.outputs.url }} --no-exit 2>&1)
-        echo "$RESULT"
-        SUMMARY=$(echo "$RESULT" | tail -n 50)
+
+        # Run axe with output to JSON so it doesn't exit with failure
+        axe ${{ steps.parse_url.outputs.url }} --exit 0 --json > axe-report.json
+
+        SUMMARY=$(cat axe-report.json | jq '.violations | map({id, impact, description}) | .[]' | head -n 50)
+
         echo "result<<EOF" >> $GITHUB_OUTPUT
         echo "$SUMMARY" >> $GITHUB_OUTPUT
         echo "EOF" >> $GITHUB_OUTPUT
