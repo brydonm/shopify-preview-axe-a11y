@@ -113,6 +113,7 @@ runs:
         path: ./axe-report-head
 
     - name: Process Violations and Output in a Separate Table
+      shell: bash
       id: process_violations
       run: |
         if [ -f "./axe-report-head/axe-report-${{ github.head_ref }}.json" ]; then
