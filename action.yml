@@ -93,31 +93,23 @@ runs:
           });
         });
 
-        fs.writeFileSync('axe-summary.md', table);
+        table += `<details><summary>View full report</summary>\`\`\`json\n${JSON.stringify(report, null, 2)}\n\`\`\`</details>\n\n`;
 
-        console.log('axe-summary.md created with results');
+        fs.writeFileSync('axe-summary.md', table);
         EOF
 
     - name: Comment on PR with results
       if: ${{ github.event.pull_request.number }}
       uses: actions/github-script@v7
       with:
-        github-token: ${{ inputs.GITHUB_TOKEN }}
+        github-token: ${{ inputs.github_token }}
         script: |
-          const prNumber = context.payload.pull_request.number;
-          const result = `${{ steps.run_test.outputs.result }}`;
-
-          // Read the full contents of the markdown file (if it was generated in a previous step)
           const fs = require('fs');
-          const reportContent = fs.readFileSync('axe-report.md', 'utf8');
+          const summary = fs.readFileSync('axe-summary.md', 'utf8');
 
-          // Format the report content with a spoiler
-          const commentBody = `🧪 **Axe Test Results:**\n<details><summary>Click to view full report</summary>\n\`\`\`md\n${reportContent}\n\`\`\`\n</details>`;
-
-          // Create or update the comment on the PR
           await github.rest.issues.createComment({
             owner: context.repo.owner,
             repo: context.repo.repo,
-            issue_number: prNumber,
-            body: commentBody
+            issue_number: context.issue.number,
+            body: commentBody,
           });
