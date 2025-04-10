@@ -2,7 +2,9 @@ name: Test BrowserStack Shopify Preview Action
 
 on:
   pull_request:
-    types: [opened, edited, synchronize]
+    types: [opened, edited]
+  push:
+    branches: [main]
 
 jobs:
   test-preview-action:
