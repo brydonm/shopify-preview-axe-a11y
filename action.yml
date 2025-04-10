@@ -74,7 +74,7 @@ runs:
         echo "Running axe on ${{ steps.parse_url.outputs.url }}"
 
         # Run axe with output to JSON so it doesn't exit with failure
-        axe ${{ steps.parse_url.outputs.url }} --exit --save axe-report.json
+        axe ${{ steps.parse_url.outputs.url }} --save axe-report.json
 
         SUMMARY=$(cat axe-report.json | jq '.violations | map({id, impact, description}) | .[]' | head -n 50)
 
