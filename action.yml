@@ -63,7 +63,7 @@ runs:
       run: |
         if [ -z "${{ steps.parse_url.outputs.url }}" ]; then
           echo "No test run due to missing URL."
-          echo "result=❌ No matching URL found in PR body." >> $GITHUB_OUTPUT
+          echo "No matching URL found in PR body." > axe-summary.md
           exit 0
         fi
 
@@ -96,22 +96,18 @@ runs:
         fs.writeFileSync('axe-summary.md', table);
         EOF
 
-        echo "result<<EOF" >> $GITHUB_OUTPUT
-        cat axe-summary.md >> $GITHUB_OUTPUT
-        echo "EOF" >> $GITHUB_OUTPUT
-
     - name: Comment on PR with results
       if: ${{ github.event.pull_request.number }}
       uses: actions/github-script@v7
       with:
         github-token: ${{ inputs.github_token }}
         script: |
-          const prNumber = context.payload.pull_request.number;
-          const result = `${{ steps.run_test.outputs.result }}`;
+          const fs = require('fs');
+          const summary = fs.readFileSync('axe-summary.md', 'utf8');
 
           await github.rest.issues.createComment({
             owner: context.repo.owner,
             repo: context.repo.repo,
-            issue_number: prNumber,
-            body: result
+            issue_number: context.issue.number,
+            body: summary,
           });
