@@ -75,7 +75,7 @@ runs:
         const report = JSON.parse(fs.readFileSync('./axe-report.json', 'utf8'));
         const violations = report.violations || [];
 
-        const fullReport = `<details><summary>View full report</summary>\`\`\`json\n${JSON.stringify(report, null, 2)}\n\`\`\`</details>\n\n`;
+        const fullReport = `<details><summary>View full report</summary>\`\`\`json\n${JSON.stringify(violations, null, 2)}\n\`\`\`</details>\n\n`;
 
         if (violations.length === 0) {
           let summary = `✅ No accessibility issues found.\n\n`;
