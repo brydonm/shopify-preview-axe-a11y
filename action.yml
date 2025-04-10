@@ -94,6 +94,8 @@ runs:
         });
 
         fs.writeFileSync('axe-summary.md', table);
+
+        echo "axe-summary.md created."
         EOF
 
     - name: Comment on PR with results
