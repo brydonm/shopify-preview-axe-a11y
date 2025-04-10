@@ -104,9 +104,9 @@ runs:
         EOF
 
     - name: Upload axe-report.json as an artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
-        name: axe-report
+        name: axe-report-${{ matrix.runs-on }}
         path: output/axe-report.json
 
     - name: Comment on PR with results
