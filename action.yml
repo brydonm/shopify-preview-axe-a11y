@@ -72,14 +72,46 @@ runs:
         fi
 
         echo "Running axe on ${{ steps.parse_url.outputs.url }}"
+        axe ${{ steps.parse_url.outputs.url }} --exit 0 --json > axe-report.json
 
-        # Run axe with output to JSON so it doesn't exit with failure
-        axe ${{ steps.parse_url.outputs.url }} --save axe-report.json
+        echo "Saving summary JS file..."
+        node <<'EOF' > axe-summary.md
+        const fs = require('fs');
+        const report = JSON.parse(fs.readFileSync('./axe-report.json', 'utf8'));
 
-        SUMMARY=$(cat axe-report.json | jq '.violations | map({id, impact, description}) | .[]' | head -n 50)
+        const violations = report.violations || [];
 
+        if (violations.length === 0) {
+          console.log('✅ No accessibility issues found.');
+          console.log('result<<EOF');
+          console.log('✅ No accessibility issues found.');
+          console.log('EOF');
+          process.exit(0);
+        }
+
+        let table = `### 🧪 Axe Accessibility Report\n\n`;
+        table += `| Issue | Impact | Target | Help |\n`;
+        table += `|-------|--------|--------|------|\n`;
+
+        violations.forEach(v => {
+          const impact = v.impact || "n/a";
+          const help = `[${v.help}](${v.helpUrl})`;
+          v.nodes.forEach(n => {
+            const target = Array.isArray(n.target) ? n.target.join(', ') : 'n/a';
+            table += `| ${v.id} | ${impact} | \`${target}\` | ${help} |\n`;
+          });
+        });
+
+        fs.writeFileSync('axe-summary.md', table);
+
+        console.log('result<<EOF');
+        console.log(table);
+        console.log('EOF');
+        EOF
+
+        RESULT=$(cat axe-summary.md)
         echo "result<<EOF" >> $GITHUB_OUTPUT
-        echo "$SUMMARY" >> $GITHUB_OUTPUT
+        echo "$RESULT" >> $GITHUB_OUTPUT
         echo "EOF" >> $GITHUB_OUTPUT
 
     - name: Comment on PR with results
@@ -90,9 +122,10 @@ runs:
         script: |
           const prNumber = context.payload.pull_request.number;
           const result = `${{ steps.run_test.outputs.result }}`;
+
           await github.rest.issues.createComment({
             owner: context.repo.owner,
             repo: context.repo.repo,
             issue_number: prNumber,
-            body: `♿ **Axe Accessibility Test Results:**\n\`\`\`\n${result || 'No test was run.'}\n\`\`\``
+            body: result
           });
