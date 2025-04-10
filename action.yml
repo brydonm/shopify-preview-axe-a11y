@@ -15,7 +15,7 @@ runs:
   using: "composite"
   steps:
     - name: Extract PR Body
-      if: ${{ github.event_name == 'push' }}
+      if: ${{ github.event_name == 'pull_request' }}
       id: pr_body
       shell: bash
       run: |
@@ -24,7 +24,7 @@ runs:
         echo "EOF" >> $GITHUB_ENV
 
     - name: Parse preview URL
-      if: ${{ github.event_name == 'push' }}
+      if: ${{ github.event_name == 'pull_request' }}
       id: parse_url
       shell: bash
       run: |
