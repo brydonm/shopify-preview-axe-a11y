@@ -57,10 +57,6 @@ runs:
       shell: bash
       run: npm install -g @axe-core/cli
 
-    - name: Install jq
-      shell: bash
-      run: sudo apt-get update && sudo apt-get install -y jq
-
     - name: Run axe test
       id: run_test
       shell: bash
@@ -72,20 +68,15 @@ runs:
         fi
 
         echo "Running axe on ${{ steps.parse_url.outputs.url }}"
-        axe ${{ steps.parse_url.outputs.url }} --save axe-report.json
+        axe ${{ steps.parse_url.outputs.url }} --exit 0 --json > axe-report.json
 
-        echo "Saving summary JS file..."
-        node <<'EOF' > axe-summary.md
+        node <<'EOF'
         const fs = require('fs');
         const report = JSON.parse(fs.readFileSync('./axe-report.json', 'utf8'));
-
         const violations = report.violations || [];
 
         if (violations.length === 0) {
-          console.log('✅ No accessibility issues found.');
-          console.log('result<<EOF');
-          console.log('✅ No accessibility issues found.');
-          console.log('EOF');
+          fs.writeFileSync('axe-summary.md', '✅ No accessibility issues found.');
           process.exit(0);
         }
 
@@ -103,15 +94,10 @@ runs:
         });
 
         fs.writeFileSync('axe-summary.md', table);
-
-        console.log('result<<EOF');
-        console.log(table);
-        console.log('EOF');
         EOF
 
-        RESULT=$(cat axe-summary.md)
         echo "result<<EOF" >> $GITHUB_OUTPUT
-        echo "$RESULT" >> $GITHUB_OUTPUT
+        cat axe-summary.md >> $GITHUB_OUTPUT
         echo "EOF" >> $GITHUB_OUTPUT
 
     - name: Comment on PR with results
