@@ -95,7 +95,7 @@ runs:
 
         fs.writeFileSync('axe-summary.md', table);
 
-        echo "axe-summary.md created."
+        console.log('axe-summary.md created with results');
         EOF
 
     - name: Comment on PR with results
