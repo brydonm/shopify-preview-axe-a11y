@@ -113,14 +113,6 @@ runs:
         path: ./axe-report-head
       continue-on-error: true
 
-    - name: Download axe-report.json for target branch (if needed)
-      id: download_report
-      uses: actions/download-artifact@v4
-      with:
-        name: axe-report-${{ github.base_ref }}.json # Using base_ref for the target branch
-        path: ./axe-report-head
-      continue-on-error: true # Ensure that the action continues even if the download fails
-
     - name: Process Violations and Output in a Separate Table
       id: process_violations
       shell: bash
