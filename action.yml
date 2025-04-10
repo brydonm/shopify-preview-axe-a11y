@@ -75,12 +75,8 @@ runs:
         const report = JSON.parse(fs.readFileSync('./axe-report.json', 'utf8'));
         const violations = report?.[0].violations || [];
 
-        const fullReport = `<details><summary>View full report</summary><code>${JSON.stringify({violations}, null, 2)}</code></details>`;
-
         if (violations.length === 0) {
-          let summary = `✅ No accessibility issues found.\n\n`;
-          summary += fullReport;
-          fs.writeFileSync('axe-summary.md', summary);
+          fs.writeFileSync('axe-summary.md', `✅ No accessibility issues found.\n\n`);
           process.exit(0);
         }
 
@@ -96,8 +92,6 @@ runs:
             table += `| ${v.id} | ${impact} | \`${target}\` | ${help} |\n`;
           });
         });
-
-        table += fullReport;
 
         fs.writeFileSync('axe-summary.md', table);
         fs.writeFileSync('axe-report.json', JSON.stringify(report, null, 2));
