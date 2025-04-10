@@ -80,7 +80,7 @@ runs:
         if (violations.length === 0) {
           let summary = `✅ No accessibility issues found.\n\n`;
           summary += fullReport;
-          fs.writeFileSync('axe-summary.md', '✅ No accessibility issues found.');
+          fs.writeFileSync('axe-summary.md', summary);
           process.exit(0);
         }
 
