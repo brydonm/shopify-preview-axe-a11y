@@ -146,6 +146,7 @@ runs:
       with:
         name: axe-report-${{ github.ref_name }}
         path: axe-report.json
+        run-id: ${{ github.event.workflow_run.id }}
 
     - name: Download axe-report.json for target branch (if needed)
       if: ${{ github.event_name == 'pull_request' }}
@@ -154,6 +155,7 @@ runs:
       with:
         name: axe-report-${{ github.base_ref }}
         path: axe-report-${{ github.base_ref }}.json
+        run-id: ${{ github.event.workflow_run.id }}
       continue-on-error: true
 
     - name: Process Violations and Output in a Separate Table
