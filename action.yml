@@ -146,6 +146,7 @@ runs:
       with:
         name: axe-report-${{ github.ref_name }}
         path: axe-report.json
+        run-id: ${{ github.event.workflow_run.id }}
 
     - name: Download axe-report.json for target branch (if needed)
       if: ${{ github.event_name == 'pull_request' }}
@@ -153,20 +154,21 @@ runs:
       uses: actions/download-artifact@v4
       with:
         name: axe-report-${{ github.base_ref }}
-        path: /axe-report-${{ github.base_ref }}.json
+        path: axe-report-${{ github.base_ref }}.json
+        run-id: ${{ github.event.workflow_run.id }}
       continue-on-error: true
 
     - name: Process Violations and Output in a Separate Table
       id: process_violations
       shell: bash
       run: |
-        if [ -f "./axe-report-head/axe-report-${{ github.base_ref }}.json" ]; then
+        if [ -f "./axe-report-${{ github.base_ref }}.json" ]; then
           echo "Processing downloaded report for target branch..."
 
           # Read the downloaded report
           node -e "
             const fs = require('fs');
-            const path = './axe-report-head/axe-report-${{ github.base_ref }}.json';
+            const path = './axe-report-${{ github.base_ref }}.json';
             const report = JSON.parse(fs.readFileSync(path, 'utf8'));
             const violations = report?.[0].violations || [];
 
