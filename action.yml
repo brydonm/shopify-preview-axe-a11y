@@ -19,6 +19,11 @@ runs:
       id: pr_body
       shell: bash
       run: |
+        echo "Extracting PR body..."
+        if [ -z "${{ github.event.pull_request.body }}" ]; then
+          echo "PR body is empty, exiting..."
+          exit 1
+        fi
         echo "PR_BODY<<EOF" >> $GITHUB_ENV
         echo "${{ github.event.pull_request.body }}" >> $GITHUB_ENV
         echo "EOF" >> $GITHUB_ENV
@@ -28,8 +33,12 @@ runs:
       id: parse_url
       shell: bash
       run: |
-        # Extract all URLs
+        echo "Extracting URLs from PR body..."
         ALL_URLS=$(echo "$PR_BODY" | grep -oE 'https?://[^ )\n]+')
+
+        # Debugging: print extracted URLs
+        echo "Extracted URLs:"
+        echo "$ALL_URLS"
 
         # Try matching preview_url_contains (if provided)
         MATCHING_URL=$(echo "$ALL_URLS" | grep "$INPUT_PREVIEW_URL_CONTAINS" | head -n1)
@@ -61,7 +70,9 @@ runs:
 
     - name: Install axe CLI
       shell: bash
-      run: npm install -g @axe-core/cli
+      run: |
+        echo "Installing axe CLI..."
+        npm install -g @axe-core/cli
 
     - name: Run axe test
       id: run_test
@@ -69,6 +80,8 @@ runs:
       run: |
         # Check if the preview URL is provided, if not use the default URL
         URL="${{ steps.parse_url.outputs.url }}"
+        echo "Testing URL: $URL"
+
         if [ -z "$URL" ]; then
           if [ -z "${{ inputs.default_url }}" ]; then
             echo "No URL provided and no default URL set. No test run."
@@ -80,8 +93,8 @@ runs:
           fi
         fi
 
-        echo "Running axe on ${{ steps.parse_url.outputs.url }}"
-        axe ${{ steps.parse_url.outputs.url }} --save axe-report.json
+        echo "Running axe on $URL"
+        axe $URL --save axe-report.json
 
         node <<'EOF'
         const fs = require('fs');
@@ -125,12 +138,16 @@ runs:
         name: axe-report-${{ github.base_ref }}.json
         path: ./axe-report-head
       continue-on-error: true
+      run: |
+        if [ ! -f "./axe-report-head/axe-report-${{ github.base_ref }}.json" ]; then
+          echo "No report found for target branch. Skipping processing."
+          exit 1
+        fi
 
     - name: Process Violations and Output in a Separate Table
       id: process_violations
       shell: bash
       run: |
-        # Check if the report exists before proceeding
         if [ -f "./axe-report-head/axe-report-${{ github.base_ref }}.json" ]; then
           echo "Processing downloaded report for target branch..."
 
