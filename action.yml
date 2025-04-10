@@ -23,7 +23,8 @@ runs:
         echo "${{ github.event.pull_request.body }}" >> $GITHUB_ENV
         echo "EOF" >> $GITHUB_ENV
 
-    - name: Run Axe
+    - name: Parse preview URL from PR body
+      if: ${{ github.event_name == 'pull_request' }}
       id: parse_url
       shell: bash
       run: |
