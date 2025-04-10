@@ -17,4 +17,5 @@ jobs:
         uses: ./
         with:
           preview_url_contains: "shopifypreview.com"
+          default_url: "https://fellowproducts.com"
           github_token: ${{ secrets.GH_TOKEN }}

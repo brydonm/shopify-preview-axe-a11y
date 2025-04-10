@@ -7,10 +7,15 @@ inputs:
   github_token:
     description: "GitHub token to post PR comment"
     required: true
+  default_url:
+    description: "Default URL to use if no preview URL is found"
+    required: false
+    default: ""
 runs:
   using: "composite"
   steps:
     - name: Extract PR Body
+      if: ${{ github.event_name == 'pull_request' }}
       id: pr_body
       shell: bash
       run: |
@@ -19,6 +24,7 @@ runs:
         echo "EOF" >> $GITHUB_ENV
 
     - name: Parse preview URL
+      if: ${{ github.event_name == 'pull_request' }}
       id: parse_url
       shell: bash
       run: |
@@ -61,10 +67,17 @@ runs:
       id: run_test
       shell: bash
       run: |
-        if [ -z "${{ steps.parse_url.outputs.url }}" ]; then
-          echo "No test run due to missing URL."
-          echo "No matching URL found in PR body." > axe-summary.md
-          exit 0
+        # Check if the preview URL is provided, if not use the default URL
+        URL="${{ steps.parse_url.outputs.url }}"
+        if [ -z "$URL" ]; then
+          if [ -z "${{ inputs.default_url }}" ]; then
+            echo "No URL provided and no default URL set. No test run."
+            echo "No URL found." > axe-summary.md
+            exit 0
+          else
+            echo "No URL provided. Using default URL: ${{ inputs.default_url }}"
+            URL="${{ inputs.default_url }}"
+          fi
         fi
 
         echo "Running axe on ${{ steps.parse_url.outputs.url }}"
@@ -98,8 +111,8 @@ runs:
         fs.writeFileSync('axe-report.json', JSON.stringify(report, null, 2));
         EOF
 
-    - name: Upload axe-report.json as an artifact (only if merging)
-      if: ${{ github.event.pull_request.merged == true }}
+    - name: Upload axe-report.json as an artifact
+      if: ${{ github.event_name == 'push' }}
       uses: actions/upload-artifact@v4
       with:
         name: axe-report-${{ github.head_ref }}.json
