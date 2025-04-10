@@ -124,6 +124,22 @@ runs:
         fs.writeFileSync('axe-report.json', JSON.stringify(report, null, 2));
         EOF
 
+    - name: Upload path debug
+      shell: bash
+      if: ${{ github.event_name == 'push' }}
+      run: |
+        echo "UPLOAD PATHS:"
+        echo "name: axe-report-${{ github.ref_name }}"
+        echo "path: /axe-report-${{ github.ref_name }}.json"
+
+    - name: Download path debug
+      shell: bash
+      if: ${{ github.event_name == 'pull_request' }}
+      run: |
+        echo "DOWNLOAD PATHS:"
+        echo "name: axe-report-${{ github.base_ref }}"
+        echo "path: /axe-report-${{ github.base_ref }}.json"
+
     - name: Upload axe-report.json as an artifact
       if: ${{ github.event_name == 'push' }}
       uses: actions/upload-artifact@v4
@@ -136,8 +152,8 @@ runs:
       id: download_report
       uses: actions/download-artifact@v4
       with:
-        name: axe-report-${{ github.ref_name }}
-        path: /axe-report-${{ github.ref_name }}.json
+        name: axe-report-${{ github.base_ref }}
+        path: /axe-report-${{ github.base_ref }}.json
       continue-on-error: true
 
     - name: Process Violations and Output in a Separate Table
