@@ -15,4 +15,4 @@ jobs:
         uses: ./
         with:
           preview_url_contains: "shopifypreview.com"
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GH_TOKEN }}
