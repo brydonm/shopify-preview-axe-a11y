@@ -130,7 +130,7 @@ runs:
       run: |
         echo "UPLOAD PATHS:"
         echo "name: axe-report-${{ github.ref_name }}"
-        echo "path: /axe-report-${{ github.ref_name }}.json"
+        echo "path: axe-report.json"
 
     - name: Download path debug
       shell: bash
@@ -145,7 +145,7 @@ runs:
       uses: actions/upload-artifact@v4
       with:
         name: axe-report-${{ github.ref_name }}
-        path: /axe-report-${{ github.ref_name }}.json
+        path: axe-report.json
 
     - name: Download axe-report.json for target branch (if needed)
       if: ${{ github.event_name == 'pull_request' }}
