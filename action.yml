@@ -1,14 +1,8 @@
-name: "BrowserStack Shopify Preview"
-description: "Run BrowserStack tests on Shopify preview URLs from PR description and comment results."
+name: "Axe Shopify Preview"
+description: "Run axe accessibility tests on Shopify preview URLs from PR description and comment results."
 inputs:
   preview_url_contains:
     description: "Part of the URL to look for (e.g., shopifypreview.com)"
-    required: true
-  browserstack_username:
-    description: "BrowserStack username"
-    required: true
-  browserstack_access_key:
-    description: "BrowserStack access key"
     required: true
   github_token:
     description: "GitHub token to post PR comment"
@@ -28,13 +22,30 @@ runs:
       id: parse_url
       shell: bash
       run: |
-        MATCHING_URL=$(echo "$PR_BODY" | grep -oE 'https?://[^ )\n]+' | grep "${{ inputs.preview_url_contains }}" | head -n1)
-        echo "Found URL: $MATCHING_URL"
+        # Extract all URLs
+        ALL_URLS=$(echo "$PR_BODY" | grep -oE 'https?://[^ )\n]+')
+
+        # Try matching preview_url_contains (if provided)
+        MATCHING_URL=$(echo "$ALL_URLS" | grep "$INPUT_PREVIEW_URL_CONTAINS" | head -n1)
+
+        # If no match yet, try matching ?preview_theme_id=
+        if [ -z "$MATCHING_URL" ]; then
+          MATCHING_URL=$(echo "$ALL_URLS" | grep -E '\?preview_theme_id=' | head -n1)
+        fi
+
+        echo "==== DEBUG INFO ===="
+        echo "All extracted URLs:"
+        echo "$ALL_URLS"
+        echo "Matched URL:"
+        echo "$MATCHING_URL"
+        echo "===================="
+
         if [ -z "$MATCHING_URL" ]; then
           echo "No matching URL found."
           echo "url=" >> $GITHUB_OUTPUT
           exit 1
         fi
+
         echo "url=$MATCHING_URL" >> $GITHUB_OUTPUT
 
     - name: Set up Node.js
@@ -42,42 +53,125 @@ runs:
       with:
         node-version: "18"
 
-    - name: Install BrowserStack CLI
+    - name: Install axe CLI
       shell: bash
-      run: npm install -g browserstack-cli
+      run: npm install -g @axe-core/cli
 
-    - name: Run BrowserStack test
+    - name: Run axe test
       id: run_test
       shell: bash
-      env:
-        BROWSERSTACK_USERNAME: ${{ inputs.browserstack_username }}
-        BROWSERSTACK_ACCESS_KEY: ${{ inputs.browserstack_access_key }}
       run: |
         if [ -z "${{ steps.parse_url.outputs.url }}" ]; then
           echo "No test run due to missing URL."
-          echo "result=❌ No matching URL found in PR body." >> $GITHUB_OUTPUT
+          echo "No matching URL found in PR body." > axe-summary.md
           exit 0
         fi
 
-        echo "Running test against ${{ steps.parse_url.outputs.url }}"
-        RESULT=$(browserstack-cypress run --spec ${{ steps.parse_url.outputs.url }} 2>&1)
-        echo "$RESULT"
-        SUMMARY=$(echo "$RESULT" | tail -n 20)
-        echo "result<<EOF" >> $GITHUB_OUTPUT
-        echo "$SUMMARY" >> $GITHUB_OUTPUT
-        echo "EOF" >> $GITHUB_OUTPUT
+        echo "Running axe on ${{ steps.parse_url.outputs.url }}"
+        axe ${{ steps.parse_url.outputs.url }} --save axe-report.json
 
-    - name: Comment on PR with results
-      if: ${{ github.event.pull_request.number }}
+        node <<'EOF'
+        const fs = require('fs');
+        const report = JSON.parse(fs.readFileSync('./axe-report.json', 'utf8'));
+        const violations = report?.[0].violations || [];
+
+        if (violations.length === 0) {
+          fs.writeFileSync('axe-summary.md', `✅ No accessibility issues found.\n\n`);
+          process.exit(0);
+        }
+
+        let table = `### 🧪 Axe Accessibility Report\n\n`;
+        table += `| Issue | Impact | Target | Help |\n`;
+        table += `|-------|--------|--------|------|\n`;
+
+        violations.forEach(v => {
+          const impact = v.impact || "n/a";
+          const help = `[${v.help}](${v.helpUrl})`;
+          v.nodes.forEach(n => {
+            const target = Array.isArray(n.target) ? n.target.join(', ') : 'n/a';
+            table += `| ${v.id} | ${impact} | \`${target}\` | ${help} |\n`;
+          });
+        });
+
+        // Write the report with violations
+        fs.writeFileSync('axe-summary.md', table);
+        fs.writeFileSync('axe-report.json', JSON.stringify(report, null, 2));
+        EOF
+
+    - name: Upload axe-report.json as an artifact (only if merging)
+      if: ${{ github.event.pull_request.merged == true }}
+      uses: actions/upload-artifact@v4
+      with:
+        name: axe-report-${{ github.head_ref }}.json
+        path: axe-report.json
+
+    - name: Download axe-report.json for target branch (if needed)
+      id: download_report
+      uses: actions/download-artifact@v4
+      with:
+        name: axe-report-${{ github.base_ref }}.json
+        path: ./axe-report-head
+      continue-on-error: true
+
+    - name: Process Violations and Output in a Separate Table
+      id: process_violations
+      shell: bash
+      run: |
+        # Check if the report exists before proceeding
+        if [ -f "./axe-report-head/axe-report-${{ github.base_ref }}.json" ]; then
+          echo "Processing downloaded report for target branch..."
+
+          # Read the downloaded report
+          node -e "
+            const fs = require('fs');
+            const path = './axe-report-head/axe-report-${{ github.base_ref }}.json';
+            const report = JSON.parse(fs.readFileSync(path, 'utf8'));
+            const violations = report?.[0].violations || [];
+
+            if (violations.length === 0) {
+              console.log('No violations found in downloaded report.');
+              process.exit(0);
+            }
+
+            let violationsTable = '### 🧪 Violations from Downloaded Report\\n\\n';
+            violationsTable += '| Issue | Impact | Target | Help |\\n';
+            violationsTable += '|-------|--------|--------|------|\\n';
+
+            violations.forEach(v => {
+              const impact = v.impact || 'n/a';
+              const help = \`[${v.help}](${v.helpUrl})\`;
+              v.nodes.forEach(n => {
+                const target = Array.isArray(n.target) ? n.target.join(', ') : 'n/a';
+                violationsTable += \`| ${v.id} | ${impact} | \${target} | ${help} |\\n\`;
+              });
+            });
+
+            fs.writeFileSync('axe-violations-summary.md', violationsTable);
+          "
+        else
+          echo "No axe-report found for target branch. Skipping violation processing."
+          exit 0
+        fi
+      if: success()
+
+    - name: Comment on PR with results (only if PR is open)
+      if: ${{ github.event.pull_request.state == 'open' }}
       uses: actions/github-script@v7
       with:
         github-token: ${{ inputs.github_token }}
         script: |
-          const prNumber = context.payload.pull_request.number;
-          const result = `${{ steps.run_test.outputs.result }}`;
+          const fs = require('fs');
+          const summary = fs.readFileSync('axe-summary.md', 'utf8');
+          const violationsSummary = fs.existsSync('axe-violations-summary.md') ? fs.readFileSync('axe-violations-summary.md', 'utf8') : '';
+
+          let body = summary;
+          if (violationsSummary) {
+            body += "\n\n" + violationsSummary;
+          }
+
           await github.rest.issues.createComment({
             owner: context.repo.owner,
             repo: context.repo.repo,
-            issue_number: prNumber,
-            body: `🧪 **BrowserStack Test Results:**\n\`\`\`\n${result || 'No test was run.'}\n\`\`\``
+            issue_number: context.issue.number,
+            body: body,
           });

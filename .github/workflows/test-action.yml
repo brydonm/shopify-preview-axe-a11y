@@ -2,7 +2,9 @@ name: Test BrowserStack Shopify Preview Action
 
 on:
   pull_request:
-    types: [opened, edited, synchronize]
+    types: [opened, edited]
+  push:
+    branches: [main]
 
 jobs:
   test-preview-action:
@@ -11,10 +13,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Run custom BrowserStack preview action
+      - name: Run custom AXE preview action
         uses: ./
         with:
           preview_url_contains: "shopifypreview.com"
-          browserstack_username: ${{ secrets.BROWSERSTACK_USERNAME }}
-          browserstack_access_key: ${{ secrets.BROWSERSTACK_ACCESS_KEY }}
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GH_TOKEN }}
