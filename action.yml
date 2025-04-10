@@ -138,11 +138,6 @@ runs:
         name: axe-report-${{ github.base_ref }}.json
         path: ./axe-report-head
       continue-on-error: true
-      run: |
-        if [ ! -f "./axe-report-head/axe-report-${{ github.base_ref }}.json" ]; then
-          echo "No report found for target branch. Skipping processing."
-          exit 1
-        fi
 
     - name: Process Violations and Output in a Separate Table
       id: process_violations
