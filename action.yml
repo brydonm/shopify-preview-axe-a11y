@@ -73,7 +73,7 @@ runs:
         node <<'EOF'
         const fs = require('fs');
         const report = JSON.parse(fs.readFileSync('./axe-report.json', 'utf8'));
-        const violations = report.violations || [];
+        const violations = report?.[0].violations || [];
 
         const fullReport = `<details><summary>View full report</summary><code>${JSON.stringify({violations}, null, 2)}</code></details>`;
 
