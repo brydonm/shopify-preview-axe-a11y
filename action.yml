@@ -129,7 +129,7 @@ runs:
       uses: actions/upload-artifact@v4
       with:
         name: axe-report-${{ github.ref_name }}.json
-        path: axe-report.json
+        path: reports
 
     - name: Download axe-report.json for target branch (if needed)
       if: ${{ github.event_name == 'pull_request' }}
@@ -137,7 +137,7 @@ runs:
       uses: actions/download-artifact@v4
       with:
         name: axe-report-${{ github.base_ref }}.json
-        path: ./
+        path: reports
       continue-on-error: true
 
     - name: Process Violations and Output in a Separate Table
