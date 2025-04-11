@@ -84,7 +84,7 @@ runs:
         if [ -z "$URL" ]; then
           if [ -z "${{ inputs.default_url }}" ]; then
             echo "No URL provided and no default URL set. No test run."
-            echo "No URL found." > _axe-a11y-reports/axe-summary.md
+            echo "No URL found." > axe-summary.md
             exit 0
           else
             echo "No URL provided. Using default URL: ${{ inputs.default_url }}"
@@ -93,15 +93,15 @@ runs:
         fi
 
         echo "Running axe on $URL"
-        axe $URL --save _axe-a11y-reports/${{ github.head_ref }}.json
+        axe $URL --save _axe-a11y-reports/${{ github.ref_name }}.json
 
         node <<'EOF'
         const fs = require('fs');
-        const report = JSON.parse(fs.readFileSync('./_axe-a11y-reports/${{ github.head_ref }}.json', 'utf8'));
+        const report = JSON.parse(fs.readFileSync('./_axe-a11y-reports/${{ github.ref_name }}.json', 'utf8'));
         const violations = report?.[0]?.violations || [];
 
         if (violations.length === 0) {
-          fs.writeFileSync('_axe-a11y-reports/axe-summary.md', `✅ No accessibility issues found.\n\n`);
+          fs.writeFileSync('axe-summary.md', `✅ No accessibility issues found.\n\n`);
           process.exit(0);
         }
 
@@ -118,7 +118,7 @@ runs:
           });
         });
 
-        fs.writeFileSync('_axe-a11y-reports/axe-summary.md', table);
+        fs.writeFileSync('axe-summary.md', table);
         EOF
 
     - name: Process Violations from Target Branch Report (if available)
