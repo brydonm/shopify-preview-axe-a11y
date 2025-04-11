@@ -109,31 +109,7 @@ runs:
         axe $URL --save _axe-a11y-reports/${{ steps.branch_name.outputs.name }}-branch-report.json
         echo "axe report saved to _axe-a11y-reports/${{ steps.branch_name.outputs.name }}-branch-report.json"
 
-        node <<'EOF'
-        const fs = require('fs');
-        const report = JSON.parse(fs.readFileSync('./_axe-a11y-reports/${{ steps.branch_name.outputs.name }}-branch-report.json', 'utf8'));
-        const violations = report?.[0]?.violations || [];
-
-        if (violations.length === 0) {
-          fs.writeFileSync('axe-summary.md', `✅ No accessibility issues found.\n\n`);
-          process.exit(0);
-        }
-
-        let table = `### 🧪 Axe Accessibility Report\n\n`;
-        table += `| Issue | Impact | Target | Help |\n`;
-        table += `|-------|--------|--------|------|\n`;
-
-        violations.forEach(v => {
-          const impact = v.impact || "n/a";
-          const help = `[${v.help}](${v.helpUrl})`;
-          v.nodes.forEach(n => {
-            const target = Array.isArray(n.target) ? n.target.join(', ') : 'n/a';
-            table += `| ${v.id} | ${impact} | \`${target}\` | ${help} |\n`;
-          });
-        });
-
-        fs.writeFileSync('axe-summary.md', table);
-        EOF
+        node scripts/process-violations.js "${{ steps.branch_name.outputs.name }}"
 
     - name: Process Violations from Target Branch Report (if available)
       id: process_violations
