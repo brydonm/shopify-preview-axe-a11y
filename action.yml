@@ -194,3 +194,17 @@ runs:
             issue_number: context.issue.number,
             body: body,
           });
+
+    - name: Commit and push reports
+      if: always()
+      shell: bash
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+        git fetch
+        git checkout ${{ github.head_ref }}
+
+        git add _axe-a11y-reports
+        git commit -m "chore: update axe accessibility reports" || echo "No changes to commit"
+        git push
