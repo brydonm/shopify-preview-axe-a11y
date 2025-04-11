@@ -1,28 +1,56 @@
-# 🧪 BrowserStack Shopify Preview Action
+# 🧪 Shopify Preview Axe A11y Report
 
 ---
 
-Automatically run [BrowserStack](https://www.browserstack.com/) tests on preview URLs mentioned in your PR description --- and post the results as a comment!
+Automatically run [Axe](https://www.deque.com/axe/) tests on preview URLs mentioned in your PR description --- and post the results as a comment!
 
 ## ✅ Features
 
 - 🔍 Extracts Shopify preview URL from PR body (no special formatting needed)
 - 🧪 Runs BrowserStack CLI tests
 - 💬 Comments the test results directly on the PR
+- 📊 Provides a detailed report of accessibility issues including analysis of net new issues
 
 ## 🚀 Usage
 
 Add this to your workflow in any repo:
 
 ```yaml
-name: BrowserStack Preview Test
+name: Test Action
 
 on:
   pull_request:
     types: [opened, edited, synchronize]
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
 
 jobs:
-  browserstack-test:
+  test-preview-action:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Run custom AXE preview action
+        uses: ./
+        with:
+          preview_url_contains: "shopifypreview.com"
+          default_url: "https://fellowproducts.com"
+          github_token: ${{ secrets.SHOPIFY_AXE_A11Y_GITHUB_TOKEN }}
+
+name: Shopify Axe A11y Report
+
+on:
+  pull_request:
+    types: [opened, edited, synchronize]
+  push:
+    branches: [main]
+
+jobs:
+  axe-shopify-report:
     runs-on: ubuntu-latest
 
     steps:
@@ -31,29 +59,28 @@ jobs:
       - uses: brydom/browserstack-shopify-preview@v1
         with:
           preview_url_contains: "shopifypreview.com"
-          browserstack_username: ${{ secrets.BROWSERSTACK_USERNAME }}
-          browserstack_access_key: ${{ secrets.BROWSERSTACK_ACCESS_KEY }}
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          default_url: ""
+          github_token: ${{ secrets.SHOPIFY_AXE_A11Y_GITHUB_TOKEN }}
 ```
 
 ## 🔧 Inputs
 
-| Name                    | Required | Description                                                            |
-| ----------------------- | -------- | ---------------------------------------------------------------------- |
-| preview_url_contains    | ✅ Yes   | Substring to match a preview URL in PR body (e.g., shopifypreview.com) |
-| browserstack_username   | ✅ Yes   | Your BrowserStack username (use a GitHub Secret)                       |
-| browserstack_access_key | ✅ Yes   | Your BrowserStack access key (use a GitHub Secret)                     |
-| github_token            | ✅ Yes   | GitHub token to post PR comment (use secrets.GITHUB_TOKEN)             |
+| Name                 | Required | Description                                                                                                          |
+| -------------------- | -------- | -------------------------------------------------------------------------------------------------------------------- |
+| preview_url_contains | ✅ Yes   | Substring to match a preview URL in PR body (e.g., shopifypreview.com)                                               |
+| default_url          | ✅ Yes   | Default URL to run the base tests on. This is required for the push action to generate a report based on the branch. |
+| github_token         | ✅ Yes   | GitHub token to post PR comment (use `secrets.GITHUB_TOKEN`)                                                         |
 
 ## 📝 PR Description Format
 
-Include a preview URL **anywhere** in the PR body like:
+Include a preview URL **anywhere** in the PR body like ():
 
-https://your-site.shopifypreview.com/preview-path
+- https://your-site.shopifypreview.com
+- https://your-site.com/?preview_theme_id=123456789
 
-The action will automatically find and test the first matching URL that contains `shopifypreview.com` or whatever value you set via `preview_url_contains`.
+The action will automatically find and test the first matching URL that contains `?preview_theme_id` or whatever value you set via `preview_url_contains`.
 
 ## 🛡️ Security
 
-- Use GitHub Secrets to store sensitive credentials like your BrowserStack credentials.
+- Use GitHub Secrets to store sensitive credentials.
 - This action uses the GitHub token to comment on PRs securely.

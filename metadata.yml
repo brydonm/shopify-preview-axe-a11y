@@ -1,25 +1,15 @@
-name: BrowserStack Shopify Preview Action
-description: Automatically run BrowserStack tests on Shopify preview URLs and post results in the PR.
-author: "https://github.com/brydonm/browserstack-shopify-preview"
+name: Shopify Preview Axe A11y Action
+description: Automatically run accessibility tests using Axe on Shopify preview URLs and post results in the PR.
+author: "https://github.com/brydonm/shopify-preview-axe-a11y"
 inputs:
   preview_url_contains:
     description: "Substring to match a preview URL in the PR body."
     required: true
     default: "shopifypreview.com"
-  browserstack_username:
-    description: "Your BrowserStack username."
-    required: true
-  browserstack_access_key:
-    description: "Your BrowserStack access key."
-    required: true
   github_token:
     description: "GitHub token to post the PR comment."
     required: true
-outputs:
-  url:
-    description: "The preview URL found in the PR body."
-    value: ${{ steps.parse_url.outputs.url }}
 branding:
   icon: "eye"
   color: "blue"
-repository: "https://github.com/brydonm/browserstack-shopify-preview"
+repository: "https://github.com/brydonm/shopify-preview-axe-a11y"

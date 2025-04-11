@@ -1,8 +1,13 @@
-name: Test BrowserStack Shopify Preview Action
+name: Test Action
 
 on:
   pull_request:
     types: [opened, edited, synchronize]
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
 
 jobs:
   test-preview-action:
@@ -11,10 +16,9 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Run custom BrowserStack preview action
+      - name: Run custom AXE preview action
         uses: ./
         with:
           preview_url_contains: "shopifypreview.com"
-          browserstack_username: ${{ secrets.BROWSERSTACK_USERNAME }}
-          browserstack_access_key: ${{ secrets.BROWSERSTACK_ACCESS_KEY }}
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          default_url: "https://fellowproducts.com"
+          github_token: ${{ secrets.SHOPIFY_AXE_A11Y_GITHUB_TOKEN }}
