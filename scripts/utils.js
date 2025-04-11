@@ -43,7 +43,7 @@ const violations = [
  * @param {Array} violations - The array of violations to sort.
  * @returns {Array} - The sorted array of violations.
  */
-export function sortByImpact(violations) {
+function sortByImpact(violations) {
   const impactOrder = {
     critical: 1,
     serious: 2,
@@ -57,3 +57,7 @@ export function sortByImpact(violations) {
     return impactA - impactB;
   });
 }
+
+module.exports = {
+  sortByImpact,
+};
