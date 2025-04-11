@@ -132,7 +132,6 @@ runs:
       with:
         issue-number: ${{ github.event.pull_request.number }}
         body-path: axe-comment.md
-        token: ${{ inputs.github_token }}
 
     - name: Commit and push reports
       if: always() && github.event_name == 'push'
