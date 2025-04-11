@@ -33,18 +33,16 @@ jobs:
 
       - uses: brydonm/shopify-preview-axe-a11y@v1
         with:
-          preview_url_contains: "shopifypreview.com"
           default_url: ""
           github_token: ${{ secrets.SHOPIFY_AXE_A11Y_GITHUB_TOKEN }}
 ```
 
 ## 🔧 Inputs
 
-| Name                 | Required | Description                                                                                                          |
-| -------------------- | -------- | -------------------------------------------------------------------------------------------------------------------- |
-| preview_url_contains | ✅ Yes   | Substring to match a preview URL in PR body (e.g., shopifypreview.com)                                               |
-| default_url          | ✅ Yes   | Default URL to run the base tests on. This is required for the push action to generate a report based on the branch. |
-| github_token         | ✅ Yes   | GitHub token to post PR comment (use `secrets.GITHUB_TOKEN`)                                                         |
+| Name | Required | Description |
+| -------------------- | -------- | -------------------------------------------------------------------------------------------------------------------- | |
+| default_url | ✅ Yes | Default URL to run the base tests on. This is required for the push action to generate a report based on the branch. |
+| github_token | ✅ Yes | GitHub token to post PR comment (use `secrets.GITHUB_TOKEN`) |
 
 ## 📝 PR Description Format
 
@@ -53,7 +51,7 @@ Include a preview URL **anywhere** in the PR body like ():
 - https://your-site.shopifypreview.com
 - https://your-site.com/?preview_theme_id=123456789
 
-The action will automatically find and test the first matching URL that contains `?preview_theme_id` or whatever value you set via `preview_url_contains`.
+The action will automatically find and test the first matching URL that contains `?preview_theme_id` or `shopifypreview.com`.
 
 ## 🛡️ Security
 

@@ -19,6 +19,5 @@ jobs:
       - name: Run custom AXE preview action
         uses: ./
         with:
-          preview_url_contains: "shopifypreview.com"
           default_url: "https://fellowproducts.com"
           github_token: ${{ secrets.SHOPIFY_AXE_A11Y_GITHUB_TOKEN }}

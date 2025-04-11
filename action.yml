@@ -2,9 +2,6 @@ name: "Shopify Preview Axe A11y Report"
 description: "Run axe accessibility tests on Shopify preview URLs from PR description and comment results."
 
 inputs:
-  preview_url_contains:
-    description: "Part of the URL to look for (e.g., shopifypreview.com)"
-    required: true
   github_token:
     description: "GitHub token to post PR comment"
     required: true
@@ -41,11 +38,8 @@ runs:
         echo "Extracted URLs:"
         echo "$ALL_URLS"
 
-        MATCHING_URL=$(echo "$ALL_URLS" | grep "$INPUT_PREVIEW_URL_CONTAINS" | head -n1)
-
-        if [ -z "$MATCHING_URL" ]; then
-          MATCHING_URL=$(echo "$ALL_URLS" | grep -E '\?preview_theme_id=' | head -n1)
-        fi
+        # Match URLs that contain '?preview_theme_id=' or 'shopifypreview.com'
+        MATCHING_URL=$(echo "$ALL_URLS" | grep -E '\?preview_theme_id=|shopifypreview\.com' | head -n1)
 
         echo "==== DEBUG INFO ===="
         echo "All extracted URLs:"
