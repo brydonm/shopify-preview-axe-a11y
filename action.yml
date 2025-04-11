@@ -1,5 +1,6 @@
 name: "Axe Shopify Preview"
 description: "Run axe accessibility tests on Shopify preview URLs from PR description and comment results."
+
 inputs:
   preview_url_contains:
     description: "Part of the URL to look for (e.g., shopifypreview.com)"
@@ -11,6 +12,7 @@ inputs:
     description: "Default URL to use if no preview URL is found"
     required: false
     default: ""
+
 runs:
   using: "composite"
   steps:
@@ -36,14 +38,11 @@ runs:
         echo "Extracting URLs from PR body..."
         ALL_URLS=$(echo "$PR_BODY" | grep -oE 'https?://[^ )\n]+')
 
-        # Debugging: print extracted URLs
         echo "Extracted URLs:"
         echo "$ALL_URLS"
 
-        # Try matching preview_url_contains (if provided)
         MATCHING_URL=$(echo "$ALL_URLS" | grep "$INPUT_PREVIEW_URL_CONTAINS" | head -n1)
 
-        # If no match yet, try matching ?preview_theme_id=
         if [ -z "$MATCHING_URL" ]; then
           MATCHING_URL=$(echo "$ALL_URLS" | grep -E '\?preview_theme_id=' | head -n1)
         fi
@@ -78,14 +77,14 @@ runs:
       id: run_test
       shell: bash
       run: |
-        # Check if the preview URL is provided, if not use the default URL
+        mkdir -p _axe-a11y-reports
         URL="${{ steps.parse_url.outputs.url }}"
         echo "Testing URL: $URL"
 
         if [ -z "$URL" ]; then
           if [ -z "${{ inputs.default_url }}" ]; then
             echo "No URL provided and no default URL set. No test run."
-            echo "No URL found." > axe-summary.md
+            echo "No URL found." > _axe-a11y-reports/axe-summary.md
             exit 0
           else
             echo "No URL provided. Using default URL: ${{ inputs.default_url }}"
@@ -94,15 +93,15 @@ runs:
         fi
 
         echo "Running axe on $URL"
-        axe $URL --save axe-report.json
+        axe $URL --save _axe-a11y-reports/axe-report.json
 
         node <<'EOF'
         const fs = require('fs');
-        const report = JSON.parse(fs.readFileSync('./axe-report.json', 'utf8'));
+        const report = JSON.parse(fs.readFileSync('./_axe-a11y-reports/axe-report.json', 'utf8'));
         const violations = report?.[0]?.violations || [];
 
         if (violations.length === 0) {
-          fs.writeFileSync('axe-summary.md', `✅ No accessibility issues found.\n\n`);
+          fs.writeFileSync('_axe-a11y-reports/axe-summary.md', `✅ No accessibility issues found.\n\n`);
           process.exit(0);
         }
 
@@ -119,56 +118,31 @@ runs:
           });
         });
 
-        // Write the report with violations
-        fs.writeFileSync('axe-summary.md', table);
-        fs.writeFileSync('axe-report.json', JSON.stringify(report, null, 2));
+        fs.writeFileSync('_axe-a11y-reports/axe-summary.md', table);
         EOF
 
-    - name: Upload path debug
+    - name: Path debug
       shell: bash
-      if: ${{ github.event_name == 'push' }}
       run: |
-        echo "UPLOAD PATHS:"
-        echo "name: axe-report-${{ github.ref_name }}"
-        echo "path: axe-report.json"
+        echo "== DEBUG FILES WRITTEN =="
+        echo "summary: _axe-a11y-reports/axe-summary.md"
+        echo "report:  _axe-a11y-reports/axe-report.json"
+        ls -la _axe-a11y-reports
 
-    - name: Download path debug
-      shell: bash
-      if: ${{ github.event_name == 'pull_request' }}
-      run: |
-        echo "DOWNLOAD PATHS:"
-        echo "name: axe-report-${{ github.base_ref }}"
-        echo "path: /axe-report-${{ github.base_ref }}.json"
-
-    - name: Upload axe-report.json as an artifact
-      if: ${{ github.event_name == 'push' }}
-      uses: actions/upload-artifact@v4
-      with:
-        name: axe-report-${{ github.ref_name }}
-        path: axe-report.json
-        run-id: ${{ github.event.workflow_run.id }}
-
-    - name: Download axe-report.json for target branch (if needed)
-      if: ${{ github.event_name == 'pull_request' }}
-      id: download_report
-      uses: actions/download-artifact@v4
-      with:
-        name: axe-report-${{ github.base_ref }}
-        path: axe-report-${{ github.base_ref }}.json
-        run-id: ${{ github.event.workflow_run.id }}
-      continue-on-error: true
-
-    - name: Process Violations and Output in a Separate Table
+    - name: Process Violations from Target Branch Report (if available)
       id: process_violations
       shell: bash
       run: |
-        if [ -f "./axe-report-${{ github.base_ref }}.json" ]; then
+        BASE_BRANCH="${{ github.base_ref }}"
+        TARGET_REPORT="_axe-a11y-reports/axe-report-${BASE_BRANCH}.json"
+        echo "Checking for file: $TARGET_REPORT"
+
+        if [ -f "$TARGET_REPORT" ]; then
           echo "Processing downloaded report for target branch..."
 
-          # Read the downloaded report
           node -e "
             const fs = require('fs');
-            const path = './axe-report-${{ github.base_ref }}.json';
+            const path = '$TARGET_REPORT';
             const report = JSON.parse(fs.readFileSync(path, 'utf8'));
             const violations = report?.[0].violations || [];
 
@@ -190,7 +164,7 @@ runs:
               });
             });
 
-            fs.writeFileSync('axe-violations-summary.md', violationsTable);
+            fs.writeFileSync('_axe-a11y-reports/axe-violations-summary.md', violationsTable);
           "
         else
           echo "No axe-report found for target branch. Skipping violation comparison."
@@ -205,8 +179,9 @@ runs:
         github-token: ${{ inputs.github_token }}
         script: |
           const fs = require('fs');
-          const summary = fs.readFileSync('axe-summary.md', 'utf8');
-          const violationsSummary = fs.existsSync('axe-violations-summary.md') ? fs.readFileSync('axe-violations-summary.md', 'utf8') : '';
+          const summary = fs.readFileSync('_axe-a11y-reports/axe-summary.md', 'utf8');
+          const violationsSummaryPath = '_axe-a11y-reports/axe-violations-summary.md';
+          const violationsSummary = fs.existsSync(violationsSummaryPath) ? fs.readFileSync(violationsSummaryPath, 'utf8') : '';
 
           let body = summary;
           if (violationsSummary) {
