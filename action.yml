@@ -93,11 +93,11 @@ runs:
         fi
 
         echo "Running axe on $URL"
-        axe $URL --save _axe-a11y-reports/${{ github.ref_name }}.json
+        axe $URL --save _axe-a11y-reports/${{ github.ref_name }}-branch-report.json
 
         node <<'EOF'
         const fs = require('fs');
-        const report = JSON.parse(fs.readFileSync('./_axe-a11y-reports/${{ github.ref_name }}.json', 'utf8'));
+        const report = JSON.parse(fs.readFileSync('./_axe-a11y-reports/${{ github.ref_name }}-branch-report.json', 'utf8'));
         const violations = report?.[0]?.violations || [];
 
         if (violations.length === 0) {
