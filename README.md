@@ -16,31 +16,6 @@ Automatically run [Axe](https://www.deque.com/axe/) tests on preview URLs mentio
 Add this to your workflow in any repo:
 
 ```yaml
-name: Test Action
-
-on:
-  pull_request:
-    types: [opened, edited, synchronize]
-  push:
-    branches: [main]
-
-permissions:
-  contents: write
-
-jobs:
-  test-preview-action:
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v3
-
-      - name: Run custom AXE preview action
-        uses: ./
-        with:
-          preview_url_contains: "shopifypreview.com"
-          default_url: "https://fellowproducts.com"
-          github_token: ${{ secrets.SHOPIFY_AXE_A11Y_GITHUB_TOKEN }}
-
 name: Shopify Axe A11y Report
 
 on:
