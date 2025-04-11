@@ -111,8 +111,8 @@ runs:
 
         node scripts/run-axe-test.js "${{ steps.branch_name.outputs.name }}"
 
-    - name: Process Violations from Target Branch Report (if available)
-      id: process_violations
+    - name: Process Previous Violations from Target Branch Report (if available)
+      id: process_previous_violations
       shell: bash
       run: |
         TARGET_REPORT="_axe-a11y-reports/${{ github.base_ref }}-branch-report.json"
@@ -121,7 +121,7 @@ runs:
         if [ -f "$TARGET_REPORT" ]; then
           echo "Processing downloaded report for target branch..."
 
-          node scripts/process-violations.js "${{ steps.branch_name.outputs.name }}"
+          node scripts/process-previous-violations.js "${{ steps.branch_name.outputs.name }}"
         else
           echo "No axe-report found for target branch. Skipping violation comparison."
           exit 0
@@ -135,19 +135,61 @@ runs:
         github-token: ${{ inputs.github_token }}
         script: |
           const fs = require('fs');
-          const summary = fs.readFileSync('axe-summary.md', 'utf8');
-          const violationsSummary = fs.existsSync('axe-violations-summary.md') ? fs.readFileSync('axe-violations-summary.md', 'utf8') : '';
+          const currentViolations = fs.readFileSync('axe-current-violations.json', 'utf8');
+          const previousViolations = fs.existsSync('axe-previous-violations.json') ? fs.readFileSync('axe-previous-violations.json', 'utf8') : '';
 
-          let body = summary;
-          if (violationsSummary) {
-            body += "\n\n" + violationsSummary;
-          }
+          // find net new violations
+          const currentViolationsParsed = JSON.parse(currentViolations);
+          const previousViolationsParsed = previousViolations ? JSON.parse(previousViolations) : {};
+          const newViolations = currentViolationsParsed.filter(violation => {
+            return !previousViolationsParsed.some(prevViolation => prevViolation.id === violation.id && violation.nodes.length === prevViolation.nodes.length);
+          });
+
+          let violationsTable = "### 🧪 New violations compared to previous report\n\n";
+          violationsTable += "| Issue | Impact | Target | Help |\n";
+          violationsTable += "|-------|--------|--------|------|\n";
+
+          newViolations.forEach((v) => {
+            const impact = v.impact || "n/a";
+            const help = `[${v.help}](${v.helpUrl})`;
+            v.nodes.forEach((n) => {
+              const target = Array.isArray(n.target) ? n.target.join(", ") : "n/a";
+              violationsTable += `| ${v.id} | ${impact} | ${target} | ${help} |\n`;
+            });
+          });
+
+          violationsTable += "\n\n### 🧪 All violations\n\n";
+
+          violationsTable += "| Issue | Impact | Target | Help |\n";
+          violationsTable += "|-------|--------|--------|------|\n";
+
+          currentViolationsParsed.forEach((v) => {
+            const impact = v.impact || "n/a";
+            const help = `[${v.help}](${v.helpUrl})`;
+            v.nodes.forEach((n) => {
+              const target = Array.isArray(n.target) ? n.target.join(", ") : "n/a";
+              violationsTable += `| ${v.id} | ${impact} | ${target} | ${help} |\n`;
+            });
+          });
+          violationsTable += "\n\n### 🧪 Previous violations\n\n";
+
+          violationsTable += "| Issue | Impact | Target | Help |\n";
+          violationsTable += "|-------|--------|--------|------|\n";
+
+          previousViolationsParsed.forEach((v) => {
+            const impact = v.impact || "n/a";
+            const help = `[${v.help}](${v.helpUrl})`;
+            v.nodes.forEach((n) => {
+              const target = Array.isArray(n.target) ? n.target.join(", ") : "n/a";
+              violationsTable += `| ${v.id} | ${impact} | ${target} | ${help} |\n`;
+            });
+          });
 
           await github.rest.issues.createComment({
             owner: context.repo.owner,
             repo: context.repo.repo,
             issue_number: context.issue.number,
-            body: body,
+            body: violationsTable,
           });
 
     - name: Commit and push reports

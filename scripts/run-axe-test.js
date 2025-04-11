@@ -12,22 +12,27 @@ const report = JSON.parse(
 );
 const violations = report?.[0]?.violations || [];
 
-if (violations.length === 0) {
-  fs.writeFileSync("axe-summary.md", `✅ No accessibility issues found.\n\n`);
-  process.exit(0);
-}
+fs.writeFileSync(
+  "axe-current-violations.json",
+  JSON.stringify(violations, null, 2)
+);
 
-let table = `### 🧪 Axe Accessibility Report\n\n`;
-table += `| Issue | Impact | Target | Help |\n`;
-table += `|-------|--------|--------|------|\n`;
+// if (violations.length === 0) {
+//   fs.writeFileSync("axe-summary.md", `✅ No accessibility issues found.\n\n`);
+//   process.exit(0);
+// }
 
-sortByImpact(violations).forEach((v) => {
-  const impact = v.impact || "n/a";
-  const help = `[${v.help}](${v.helpUrl})`;
-  v.nodes.forEach((n) => {
-    const target = Array.isArray(n.target) ? n.target.join(", ") : "n/a";
-    table += `| ${v.id} | ${impact} | \`${target}\` | ${help} |\n`;
-  });
-});
+// let table = `### 🧪 Axe Accessibility Report\n\n`;
+// table += `| Issue | Impact | Target | Help |\n`;
+// table += `|-------|--------|--------|------|\n`;
 
-fs.writeFileSync("axe-summary.md", table);
+// sortByImpact(violations).forEach((v) => {
+//   const impact = v.impact || "n/a";
+//   const help = `[${v.help}](${v.helpUrl})`;
+//   v.nodes.forEach((n) => {
+//     const target = Array.isArray(n.target) ? n.target.join(", ") : "n/a";
+//     table += `| ${v.id} | ${impact} | \`${target}\` | ${help} |\n`;
+//   });
+// });
+
+// fs.writeFileSync("axe-summary.md", table);
