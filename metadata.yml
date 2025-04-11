@@ -1,10 +1,6 @@
 name: Shopify Preview Axe A11y Action
 description: Automatically run accessibility tests using Axe on Shopify preview URLs and post results in the PR.
 author: "https://github.com/brydonm/shopify-preview-axe-a11y"
-inputs:
-  github_token:
-    description: "GitHub token to post the PR comment."
-    required: true
 branding:
   icon: "eye"
   color: "blue"

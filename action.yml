@@ -2,9 +2,6 @@ name: "Shopify Preview Axe A11y Report"
 description: "Run axe accessibility tests on Shopify preview URLs from PR description and comment results."
 
 inputs:
-  github_token:
-    description: "GitHub token to post PR comment"
-    required: true
   default_url:
     description: "Default URL to use if no preview URL is found"
     required: false
@@ -131,7 +128,6 @@ runs:
       if: ${{ github.event.pull_request.state == 'open' }}
       uses: actions/github-script@v7
       with:
-        github-token: ${{ inputs.github_token }}
         script: |
           const fs = require('fs');
           const commentBody = fs.readFileSync('axe-comment.md', 'utf8');

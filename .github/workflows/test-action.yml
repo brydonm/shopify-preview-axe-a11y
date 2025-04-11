@@ -8,6 +8,7 @@ on:
 
 permissions:
   contents: write
+  pull-requests: write
 
 jobs:
   test-preview-action:
@@ -20,4 +21,3 @@ jobs:
         uses: ./
         with:
           default_url: "https://fellowproducts.com"
-          github_token: ${{ secrets.SHOPIFY_AXE_A11Y_GITHUB_TOKEN }}

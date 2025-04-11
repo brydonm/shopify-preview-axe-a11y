@@ -24,6 +24,10 @@ on:
   push:
     branches: [main]
 
+permissions:
+  contents: write
+  pull-requests: write
+
 jobs:
   axe-shopify-report:
     runs-on: ubuntu-latest
@@ -34,7 +38,6 @@ jobs:
       - uses: brydonm/shopify-preview-axe-a11y@v1
         with:
           default_url: ""
-          github_token: ${{ secrets.SHOPIFY_AXE_A11Y_GITHUB_TOKEN }}
 ```
 
 ## 🔧 Inputs
@@ -42,7 +45,6 @@ jobs:
 | Name | Required | Description |
 | -------------------- | -------- | -------------------------------------------------------------------------------------------------------------------- | |
 | default_url | ✅ Yes | Default URL to run the base tests on. This is required for the push action to generate a report based on the branch. |
-| github_token | ✅ Yes | GitHub token to post PR comment (use `secrets.GITHUB_TOKEN`) |
 
 ## 📝 PR Description Format
 
