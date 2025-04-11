@@ -147,30 +147,30 @@ runs:
           echo "Processing downloaded report for target branch..."
 
           node <<EOF
-          const fs = require('fs');
-          const path = '${TARGET_REPORT}';
-          const report = JSON.parse(fs.readFileSync(path, 'utf8'));
-          const violations = report?.[0]?.violations || [];
+        const fs = require('fs');
+        const path = '${TARGET_REPORT}';
+        const report = JSON.parse(fs.readFileSync(path, 'utf8'));
+        const violations = report?.[0]?.violations || [];
 
-          if (violations.length === 0) {
-            console.log('No violations found in downloaded report.');
-            process.exit(0);
-          }
+        if (violations.length === 0) {
+          console.log('No violations found in downloaded report.');
+          process.exit(0);
+        }
 
-          let violationsTable = '### 🧪 Violations from Downloaded Report\\n\\n';
-          violationsTable += '| Issue | Impact | Target | Help |\\n';
-          violationsTable += '|-------|--------|--------|------|\\n';
+        let violationsTable = '### 🧪 Violations from Downloaded Report\\n\\n';
+        violationsTable += '| Issue | Impact | Target | Help |\\n';
+        violationsTable += '|-------|--------|--------|------|\\n';
 
-          violations.forEach(v => {
-            const impact = v.impact || 'n/a';
-            const help = \`[\${v.help}](\${v.helpUrl})\`;
-            v.nodes.forEach(n => {
-              const target = Array.isArray(n.target) ? n.target.join(', ') : 'n/a';
-              violationsTable += \`| \${v.id} | \${impact} | \${target} | \${help} |\n\`;
-            });
+        violations.forEach(v => {
+          const impact = v.impact || 'n/a';
+          const help = \`[\${v.help}](\${v.helpUrl})\`;
+          v.nodes.forEach(n => {
+            const target = Array.isArray(n.target) ? n.target.join(', ') : 'n/a';
+            violationsTable += \`| \${v.id} | \${impact} | \${target} | \${help} |\n\`;
           });
+        });
 
-          fs.writeFileSync('axe-violations-summary.md', violationsTable);
+        fs.writeFileSync('axe-violations-summary.md', violationsTable);
           EOF
         else
           echo "No axe-report found for target branch. Skipping violation comparison."
