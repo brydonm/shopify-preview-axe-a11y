@@ -156,7 +156,7 @@ runs:
               });
             });
 
-            fs.writeFileSync('_axe-a11y-reports/axe-violations-summary.md', violationsTable);
+            fs.writeFileSync('axe-violations-summary.md', violationsTable);
           "
         else
           echo "No axe-report found for target branch. Skipping violation comparison."
@@ -171,9 +171,8 @@ runs:
         github-token: ${{ inputs.github_token }}
         script: |
           const fs = require('fs');
-          const summary = fs.readFileSync('_axe-a11y-reports/axe-summary.md', 'utf8');
-          const violationsSummaryPath = '_axe-a11y-reports/axe-violations-summary.md';
-          const violationsSummary = fs.existsSync(violationsSummaryPath) ? fs.readFileSync(violationsSummaryPath, 'utf8') : '';
+          const summary = fs.readFileSync('axe-summary.md', 'utf8');
+          const violationsSummary = fs.existsSync('axe-violations-summary.md') ? fs.readFileSync('axe-violations-summary.md', 'utf8') : '';
 
           let body = summary;
           if (violationsSummary) {
