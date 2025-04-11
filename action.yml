@@ -121,7 +121,7 @@ runs:
         if [ -f "$TARGET_REPORT" ]; then
           echo "Processing downloaded report for target branch..."
 
-          node scripts/process-violations.js "${{ steps.branch_name.outputs.name }}.json"
+          node scripts/process-violations.js "${{ steps.branch_name.outputs.name }}"
         else
           echo "No axe-report found for target branch. Skipping violation comparison."
           exit 0
