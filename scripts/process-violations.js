@@ -1,5 +1,6 @@
 // scripts/process-violations.js
 const fs = require("fs");
+const { sortByImpact } = require("./utils");
 
 const targetBranch = process.argv[2];
 const path = `_axe-a11y-reports/${targetBranch}-branch-report.json`;
@@ -21,7 +22,7 @@ let violationsTable = "### 🧪 Violations from Downloaded Report\n\n";
 violationsTable += "| Issue | Impact | Target | Help |\n";
 violationsTable += "|-------|--------|--------|------|\n";
 
-violations.forEach((v) => {
+sortByImpact(violations).forEach((v) => {
   const impact = v.impact || "n/a";
   const help = `[${v.help}](${v.helpUrl})`;
   v.nodes.forEach((n) => {

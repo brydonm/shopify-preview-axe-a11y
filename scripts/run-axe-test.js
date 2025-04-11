@@ -1,5 +1,6 @@
 // scripts/process-violations.js
 const fs = require("fs");
+const { sortByImpact } = require("./utils");
 
 const targetBranch = process.argv[2];
 
@@ -20,7 +21,7 @@ let table = `### 🧪 Axe Accessibility Report\n\n`;
 table += `| Issue | Impact | Target | Help |\n`;
 table += `|-------|--------|--------|------|\n`;
 
-violations.forEach((v) => {
+sortByImpact(violations).forEach((v) => {
   const impact = v.impact || "n/a";
   const help = `[${v.help}](${v.helpUrl})`;
   v.nodes.forEach((n) => {
