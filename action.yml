@@ -78,10 +78,13 @@ runs:
       shell: bash
       run: |
         if [[ "${{ github.event_name }}" == "pull_request" ]]; then
-          echo "name=${{ github.head_ref }}" >> $GITHUB_OUTPUT
+          BRANCH="${{ github.head_ref }}"
         else
-          echo "name=${{ github.ref_name }}" >> $GITHUB_OUTPUT
+          BRANCH="${{ github.ref_name }}"
         fi
+
+        SANITIZED_NAME="${BRANCH//\//-}"
+        echo "name=$SANITIZED_NAME" >> $GITHUB_OUTPUT
 
     - name: Run axe test
       id: run_test
@@ -104,6 +107,7 @@ runs:
 
         echo "Running axe on $URL"
         axe $URL --save _axe-a11y-reports/${{ steps.branch_name.outputs.name }}-branch-report.json
+        echo "axe report saved to _axe-a11y-reports/${{ steps.branch_name.outputs.name }}-branch-report.json"
 
         node <<'EOF'
         const fs = require('fs');
