@@ -14,7 +14,7 @@
       "orientationAngle": 0,
       "orientationType": "landscape-primary"
     },
-    "timestamp": "2025-04-11T14:02:13.863Z",
+    "timestamp": "2025-04-11T14:06:27.851Z",
     "url": "https://fellowproducts.com/",
     "toolOptions": {
       "reporter": "v1"
@@ -2686,7 +2686,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<div class=\"py-[30px] px-[20px] bg-primary\" role=\"navigation\">",
+            "html": "<div class=\"py-[30px] px-[20px] bg-primary\" role=\"navigation\"> <ul class=\"text-center\"> <li class=\"mb-[17px] last:mb-0\"> <a class=\"text-light h6 font-primary leading-[19.2px]\" href=\"https://fellowproducts.com/collections/grinder\">Accessories</a> </li> </ul> </div>",
             "target": [
               "div[aria-label=\"Grinders drawer\"] > .py-\\[30px\\].bg-primary[role=\"navigation\"]"
             ]
@@ -2830,7 +2830,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<div class=\"py-[30px] px-[20px] bg-primary\" role=\"navigation\">",
+            "html": "<div class=\"py-[30px] px-[20px] bg-primary\" role=\"navigation\"> <ul class=\"text-center\"> <li class=\"mb-[17px] last:mb-0\"> <a class=\"text-light h6 font-primary leading-[19.2px]\" href=\"https://fellowproducts.com/collections/refurbished-gear\">Refurbished Kettles</a> </li> </ul> </div>",
             "target": [
               "div[aria-label=\"Kettles drawer\"] > .py-\\[30px\\].bg-primary[role=\"navigation\"]"
             ]
@@ -3010,7 +3010,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<div class=\"py-[30px] px-[20px] bg-primary\" role=\"navigation\">",
+            "html": "<div class=\"py-[30px] px-[20px] bg-primary\" role=\"navigation\"> <ul class=\"text-center\"> <li class=\"mb-[17px] last:mb-0\"> <a class=\"text-light h6 font-primary leading-[19.2px]\" href=\"https://fellowproducts.com/collections/carter-lids-accessories\">Accessories &amp; Lids</a> </li> </ul> </div>",
             "target": [
               "div[aria-label=\"Drinkware drawer\"] > .py-\\[30px\\].bg-primary[role=\"navigation\"]"
             ]
@@ -4130,7 +4130,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$858034158$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$7800408444$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".lg\\:w-\\[calc\\(25\\%-30px\\)\\].lg\\:block.hidden:nth-child(1) > hh-product-card[compare-at-price=\"56000\"][price=\"47600\"][handle=\"the-aiden-grinder-kit\"]",
@@ -4152,7 +4152,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$858034158$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$7800408444$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".lg\\:w-\\[calc\\(25\\%-30px\\)\\].lg\\:block.hidden:nth-child(1) > hh-product-card[compare-at-price=\"56000\"][price=\"47600\"][handle=\"the-aiden-grinder-kit\"]",
@@ -4174,7 +4174,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$858034158$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$7800408444$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".lg\\:w-\\[calc\\(25\\%-30px\\)\\].lg\\:block.hidden:nth-child(1) > hh-product-card[compare-at-price=\"56000\"][price=\"47600\"][handle=\"the-aiden-grinder-kit\"]",
@@ -4196,7 +4196,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$858034158$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$7800408444$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".lg\\:w-\\[calc\\(25\\%-30px\\)\\].lg\\:block.hidden:nth-child(1) > hh-product-card[compare-at-price=\"56000\"][price=\"47600\"][handle=\"the-aiden-grinder-kit\"]",
@@ -4262,7 +4262,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$858034158$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$7800408444$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".lg\\:w-\\[calc\\(25\\%-30px\\)\\].lg\\:block.hidden:nth-child(2) > hh-product-card[handle=\"carter-3-in-1-lid-system\"][title=\"Carter 3-in-1 Lid System\"][compare-at-price=\"5700\"]",
@@ -4284,7 +4284,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$858034158$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$7800408444$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".lg\\:w-\\[calc\\(25\\%-30px\\)\\].lg\\:block.hidden:nth-child(2) > hh-product-card[handle=\"carter-3-in-1-lid-system\"][title=\"Carter 3-in-1 Lid System\"][compare-at-price=\"5700\"]",
@@ -4306,7 +4306,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$858034158$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$7800408444$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".lg\\:w-\\[calc\\(25\\%-30px\\)\\].lg\\:block.hidden:nth-child(2) > hh-product-card[handle=\"carter-3-in-1-lid-system\"][title=\"Carter 3-in-1 Lid System\"][compare-at-price=\"5700\"]",
@@ -4328,7 +4328,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$858034158$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$7800408444$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".lg\\:w-\\[calc\\(25\\%-30px\\)\\].lg\\:block.hidden:nth-child(2) > hh-product-card[handle=\"carter-3-in-1-lid-system\"][title=\"Carter 3-in-1 Lid System\"][compare-at-price=\"5700\"]",
@@ -4394,7 +4394,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$858034158$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$7800408444$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".lg\\:w-\\[calc\\(25\\%-30px\\)\\].lg\\:block.hidden:nth-child(3) > hh-product-card[price=\"34500\"][handle=\"ode-brew-grinder-gen-2\"][title=\"Ode Brew Grinder Gen 2\"]",
@@ -4416,7 +4416,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$858034158$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$7800408444$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".lg\\:w-\\[calc\\(25\\%-30px\\)\\].lg\\:block.hidden:nth-child(3) > hh-product-card[price=\"34500\"][handle=\"ode-brew-grinder-gen-2\"][title=\"Ode Brew Grinder Gen 2\"]",
@@ -4438,7 +4438,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$858034158$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$7800408444$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".lg\\:w-\\[calc\\(25\\%-30px\\)\\].lg\\:block.hidden:nth-child(3) > hh-product-card[price=\"34500\"][handle=\"ode-brew-grinder-gen-2\"][title=\"Ode Brew Grinder Gen 2\"]",
@@ -4460,7 +4460,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$858034158$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$7800408444$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".lg\\:w-\\[calc\\(25\\%-30px\\)\\].lg\\:block.hidden:nth-child(3) > hh-product-card[price=\"34500\"][handle=\"ode-brew-grinder-gen-2\"][title=\"Ode Brew Grinder Gen 2\"]",
@@ -4526,7 +4526,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$858034158$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$7800408444$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".lg\\:w-\\[calc\\(25\\%-30px\\)\\].lg\\:block.hidden:nth-child(4) > hh-product-card[handle=\"rocky-lowball-tumbler\"][title=\"Rocky Lowball Tumbler\"][data-id=\"7653245812836\"]",
@@ -4548,7 +4548,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$858034158$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$7800408444$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".lg\\:w-\\[calc\\(25\\%-30px\\)\\].lg\\:block.hidden:nth-child(4) > hh-product-card[handle=\"rocky-lowball-tumbler\"][title=\"Rocky Lowball Tumbler\"][data-id=\"7653245812836\"]",
@@ -4570,7 +4570,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$858034158$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$7800408444$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".lg\\:w-\\[calc\\(25\\%-30px\\)\\].lg\\:block.hidden:nth-child(4) > hh-product-card[handle=\"rocky-lowball-tumbler\"][title=\"Rocky Lowball Tumbler\"][data-id=\"7653245812836\"]",
@@ -4592,7 +4592,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$858034158$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$7800408444$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".lg\\:w-\\[calc\\(25\\%-30px\\)\\].lg\\:block.hidden:nth-child(4) > hh-product-card[handle=\"rocky-lowball-tumbler\"][title=\"Rocky Lowball Tumbler\"][data-id=\"7653245812836\"]",
@@ -4658,7 +4658,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$858034158$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$7800408444$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".lg\\:w-\\[calc\\(25\\%-30px\\)\\].lg\\:block.hidden:nth-child(5) > hh-product-card[handle=\"stagg-ekg-pro-electric-kettle\"][title=\"Stagg EKG Pro Electric Kettle\"][data-id=\"6973225271396\"]",
@@ -4680,7 +4680,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$858034158$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$7800408444$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".lg\\:w-\\[calc\\(25\\%-30px\\)\\].lg\\:block.hidden:nth-child(5) > hh-product-card[handle=\"stagg-ekg-pro-electric-kettle\"][title=\"Stagg EKG Pro Electric Kettle\"][data-id=\"6973225271396\"]",
@@ -4702,7 +4702,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$858034158$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$7800408444$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".lg\\:w-\\[calc\\(25\\%-30px\\)\\].lg\\:block.hidden:nth-child(5) > hh-product-card[handle=\"stagg-ekg-pro-electric-kettle\"][title=\"Stagg EKG Pro Electric Kettle\"][data-id=\"6973225271396\"]",
@@ -4724,7 +4724,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$858034158$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$7800408444$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".lg\\:w-\\[calc\\(25\\%-30px\\)\\].lg\\:block.hidden:nth-child(5) > hh-product-card[handle=\"stagg-ekg-pro-electric-kettle\"][title=\"Stagg EKG Pro Electric Kettle\"][data-id=\"6973225271396\"]",
@@ -4790,7 +4790,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$858034158$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$7800408444$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".lg\\:w-\\[calc\\(25\\%-30px\\)\\].lg\\:block.hidden:nth-child(6) > hh-product-card[handle=\"tally-coffee-scale\"][url=\"/products/tally-coffee-scale\"][price=\"18500\"]",
@@ -4812,7 +4812,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$858034158$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$7800408444$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".lg\\:w-\\[calc\\(25\\%-30px\\)\\].lg\\:block.hidden:nth-child(6) > hh-product-card[handle=\"tally-coffee-scale\"][url=\"/products/tally-coffee-scale\"][price=\"18500\"]",
@@ -4834,7 +4834,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$858034158$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$7800408444$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".lg\\:w-\\[calc\\(25\\%-30px\\)\\].lg\\:block.hidden:nth-child(6) > hh-product-card[handle=\"tally-coffee-scale\"][url=\"/products/tally-coffee-scale\"][price=\"18500\"]",
@@ -4856,7 +4856,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$858034158$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$7800408444$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".lg\\:w-\\[calc\\(25\\%-30px\\)\\].lg\\:block.hidden:nth-child(6) > hh-product-card[handle=\"tally-coffee-scale\"][url=\"/products/tally-coffee-scale\"][price=\"18500\"]",
@@ -4922,7 +4922,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$858034158$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$7800408444$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".lg\\:w-\\[calc\\(25\\%-30px\\)\\].lg\\:block.hidden:nth-child(7) > hh-product-card[compare-at-price=\"10500\"][price=\"9450\"][handle=\"atmos-3-pack\"]",
@@ -4944,7 +4944,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$858034158$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$7800408444$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".lg\\:w-\\[calc\\(25\\%-30px\\)\\].lg\\:block.hidden:nth-child(7) > hh-product-card[compare-at-price=\"10500\"][price=\"9450\"][handle=\"atmos-3-pack\"]",
@@ -4966,7 +4966,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$858034158$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$7800408444$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".lg\\:w-\\[calc\\(25\\%-30px\\)\\].lg\\:block.hidden:nth-child(7) > hh-product-card[compare-at-price=\"10500\"][price=\"9450\"][handle=\"atmos-3-pack\"]",
@@ -4988,7 +4988,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$858034158$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$7800408444$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".lg\\:w-\\[calc\\(25\\%-30px\\)\\].lg\\:block.hidden:nth-child(7) > hh-product-card[compare-at-price=\"10500\"][price=\"9450\"][handle=\"atmos-3-pack\"]",
@@ -5054,7 +5054,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$858034158$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$7800408444$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".lg\\:w-\\[calc\\(25\\%-30px\\)\\].lg\\:block.hidden:nth-child(8) > hh-product-card[price=\"19500\"][handle=\"opus-coffee-grinder\"][url=\"/products/opus-coffee-grinder\"]",
@@ -5076,7 +5076,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$858034158$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$7800408444$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".lg\\:w-\\[calc\\(25\\%-30px\\)\\].lg\\:block.hidden:nth-child(8) > hh-product-card[price=\"19500\"][handle=\"opus-coffee-grinder\"][url=\"/products/opus-coffee-grinder\"]",
@@ -5098,7 +5098,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$858034158$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$7800408444$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".lg\\:w-\\[calc\\(25\\%-30px\\)\\].lg\\:block.hidden:nth-child(8) > hh-product-card[price=\"19500\"][handle=\"opus-coffee-grinder\"][url=\"/products/opus-coffee-grinder\"]",
@@ -5120,7 +5120,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$858034158$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$7800408444$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".lg\\:w-\\[calc\\(25\\%-30px\\)\\].lg\\:block.hidden:nth-child(8) > hh-product-card[price=\"19500\"][handle=\"opus-coffee-grinder\"][url=\"/products/opus-coffee-grinder\"]",
@@ -5186,7 +5186,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$858034158$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$7800408444$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".w-\\[calc\\(50\\%-5px\\)\\].lg\\:hidden:nth-child(9) > hh-product-card[compare-at-price=\"56000\"][price=\"47600\"][handle=\"the-aiden-grinder-kit\"]",
@@ -5208,7 +5208,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$858034158$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$7800408444$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".w-\\[calc\\(50\\%-5px\\)\\].lg\\:hidden:nth-child(9) > hh-product-card[compare-at-price=\"56000\"][price=\"47600\"][handle=\"the-aiden-grinder-kit\"]",
@@ -5230,7 +5230,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$858034158$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$7800408444$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".w-\\[calc\\(50\\%-5px\\)\\].lg\\:hidden:nth-child(9) > hh-product-card[compare-at-price=\"56000\"][price=\"47600\"][handle=\"the-aiden-grinder-kit\"]",
@@ -5252,7 +5252,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$858034158$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$7800408444$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".w-\\[calc\\(50\\%-5px\\)\\].lg\\:hidden:nth-child(9) > hh-product-card[compare-at-price=\"56000\"][price=\"47600\"][handle=\"the-aiden-grinder-kit\"]",
@@ -5318,7 +5318,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$858034158$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$7800408444$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".w-\\[calc\\(50\\%-5px\\)\\].lg\\:hidden:nth-child(10) > hh-product-card[handle=\"stagg-ekg-pro-electric-kettle\"][title=\"Stagg EKG Pro Electric Kettle\"][data-id=\"6973225271396\"]",
@@ -5340,7 +5340,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$858034158$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$7800408444$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".w-\\[calc\\(50\\%-5px\\)\\].lg\\:hidden:nth-child(10) > hh-product-card[handle=\"stagg-ekg-pro-electric-kettle\"][title=\"Stagg EKG Pro Electric Kettle\"][data-id=\"6973225271396\"]",
@@ -5362,7 +5362,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$858034158$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$7800408444$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".w-\\[calc\\(50\\%-5px\\)\\].lg\\:hidden:nth-child(10) > hh-product-card[handle=\"stagg-ekg-pro-electric-kettle\"][title=\"Stagg EKG Pro Electric Kettle\"][data-id=\"6973225271396\"]",
@@ -5384,7 +5384,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$858034158$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$7800408444$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".w-\\[calc\\(50\\%-5px\\)\\].lg\\:hidden:nth-child(10) > hh-product-card[handle=\"stagg-ekg-pro-electric-kettle\"][title=\"Stagg EKG Pro Electric Kettle\"][data-id=\"6973225271396\"]",
@@ -5450,7 +5450,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$858034158$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$7800408444$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".w-\\[calc\\(50\\%-5px\\)\\].lg\\:hidden:nth-child(11) > hh-product-card[handle=\"carter-3-in-1-lid-system\"][title=\"Carter 3-in-1 Lid System\"][compare-at-price=\"5700\"]",
@@ -5472,7 +5472,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$858034158$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$7800408444$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".w-\\[calc\\(50\\%-5px\\)\\].lg\\:hidden:nth-child(11) > hh-product-card[handle=\"carter-3-in-1-lid-system\"][title=\"Carter 3-in-1 Lid System\"][compare-at-price=\"5700\"]",
@@ -5494,7 +5494,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$858034158$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$7800408444$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".w-\\[calc\\(50\\%-5px\\)\\].lg\\:hidden:nth-child(11) > hh-product-card[handle=\"carter-3-in-1-lid-system\"][title=\"Carter 3-in-1 Lid System\"][compare-at-price=\"5700\"]",
@@ -5516,7 +5516,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$858034158$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$7800408444$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".w-\\[calc\\(50\\%-5px\\)\\].lg\\:hidden:nth-child(11) > hh-product-card[handle=\"carter-3-in-1-lid-system\"][title=\"Carter 3-in-1 Lid System\"][compare-at-price=\"5700\"]",
@@ -5582,7 +5582,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$858034158$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$7800408444$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".w-\\[calc\\(50\\%-5px\\)\\].lg\\:hidden:nth-child(12) > hh-product-card[price=\"34500\"][handle=\"ode-brew-grinder-gen-2\"][title=\"Ode Brew Grinder Gen 2\"]",
@@ -5604,7 +5604,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$858034158$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$7800408444$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".w-\\[calc\\(50\\%-5px\\)\\].lg\\:hidden:nth-child(12) > hh-product-card[price=\"34500\"][handle=\"ode-brew-grinder-gen-2\"][title=\"Ode Brew Grinder Gen 2\"]",
@@ -5626,7 +5626,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$858034158$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$7800408444$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".w-\\[calc\\(50\\%-5px\\)\\].lg\\:hidden:nth-child(12) > hh-product-card[price=\"34500\"][handle=\"ode-brew-grinder-gen-2\"][title=\"Ode Brew Grinder Gen 2\"]",
@@ -5648,7 +5648,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$858034158$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$7800408444$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".w-\\[calc\\(50\\%-5px\\)\\].lg\\:hidden:nth-child(12) > hh-product-card[price=\"34500\"][handle=\"ode-brew-grinder-gen-2\"][title=\"Ode Brew Grinder Gen 2\"]",
@@ -5692,7 +5692,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<a class=\"btn btn--lg btn--light\" href=\"/blogs/learn\" title=\"Explore The Fellow Blog - \" role=\"button\">\n                    Explore The Fellow Blog\n                  </a>",
+            "html": "<a class=\"btn btn--lg btn--light\" href=\"/blogs/learn\" title=\"Explore The Fellow Blog - \" role=\"button\"> Explore The Fellow Blog </a>",
             "target": [
               ".BlogSection__InfoButton > a[href$=\"learn\"]"
             ]
@@ -5710,7 +5710,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<div class=\"slick-slide slick-current slick-center\" style=\"width: 682px;\" data-slick-index=\"0\" aria-hidden=\"true\" tabindex=\"0\" role=\"tabpanel\" id=\"slick-slide00\" aria-describedby=\"slick-slide-control00\">",
+            "html": "<div class=\"slick-slide slick-current slick-center\" style=\"width: 668px;\" data-slick-index=\"0\" aria-hidden=\"true\" tabindex=\"0\" role=\"tabpanel\" id=\"slick-slide00\" aria-describedby=\"slick-slide-control00\">",
             "target": [
               "#slick-slide00"
             ]
@@ -5746,7 +5746,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<a class=\"BlogSectionArticle__Button btn btn--lg btn--light\" href=\"/blogs/learn/coffee-brewing-techniques-an-intro\" aria-label=\"Read more\" role=\"button\" title=\"Coffee Brewing Techniques: An Intro\" tabindex=\"-1\">\n                          Read more\n                        </a>",
+            "html": "<a class=\"BlogSectionArticle__Button btn btn--lg btn--light\" href=\"/blogs/learn/coffee-brewing-techniques-an-intro\" aria-label=\"Read more\" role=\"button\" title=\"Coffee Brewing Techniques: An Intro\" tabindex=\"-1\"> Read more </a>",
             "target": [
               "#slick-slide00 > .BlogSection__Article > .BlogSectionArticle__Content > .BlogSectionArticle__Button.btn--light[aria-label=\"Read more\"]"
             ]
@@ -5764,7 +5764,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<div class=\"slick-slide\" style=\"width: 682px;\" data-slick-index=\"1\" aria-hidden=\"true\" tabindex=\"0\" role=\"tabpanel\" id=\"slick-slide01\" aria-describedby=\"slick-slide-control01\">",
+            "html": "<div class=\"slick-slide\" style=\"width: 668px;\" data-slick-index=\"1\" aria-hidden=\"true\" tabindex=\"0\" role=\"tabpanel\" id=\"slick-slide01\" aria-describedby=\"slick-slide-control01\">",
             "target": [
               "#slick-slide01"
             ]
@@ -5800,7 +5800,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<a class=\"BlogSectionArticle__Button btn btn--lg btn--light\" href=\"/blogs/learn/the-golden-ratio-for-brewing-coffee\" aria-label=\"Read more\" role=\"button\" title=\"The Golden Ratio For Brewing Coffee\" tabindex=\"-1\">\n                          Read more\n                        </a>",
+            "html": "<a class=\"BlogSectionArticle__Button btn btn--lg btn--light\" href=\"/blogs/learn/the-golden-ratio-for-brewing-coffee\" aria-label=\"Read more\" role=\"button\" title=\"The Golden Ratio For Brewing Coffee\" tabindex=\"-1\"> Read more </a>",
             "target": [
               "#slick-slide01 > .BlogSection__Article > .BlogSectionArticle__Content > .BlogSectionArticle__Button.btn--light[aria-label=\"Read more\"]"
             ]
@@ -5818,7 +5818,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<div class=\"slick-slide\" style=\"width: 682px;\" data-slick-index=\"2\" aria-hidden=\"true\" tabindex=\"-1\" role=\"tabpanel\" id=\"slick-slide02\" aria-describedby=\"slick-slide-control02\">",
+            "html": "<div class=\"slick-slide\" style=\"width: 668px;\" data-slick-index=\"2\" aria-hidden=\"true\" tabindex=\"-1\" role=\"tabpanel\" id=\"slick-slide02\" aria-describedby=\"slick-slide-control02\">",
             "target": [
               "#slick-slide02"
             ]
@@ -5854,7 +5854,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<a class=\"BlogSectionArticle__Button btn btn--lg btn--light\" href=\"/blogs/brew-guides/how-to-make-pour-over-coffee-a-beginners-guide\" aria-label=\"Read more\" role=\"button\" title=\"How to Make Pour-Over Coffee: A Beginners Guide\" tabindex=\"-1\">",
+            "html": "<a class=\"BlogSectionArticle__Button btn btn--lg btn--light\" href=\"/blogs/brew-guides/how-to-make-pour-over-coffee-a-beginners-guide\" aria-label=\"Read more\" role=\"button\" title=\"How to Make Pour-Over Coffee: A Beginners Guide\" tabindex=\"-1\"> Read more </a>",
             "target": [
               "#slick-slide02 > .BlogSection__Article > .BlogSectionArticle__Content > .BlogSectionArticle__Button.btn--light[aria-label=\"Read more\"]"
             ]
@@ -6772,7 +6772,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<a id=\"ot-sdk-btn\" class=\"ot-sdk-show-settings\" href=\"javascript:void(0)\" role=\"link\" aria-label=\"OneTrust settings\" title=\"Open OneTrust settings\">Do Not Sell or Share My Personal Information</a>",
+            "html": "<a id=\"ot-sdk-btn\" class=\"ot-sdk-show-settings\" href=\"javascript:void(0)\" role=\"link\" aria-label=\"OneTrust settings\" title=\"Open OneTrust settings\">Cookies Settings</a>",
             "target": [
               "#ot-sdk-btn"
             ]
@@ -6790,7 +6790,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<div id=\"onetrust-pc-sdk\" class=\"otPcTab ot-hide ot-fade-in otRelFont ot-tgl-with-label\" lang=\"en\" aria-label=\"Preference center\" role=\"region\">",
+            "html": "<div id=\"onetrust-pc-sdk\" class=\"otPcTab ot-hide ot-fade-in\" lang=\"en\" aria-label=\"Preference center\" role=\"region\">",
             "target": [
               "#onetrust-pc-sdk"
             ]
@@ -6808,7 +6808,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<div role=\"alertdialog\" aria-modal=\"true\" aria-describedby=\"ot-pc-desc\" style=\"height: 100%;\" aria-label=\"Do Not Sell or Share My Personal Data\">",
+            "html": "<div role=\"alertdialog\" aria-modal=\"true\" aria-describedby=\"ot-pc-desc\" style=\"height: 100%;\" aria-label=\"Privacy Preference Center\">",
             "target": [
               "div[role=\"alertdialog\"]"
             ]
@@ -6844,7 +6844,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<div class=\"ot-pc-logo\" role=\"img\" aria-label=\"Company Logo\"><img alt=\"Company Logo\" src=\"https://cdn.cookielaw.org/logos/7d477f9d-cd22-41d8-b346-60bbb1c20986/52dea72b-44a4-4532-a3a4-f9647ff99b39/a4f1b622-2bce-4bc5-afbe-9eb5a513a093/Fellow-Logo-black.png\"></div>",
+            "html": "<div class=\"ot-pc-logo\" role=\"img\" aria-label=\"Company Logo\"><img alt=\"Company Logo\" src=\"https://cdn.cookielaw.org/logos/7d477f9d-cd22-41d8-b346-60bbb1c20986/807aae1a-1266-4f09-9c3e-60692e678dfc/636a82d1-8a32-4810-a280-22821a09b994/Fellow-Logo-black-4192_x_868_(1).png\"></div>",
             "target": [
               ".ot-pc-logo"
             ]
@@ -6916,6 +6916,114 @@
             "all": [],
             "none": [],
             "impact": null,
+            "html": "<li class=\"ot-cat-item ot-always-active-group ot-vs-config\" role=\"presentation\" data-optanongroupid=\"C0003\"><div class=\"category-menu-switch-handler\" role=\"tab\" tabindex=\"-1\" aria-selected=\"false\" aria-controls=\"ot-desc-id-C0003\"><h3 id=\"ot-header-id-C0003\">Functional Cookies</h3></div></li>",
+            "target": [
+              "li[data-optanongroupid=\"C0003\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "aria-allowed-role",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "ARIA role is allowed for given element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<div class=\"category-menu-switch-handler\" role=\"tab\" tabindex=\"-1\" aria-selected=\"false\" aria-controls=\"ot-desc-id-C0003\"><h3 id=\"ot-header-id-C0003\">Functional Cookies</h3></div>",
+            "target": [
+              "div[aria-controls=\"ot-desc-id-C0003\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "aria-allowed-role",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "ARIA role is allowed for given element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<li class=\"ot-cat-item ot-always-active-group ot-vs-config\" role=\"presentation\" data-optanongroupid=\"C0002\"><div class=\"category-menu-switch-handler\" role=\"tab\" tabindex=\"-1\" aria-selected=\"false\" aria-controls=\"ot-desc-id-C0002\"><h3 id=\"ot-header-id-C0002\">Performance Cookies</h3></div></li>",
+            "target": [
+              "li[data-optanongroupid=\"C0002\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "aria-allowed-role",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "ARIA role is allowed for given element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<div class=\"category-menu-switch-handler\" role=\"tab\" tabindex=\"-1\" aria-selected=\"false\" aria-controls=\"ot-desc-id-C0002\"><h3 id=\"ot-header-id-C0002\">Performance Cookies</h3></div>",
+            "target": [
+              "div[aria-controls=\"ot-desc-id-C0002\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "aria-allowed-role",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "ARIA role is allowed for given element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<li class=\"ot-cat-item ot-always-active-group ot-vs-config\" role=\"presentation\" data-optanongroupid=\"C0005\"><div class=\"category-menu-switch-handler\" role=\"tab\" tabindex=\"-1\" aria-selected=\"false\" aria-controls=\"ot-desc-id-C0005\"><h3 id=\"ot-header-id-C0005\">Social Media Cookies</h3></div></li>",
+            "target": [
+              "li[data-optanongroupid=\"C0005\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "aria-allowed-role",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "ARIA role is allowed for given element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<div class=\"category-menu-switch-handler\" role=\"tab\" tabindex=\"-1\" aria-selected=\"false\" aria-controls=\"ot-desc-id-C0005\"><h3 id=\"ot-header-id-C0005\">Social Media Cookies</h3></div>",
+            "target": [
+              "div[aria-controls=\"ot-desc-id-C0005\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "aria-allowed-role",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "ARIA role is allowed for given element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
             "html": "<li class=\"ot-cat-item ot-always-active-group ot-vs-config\" role=\"presentation\" data-optanongroupid=\"C0001\"><div class=\"category-menu-switch-handler\" role=\"tab\" tabindex=\"-1\" aria-selected=\"false\" aria-controls=\"ot-desc-id-C0001\"><h3 id=\"ot-header-id-C0001\">Strictly Necessary Cookies</h3></div></li>",
             "target": [
               "li[data-optanongroupid=\"C0001\"]"
@@ -6952,9 +7060,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<li class=\"ot-cat-item ot-vs-config\" role=\"presentation\" data-optanongroupid=\"SSPD_BG\"><div class=\"category-menu-switch-handler\" role=\"tab\" tabindex=\"-1\" aria-selected=\"false\" aria-controls=\"ot-desc-id-SSPD_BG\"><h3 id=\"ot-header-id-SSPD_BG\">Share or Sale of Personal Data</h3></div></li>",
+            "html": "<li class=\"ot-cat-item ot-always-active-group ot-vs-config\" role=\"presentation\" data-optanongroupid=\"C0004\"><div class=\"category-menu-switch-handler\" role=\"tab\" tabindex=\"-1\" aria-selected=\"false\" aria-controls=\"ot-desc-id-C0004\"><h3 id=\"ot-header-id-C0004\">Targeting Cookies</h3></div></li>",
             "target": [
-              ".ot-cat-item.ot-vs-config[data-optanongroupid=\"SSPD_BG\"]"
+              "li[data-optanongroupid=\"C0004\"]"
             ]
           },
           {
@@ -6970,9 +7078,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<div class=\"category-menu-switch-handler\" role=\"tab\" tabindex=\"-1\" aria-selected=\"false\" aria-controls=\"ot-desc-id-SSPD_BG\"><h3 id=\"ot-header-id-SSPD_BG\">Share or Sale of Personal Data</h3></div>",
+            "html": "<div class=\"category-menu-switch-handler\" role=\"tab\" tabindex=\"-1\" aria-selected=\"false\" aria-controls=\"ot-desc-id-C0004\"><h3 id=\"ot-header-id-C0004\">Targeting Cookies</h3></div>",
             "target": [
-              "div[aria-controls=\"ot-desc-id-SSPD_BG\"]"
+              "div[aria-controls=\"ot-desc-id-C0004\"]"
             ]
           },
           {
@@ -7006,6 +7114,60 @@
             "all": [],
             "none": [],
             "impact": null,
+            "html": "<div class=\"ot-desc-cntr ot-hide ot-always-active-group\" role=\"tabpanel\" tabindex=\"0\" id=\"ot-desc-id-C0003\">",
+            "target": [
+              "#ot-desc-id-C0003"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "aria-allowed-role",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "ARIA role is allowed for given element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<div class=\"ot-desc-cntr ot-hide ot-always-active-group\" role=\"tabpanel\" tabindex=\"0\" id=\"ot-desc-id-C0002\">",
+            "target": [
+              "#ot-desc-id-C0002"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "aria-allowed-role",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "ARIA role is allowed for given element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<div class=\"ot-desc-cntr ot-hide ot-always-active-group\" role=\"tabpanel\" tabindex=\"0\" id=\"ot-desc-id-C0005\">",
+            "target": [
+              "#ot-desc-id-C0005"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "aria-allowed-role",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "ARIA role is allowed for given element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
             "html": "<div class=\"ot-desc-cntr ot-hide ot-always-active-group\" role=\"tabpanel\" tabindex=\"0\" id=\"ot-desc-id-C0001\">",
             "target": [
               "#ot-desc-id-C0001"
@@ -7024,153 +7186,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<div class=\"ot-desc-cntr ot-hide\" role=\"tabpanel\" tabindex=\"0\" id=\"ot-desc-id-SSPD_BG\">",
+            "html": "<div class=\"ot-desc-cntr ot-hide ot-always-active-group\" role=\"tabpanel\" tabindex=\"0\" id=\"ot-desc-id-C0004\">",
             "target": [
-              "#ot-desc-id-SSPD_BG"
-            ]
-          },
-          {
-            "any": [
-              {
-                "id": "aria-allowed-role",
-                "data": null,
-                "relatedNodes": [],
-                "impact": "minor",
-                "message": "ARIA role is allowed for given element"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": null,
-            "html": "<input type=\"checkbox\" name=\"ot-group-id-SSPD_BG\" id=\"ot-group-id-SSPD_BG\" aria-checked=\"true\" role=\"switch\" class=\"category-switch-handler\" data-optanongroupid=\"SSPD_BG\" checked=\"\" aria-labelledby=\"ot-header-id-SSPD_BG\">",
-            "target": [
-              "#ot-group-id-SSPD_BG"
-            ]
-          },
-          {
-            "any": [
-              {
-                "id": "aria-allowed-role",
-                "data": null,
-                "relatedNodes": [],
-                "impact": "minor",
-                "message": "ARIA role is allowed for given element"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": null,
-            "html": "<span class=\"ot-switch-nob\" aria-checked=\"false\" role=\"switch\" aria-label=\"Share or Sale of Personal Data\"></span>",
-            "target": [
-              "span[aria-label=\"Share or Sale of Personal Data\"]"
-            ]
-          },
-          {
-            "any": [
-              {
-                "id": "aria-allowed-role",
-                "data": null,
-                "relatedNodes": [],
-                "impact": "minor",
-                "message": "ARIA role is allowed for given element"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": null,
-            "html": "<input type=\"checkbox\" name=\"switch\" id=\"ot-sub-group-id-C0004\" aria-checked=\"false\" role=\"switch\" data-optanongroupid=\"C0004\" class=\"cookie-subgroup-handler\" aria-label=\"Targeting Cookies\" checked=\"\">",
-            "target": [
-              "#ot-sub-group-id-C0004"
-            ]
-          },
-          {
-            "any": [
-              {
-                "id": "aria-allowed-role",
-                "data": null,
-                "relatedNodes": [],
-                "impact": "minor",
-                "message": "ARIA role is allowed for given element"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": null,
-            "html": "<span class=\"ot-switch-nob\" aria-checked=\"false\" role=\"switch\"></span>",
-            "target": [
-              "label[for=\"ot-sub-group-id-C0004\"] > .ot-switch-nob[role=\"switch\"]"
-            ]
-          },
-          {
-            "any": [
-              {
-                "id": "aria-allowed-role",
-                "data": null,
-                "relatedNodes": [],
-                "impact": "minor",
-                "message": "ARIA role is allowed for given element"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": null,
-            "html": "<input type=\"checkbox\" name=\"switch\" id=\"ot-sub-group-id-C0002\" aria-checked=\"false\" role=\"switch\" data-optanongroupid=\"C0002\" class=\"cookie-subgroup-handler\" aria-label=\"Performance Cookies\" checked=\"\">",
-            "target": [
-              "#ot-sub-group-id-C0002"
-            ]
-          },
-          {
-            "any": [
-              {
-                "id": "aria-allowed-role",
-                "data": null,
-                "relatedNodes": [],
-                "impact": "minor",
-                "message": "ARIA role is allowed for given element"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": null,
-            "html": "<span class=\"ot-switch-nob\" aria-checked=\"false\" role=\"switch\"></span>",
-            "target": [
-              "label[for=\"ot-sub-group-id-C0002\"] > .ot-switch-nob[role=\"switch\"]"
-            ]
-          },
-          {
-            "any": [
-              {
-                "id": "aria-allowed-role",
-                "data": null,
-                "relatedNodes": [],
-                "impact": "minor",
-                "message": "ARIA role is allowed for given element"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": null,
-            "html": "<input type=\"checkbox\" name=\"switch\" id=\"ot-sub-group-id-C0005\" aria-checked=\"false\" role=\"switch\" data-optanongroupid=\"C0005\" class=\"cookie-subgroup-handler\" aria-label=\"Social Media Cookies\" checked=\"\">",
-            "target": [
-              "#ot-sub-group-id-C0005"
-            ]
-          },
-          {
-            "any": [
-              {
-                "id": "aria-allowed-role",
-                "data": null,
-                "relatedNodes": [],
-                "impact": "minor",
-                "message": "ARIA role is allowed for given element"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": null,
-            "html": "<span class=\"ot-switch-nob\" aria-checked=\"false\" role=\"switch\"></span>",
-            "target": [
-              "label[for=\"ot-sub-group-id-C0005\"] > .ot-switch-nob[role=\"switch\"]"
+              "#ot-desc-id-C0004"
             ]
           },
           {
@@ -7207,6 +7225,24 @@
             "html": "<svg role=\"presentation\" aria-hidden=\"true\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\" viewBox=\"0 0 402.577 402.577\" xml:space=\"preserve\">",
             "target": [
               "svg[viewBox=\"0 0 402.577 402.577\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "aria-allowed-role",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "ARIA role is allowed for given element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<svg role=\"presentation\" viewBox=\"0 0 24 24\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\">",
+            "target": [
+              "svg[viewBox=\"0 0 24 24\"]"
             ]
           },
           {
@@ -7686,9 +7722,9 @@
             ],
             "none": [],
             "impact": null,
-            "html": "<div tabindex=\"-1\" aria-hidden=\"true\" id=\"web-pixels-manager-sandbox-container\" data-shopify-privacy=\"exclude\" style=\"height: 0px !important; width: 0px !important; position: fixed !important; visibility: hidden !important; overflow: hidden !important; z-index: -100 !important; margin: 0px !important; padding: 0px !important; border: 0px !important;\">",
+            "html": "<noscript aria-hidden=\"true\">\n    <img src=\"https://s.amazon-adsystem.com/iu3?pid=37a8f383-4898-407d-a7b8-c08fcc188c61&amp;event=PageView\" width=\"1\" height=\"1\" border=\"0\">\n  </noscript>",
             "target": [
-              "#web-pixels-manager-sandbox-container"
+              "noscript:nth-child(15)"
             ]
           },
           {
@@ -7750,41 +7786,9 @@
             ],
             "none": [],
             "impact": null,
-            "html": "<noscript aria-hidden=\"true\">\n    <img src=\"https://s.amazon-adsystem.com/iu3?pid=37a8f383-4898-407d-a7b8-c08fcc188c61&amp;event=PageView\" width=\"1\" height=\"1\" border=\"0\">\n  </noscript>",
-            "target": [
-              "noscript:nth-child(19)"
-            ]
-          },
-          {
-            "any": [],
-            "all": [
-              {
-                "id": "focusable-modal-open",
-                "data": null,
-                "relatedNodes": [],
-                "impact": "serious",
-                "message": "No focusable elements while a modal is open"
-              },
-              {
-                "id": "focusable-disabled",
-                "data": null,
-                "relatedNodes": [],
-                "impact": "serious",
-                "message": "No focusable elements contained within element"
-              },
-              {
-                "id": "focusable-not-tabbable",
-                "data": null,
-                "relatedNodes": [],
-                "impact": "serious",
-                "message": "No focusable elements contained within element"
-              }
-            ],
-            "none": [],
-            "impact": null,
             "html": "<iframe height=\"0\" width=\"0\" style=\"display: none; visibility: hidden;\" aria-hidden=\"true\"></iframe>",
             "target": [
-              "iframe[height=\"0\"][width=\"0\"]:nth-child(41)"
+              "iframe[height=\"0\"][width=\"0\"]:nth-child(27)"
             ]
           },
           {
@@ -7942,41 +7946,9 @@
             ],
             "none": [],
             "impact": null,
-            "html": "<div id=\"batBeacon264648019465\" style=\"width: 0px; height: 0px; display: none; visibility: hidden;\" aria-hidden=\"true\">",
+            "html": "<div id=\"batBeacon344796679800\" style=\"width: 0px; height: 0px; display: none; visibility: hidden;\" aria-hidden=\"true\">",
             "target": [
-              "#batBeacon264648019465"
-            ]
-          },
-          {
-            "any": [],
-            "all": [
-              {
-                "id": "focusable-modal-open",
-                "data": null,
-                "relatedNodes": [],
-                "impact": "serious",
-                "message": "No focusable elements while a modal is open"
-              },
-              {
-                "id": "focusable-disabled",
-                "data": null,
-                "relatedNodes": [],
-                "impact": "serious",
-                "message": "No focusable elements contained within element"
-              },
-              {
-                "id": "focusable-not-tabbable",
-                "data": null,
-                "relatedNodes": [],
-                "impact": "serious",
-                "message": "No focusable elements contained within element"
-              }
-            ],
-            "none": [],
-            "impact": null,
-            "html": "<div id=\"dynamic-react-root\" aria-hidden=\"true\"></div>",
-            "target": [
-              "#dynamic-react-root"
+              "#batBeacon344796679800"
             ]
           },
           {
@@ -8038,9 +8010,41 @@
             ],
             "none": [],
             "impact": null,
+            "html": "<div id=\"dynamic-react-root\" aria-hidden=\"true\"></div>",
+            "target": [
+              "#dynamic-react-root"
+            ]
+          },
+          {
+            "any": [],
+            "all": [
+              {
+                "id": "focusable-modal-open",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "No focusable elements while a modal is open"
+              },
+              {
+                "id": "focusable-disabled",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "No focusable elements contained within element"
+              },
+              {
+                "id": "focusable-not-tabbable",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "No focusable elements contained within element"
+              }
+            ],
+            "none": [],
+            "impact": null,
             "html": "<iframe height=\"0\" width=\"0\" style=\"display: none; visibility: hidden;\" aria-hidden=\"true\"></iframe>",
             "target": [
-              "iframe[height=\"0\"][width=\"0\"]:nth-child(52)"
+              "iframe[height=\"0\"][width=\"0\"]:nth-child(51)"
             ]
           },
           {
@@ -8103,7 +8107,39 @@
             ],
             "none": [],
             "impact": null,
-            "html": "<div id=\"k-hub\" aria-hidden=\"true\" style=\"position: fixed; top: 0px;\">",
+            "html": "<div tabindex=\"-1\" aria-hidden=\"true\" id=\"web-pixels-manager-sandbox-container\" data-shopify-privacy=\"exclude\" style=\"height: 0px !important; width: 0px !important; position: fixed !important; visibility: hidden !important; overflow: hidden !important; z-index: -100 !important; margin: 0px !important; padding: 0px !important; border: 0px !important;\">",
+            "target": [
+              "#web-pixels-manager-sandbox-container"
+            ]
+          },
+          {
+            "any": [],
+            "all": [
+              {
+                "id": "focusable-modal-open",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "No focusable elements while a modal is open"
+              },
+              {
+                "id": "focusable-disabled",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "No focusable elements contained within element"
+              },
+              {
+                "id": "focusable-not-tabbable",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "No focusable elements contained within element"
+              }
+            ],
+            "none": [],
+            "impact": null,
+            "html": "<div id=\"k-hub\" style=\"position: fixed; top: 0px;\" aria-hidden=\"true\">",
             "target": [
               "#k-hub"
             ]
@@ -8135,9 +8171,9 @@
             ],
             "none": [],
             "impact": null,
-            "html": "<div id=\"floating-ui-64il6\" data-floating-ui-portal=\"\" aria-hidden=\"true\"><div class=\"HubLauncherWidget__FloatingWidget-sc-1cgcsir-0 itYCKI\" style=\"opacity: 1; transform: scale(1); transition-property: opacity, transform; transition-duration: 250ms;\"></div></div>",
+            "html": "<div id=\"floating-ui-0h7f6\" data-floating-ui-portal=\"\" aria-hidden=\"true\"><div class=\"HubLauncherWidget__FloatingWidget-sc-1cgcsir-0 itYCKI\" style=\"opacity: 1; transform: scale(1); transition-property: opacity, transform; transition-duration: 250ms;\"></div></div>",
             "target": [
-              "#floating-ui-64il6"
+              "#floating-ui-0h7f6"
             ]
           },
           {
@@ -8490,7 +8526,7 @@
             ],
             "none": [],
             "impact": null,
-            "html": "<html lang=\"en\" style=\"--cart-header-height: 97px; --header-height: 122px; overflow: hidden; position: absolute; inset: 0px;\">",
+            "html": "<html lang=\"en\" style=\"--header-height: 122px; --cart-header-height: 97px; overflow: hidden; position: absolute; inset: 0px;\">",
             "target": [
               "html"
             ]
@@ -8805,7 +8841,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<html lang=\"en\" style=\"--cart-header-height: 97px; --header-height: 122px; overflow: hidden; position: absolute; inset: 0px;\">",
+            "html": "<html lang=\"en\" style=\"--header-height: 122px; --cart-header-height: 97px; overflow: hidden; position: absolute; inset: 0px;\">",
             "target": [
               "html"
             ]
@@ -9019,7 +9055,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<html lang=\"en\" style=\"--cart-header-height: 97px; --header-height: 122px; overflow: hidden; position: absolute; inset: 0px;\">",
+            "html": "<html lang=\"en\" style=\"--header-height: 122px; --cart-header-height: 97px; overflow: hidden; position: absolute; inset: 0px;\">",
             "target": [
               "html"
             ]
@@ -9044,7 +9080,7 @@
             "any": [
               {
                 "id": "duplicate-id-aria",
-                "data": "swiper-wrapper-14b8339324e5310fd",
+                "data": "swiper-wrapper-4be94ecda0f93342",
                 "relatedNodes": [],
                 "impact": "critical",
                 "message": "Document has no elements referenced with ARIA or labels that share the same id attribute"
@@ -9053,9 +9089,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<div class=\"swiper-wrapper\" id=\"swiper-wrapper-14b8339324e5310fd\" aria-live=\"off\">",
+            "html": "<div class=\"swiper-wrapper\" id=\"swiper-wrapper-4be94ecda0f93342\" aria-live=\"off\">",
             "target": [
-              "#swiper-wrapper-14b8339324e5310fd"
+              "#swiper-wrapper-4be94ecda0f93342"
             ]
           },
           {
@@ -9422,7 +9458,7 @@
             "any": [
               {
                 "id": "duplicate-id-aria",
-                "data": "swiper-wrapper-5557a63959154c99",
+                "data": "swiper-wrapper-d6f4b57036a18f50",
                 "relatedNodes": [],
                 "impact": "critical",
                 "message": "Document has no elements referenced with ARIA or labels that share the same id attribute"
@@ -9431,9 +9467,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<div class=\"swiper-wrapper\" id=\"swiper-wrapper-5557a63959154c99\" aria-live=\"polite\">",
+            "html": "<div class=\"swiper-wrapper\" id=\"swiper-wrapper-d6f4b57036a18f50\" aria-live=\"polite\">",
             "target": [
-              "#swiper-wrapper-5557a63959154c99"
+              "#swiper-wrapper-d6f4b57036a18f50"
             ]
           },
           {
@@ -9449,7 +9485,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<div class=\"slick-slide slick-current slick-center\" style=\"width: 682px;\" data-slick-index=\"0\" aria-hidden=\"true\" tabindex=\"0\" role=\"tabpanel\" id=\"slick-slide00\" aria-describedby=\"slick-slide-control00\">",
+            "html": "<div class=\"slick-slide slick-current slick-center\" style=\"width: 668px;\" data-slick-index=\"0\" aria-hidden=\"true\" tabindex=\"0\" role=\"tabpanel\" id=\"slick-slide00\" aria-describedby=\"slick-slide-control00\">",
             "target": [
               "#slick-slide00"
             ]
@@ -9467,7 +9503,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<div class=\"slick-slide\" style=\"width: 682px;\" data-slick-index=\"1\" aria-hidden=\"true\" tabindex=\"0\" role=\"tabpanel\" id=\"slick-slide01\" aria-describedby=\"slick-slide-control01\">",
+            "html": "<div class=\"slick-slide\" style=\"width: 668px;\" data-slick-index=\"1\" aria-hidden=\"true\" tabindex=\"0\" role=\"tabpanel\" id=\"slick-slide01\" aria-describedby=\"slick-slide-control01\">",
             "target": [
               "#slick-slide01"
             ]
@@ -9485,7 +9521,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<div class=\"slick-slide\" style=\"width: 682px;\" data-slick-index=\"2\" aria-hidden=\"true\" tabindex=\"-1\" role=\"tabpanel\" id=\"slick-slide02\" aria-describedby=\"slick-slide-control02\">",
+            "html": "<div class=\"slick-slide\" style=\"width: 668px;\" data-slick-index=\"2\" aria-hidden=\"true\" tabindex=\"-1\" role=\"tabpanel\" id=\"slick-slide02\" aria-describedby=\"slick-slide-control02\">",
             "target": [
               "#slick-slide02"
             ]
@@ -9584,24 +9620,6 @@
             "any": [
               {
                 "id": "duplicate-id-aria",
-                "data": "ot-header-id-SSPD_BG",
-                "relatedNodes": [],
-                "impact": "critical",
-                "message": "Document has no elements referenced with ARIA or labels that share the same id attribute"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": null,
-            "html": "<h3 id=\"ot-header-id-SSPD_BG\">Share or Sale of Personal Data</h3>",
-            "target": [
-              "#ot-header-id-SSPD_BG"
-            ]
-          },
-          {
-            "any": [
-              {
-                "id": "duplicate-id-aria",
                 "data": "ot-tab-desc",
                 "relatedNodes": [],
                 "impact": "critical",
@@ -9656,6 +9674,60 @@
             "any": [
               {
                 "id": "duplicate-id-aria",
+                "data": "ot-desc-id-C0003",
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Document has no elements referenced with ARIA or labels that share the same id attribute"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<div class=\"ot-desc-cntr ot-hide ot-always-active-group\" role=\"tabpanel\" tabindex=\"0\" id=\"ot-desc-id-C0003\">",
+            "target": [
+              "#ot-desc-id-C0003"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "duplicate-id-aria",
+                "data": "ot-desc-id-C0002",
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Document has no elements referenced with ARIA or labels that share the same id attribute"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<div class=\"ot-desc-cntr ot-hide ot-always-active-group\" role=\"tabpanel\" tabindex=\"0\" id=\"ot-desc-id-C0002\">",
+            "target": [
+              "#ot-desc-id-C0002"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "duplicate-id-aria",
+                "data": "ot-desc-id-C0005",
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Document has no elements referenced with ARIA or labels that share the same id attribute"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<div class=\"ot-desc-cntr ot-hide ot-always-active-group\" role=\"tabpanel\" tabindex=\"0\" id=\"ot-desc-id-C0005\">",
+            "target": [
+              "#ot-desc-id-C0005"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "duplicate-id-aria",
                 "data": "ot-desc-id-C0001",
                 "relatedNodes": [],
                 "impact": "critical",
@@ -9674,7 +9746,7 @@
             "any": [
               {
                 "id": "duplicate-id-aria",
-                "data": "ot-desc-id-SSPD_BG",
+                "data": "ot-desc-id-C0004",
                 "relatedNodes": [],
                 "impact": "critical",
                 "message": "Document has no elements referenced with ARIA or labels that share the same id attribute"
@@ -9683,81 +9755,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<div class=\"ot-desc-cntr ot-hide\" role=\"tabpanel\" tabindex=\"0\" id=\"ot-desc-id-SSPD_BG\">",
+            "html": "<div class=\"ot-desc-cntr ot-hide ot-always-active-group\" role=\"tabpanel\" tabindex=\"0\" id=\"ot-desc-id-C0004\">",
             "target": [
-              "#ot-desc-id-SSPD_BG"
-            ]
-          },
-          {
-            "any": [
-              {
-                "id": "duplicate-id-aria",
-                "data": "ot-group-id-SSPD_BG",
-                "relatedNodes": [],
-                "impact": "critical",
-                "message": "Document has no elements referenced with ARIA or labels that share the same id attribute"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": null,
-            "html": "<input type=\"checkbox\" name=\"ot-group-id-SSPD_BG\" id=\"ot-group-id-SSPD_BG\" aria-checked=\"true\" role=\"switch\" class=\"category-switch-handler\" data-optanongroupid=\"SSPD_BG\" checked=\"\" aria-labelledby=\"ot-header-id-SSPD_BG\">",
-            "target": [
-              "#ot-group-id-SSPD_BG"
-            ]
-          },
-          {
-            "any": [
-              {
-                "id": "duplicate-id-aria",
-                "data": "ot-sub-group-id-C0004",
-                "relatedNodes": [],
-                "impact": "critical",
-                "message": "Document has no elements referenced with ARIA or labels that share the same id attribute"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": null,
-            "html": "<input type=\"checkbox\" name=\"switch\" id=\"ot-sub-group-id-C0004\" aria-checked=\"false\" role=\"switch\" data-optanongroupid=\"C0004\" class=\"cookie-subgroup-handler\" aria-label=\"Targeting Cookies\" checked=\"\">",
-            "target": [
-              "#ot-sub-group-id-C0004"
-            ]
-          },
-          {
-            "any": [
-              {
-                "id": "duplicate-id-aria",
-                "data": "ot-sub-group-id-C0002",
-                "relatedNodes": [],
-                "impact": "critical",
-                "message": "Document has no elements referenced with ARIA or labels that share the same id attribute"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": null,
-            "html": "<input type=\"checkbox\" name=\"switch\" id=\"ot-sub-group-id-C0002\" aria-checked=\"false\" role=\"switch\" data-optanongroupid=\"C0002\" class=\"cookie-subgroup-handler\" aria-label=\"Performance Cookies\" checked=\"\">",
-            "target": [
-              "#ot-sub-group-id-C0002"
-            ]
-          },
-          {
-            "any": [
-              {
-                "id": "duplicate-id-aria",
-                "data": "ot-sub-group-id-C0005",
-                "relatedNodes": [],
-                "impact": "critical",
-                "message": "Document has no elements referenced with ARIA or labels that share the same id attribute"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": null,
-            "html": "<input type=\"checkbox\" name=\"switch\" id=\"ot-sub-group-id-C0005\" aria-checked=\"false\" role=\"switch\" data-optanongroupid=\"C0005\" class=\"cookie-subgroup-handler\" aria-label=\"Social Media Cookies\" checked=\"\">",
-            "target": [
-              "#ot-sub-group-id-C0005"
+              "#ot-desc-id-C0004"
             ]
           },
           {
@@ -10043,7 +10043,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<html lang=\"en\" style=\"--cart-header-height: 97px; --header-height: 122px; overflow: hidden; position: absolute; inset: 0px;\">",
+            "html": "<html lang=\"en\" style=\"--header-height: 122px; --cart-header-height: 97px; overflow: hidden; position: absolute; inset: 0px;\">",
             "target": [
               "html"
             ]
@@ -10080,7 +10080,7 @@
               }
             ],
             "impact": null,
-            "html": "<html lang=\"en\" style=\"--cart-header-height: 97px; --header-height: 122px; overflow: hidden; position: absolute; inset: 0px;\">",
+            "html": "<html lang=\"en\" style=\"--header-height: 122px; --cart-header-height: 97px; overflow: hidden; position: absolute; inset: 0px;\">",
             "target": [
               "html"
             ]
@@ -10277,7 +10277,7 @@
             ],
             "none": [],
             "impact": null,
-            "html": "<html lang=\"en\" style=\"--cart-header-height: 97px; --header-height: 122px; overflow: hidden; position: absolute; inset: 0px;\">",
+            "html": "<html lang=\"en\" style=\"--header-height: 122px; --cart-header-height: 97px; overflow: hidden; position: absolute; inset: 0px;\">",
             "target": [
               "html"
             ]
@@ -10487,7 +10487,7 @@
             ],
             "none": [],
             "impact": null,
-            "html": "<html lang=\"en\" style=\"--cart-header-height: 97px; --header-height: 122px; overflow: hidden; position: absolute; inset: 0px;\">",
+            "html": "<html lang=\"en\" style=\"--header-height: 122px; --cart-header-height: 97px; overflow: hidden; position: absolute; inset: 0px;\">",
             "target": [
               "html"
             ]
@@ -11147,7 +11147,7 @@
                 "data": null,
                 "relatedNodes": [
                   {
-                    "html": "<a class=\"skip-to-content-link button visually-hidden btn btn--lg btn--light\" href=\"#root\" aria-hidden=\"true\">\n      Skip to content\n    </a>",
+                    "html": "<a class=\"skip-to-content-link button visually-hidden btn btn--lg btn--light\" href=\"#root\" aria-hidden=\"true\"> Skip to content </a>",
                     "target": [
                       ".skip-to-content-link"
                     ]
@@ -11159,7 +11159,7 @@
             ],
             "none": [],
             "impact": "serious",
-            "html": "<a class=\"skip-to-content-link button visually-hidden btn btn--lg btn--light\" href=\"#root\" aria-hidden=\"true\">\n      Skip to content\n    </a>",
+            "html": "<a class=\"skip-to-content-link button visually-hidden btn btn--lg btn--light\" href=\"#root\" aria-hidden=\"true\"> Skip to content </a>",
             "target": [
               ".skip-to-content-link"
             ],
@@ -11173,7 +11173,7 @@
                 "data": null,
                 "relatedNodes": [
                   {
-                    "html": "<button class=\"accessibility__opener-btn btn btn--lg btn--dark\" type=\"button\" aria-haspopup=\"dialog\">\n      Skip to Accessibility Statement\n    </button>",
+                    "html": "<button class=\"accessibility__opener-btn btn btn--lg btn--dark\" type=\"button\" aria-haspopup=\"dialog\"> Skip to Accessibility Statement </button>",
                     "target": [
                       ".accessibility__opener-btn"
                     ]
@@ -11199,37 +11199,37 @@
                 "data": null,
                 "relatedNodes": [
                   {
-                    "html": "<a class=\"w-full h-full flex flex-col items-center justify-center\" href=\"/products/the-aiden-grinder-kit\">",
+                    "html": "<a class=\"w-full h-full flex flex-col items-center justify-center\" href=\"/products/the-aiden-grinder-kit\"> <p>Grind, brew, save 🎉 <span style=\"text-decoration:underline\">Get 15% off The Aiden + Grinder Kit</span></p> </a>",
                     "target": [
                       "div[aria-label=\"1 / 4\"] > .justify-center.flex-col.h-full"
                     ]
                   },
                   {
-                    "html": "<a class=\"w-full h-full flex flex-col items-center justify-center\" href=\"/pages/fellow-drops\">\n            \n          \n          <p>Join our strangely addictive <span style=\"text-decoration:underline\">text-to-order coffee club</span> 👽</p>\n          \n          \n            \n              </a>",
+                    "html": "<a class=\"w-full h-full flex flex-col items-center justify-center\" href=\"/pages/fellow-drops\"> <p>Join our strangely addictive <span style=\"text-decoration:underline\">text-to-order coffee club</span> 👽</p> </a>",
                     "target": [
                       ".justify-center.flex-col[href$=\"fellow-drops\"]"
                     ]
                   },
                   {
-                    "html": "<a class=\"w-full h-full flex flex-col items-center justify-center\" href=\"/collections/personalization\">\n            \n          \n          <p>Engrave your favorite drinkware ✨ <span style=\"text-decoration:underline\">Personalize a mug</span></p>\n          \n          \n            \n              </a>",
+                    "html": "<a class=\"w-full h-full flex flex-col items-center justify-center\" href=\"/collections/personalization\"> <p>Engrave your favorite drinkware ✨ <span style=\"text-decoration:underline\">Personalize a mug</span></p> </a>",
                     "target": [
                       "div[aria-label=\"3 / 4\"] > a[href$=\"personalization\"]"
                     ]
                   },
                   {
-                    "html": "<a class=\"w-full h-full flex flex-col items-center justify-center\" href=\"/collections/all-products\">\n            \n          \n          <p>Get free standard US shipping on orders $75+</p>\n          \n          \n            \n              </a>",
+                    "html": "<a class=\"w-full h-full flex flex-col items-center justify-center\" href=\"/collections/all-products\"> <p>Get free standard US shipping on orders $75+</p> </a>",
                     "target": [
                       ".justify-center.flex-col[href$=\"all-products\"]"
                     ]
                   },
                   {
-                    "html": "<button class=\"swiper-button-prev left-[20px] m-0 z-[2] top-1/2 -translate-y-1/2 text-reverse w-[15px] h-[15px] bg-transparent p-0 z-1 after:content-none\" tabindex=\"0\" aria-label=\"Previous slide\" aria-controls=\"swiper-wrapper-14b8339324e5310fd\">",
+                    "html": "<button class=\"swiper-button-prev left-[20px] m-0 z-[2] top-1/2 -translate-y-1/2 text-reverse w-[15px] h-[15px] bg-transparent p-0 z-1 after:content-none\" tabindex=\"0\" aria-label=\"Previous slide\" aria-controls=\"swiper-wrapper-4be94ecda0f93342\">",
                     "target": [
                       ".left-\\[20px\\]"
                     ]
                   },
                   {
-                    "html": "<button class=\"swiper-button-next right-[20px] m-0 z-[2] top-1/2 -translate-y-1/2 text-reverse w-[15px] h-[15px] bg-transparent p-0 z-1 after:content-none\" tabindex=\"0\" aria-label=\"Next slide\" aria-controls=\"swiper-wrapper-14b8339324e5310fd\">",
+                    "html": "<button class=\"swiper-button-next right-[20px] m-0 z-[2] top-1/2 -translate-y-1/2 text-reverse w-[15px] h-[15px] bg-transparent p-0 z-1 after:content-none\" tabindex=\"0\" aria-label=\"Next slide\" aria-controls=\"swiper-wrapper-4be94ecda0f93342\">",
                     "target": [
                       ".swiper-button-next.right-\\[20px\\].w-\\[15px\\]"
                     ]
@@ -11301,7 +11301,7 @@
                     ]
                   },
                   {
-                    "html": "<a class=\"text-xs block p-[6px] text-grey-8 rounded-[12px] bg-lighter-grey whitespace-nowrap\" href=\"https://fellowproducts.com/pages/fellow-drops\">Fellow Drops</a>",
+                    "html": "<a class=\"text-xs block p-[6px] text-grey-8 rounded-[12px] bg-lighter-grey whitespace-nowrap\" href=\"https://fellowproducts.com/pages/fellow-drops\">Our Coffee Club</a>",
                     "target": [
                       "li:nth-child(9) > .text-xs.p-\\[6px\\].rounded-\\[12px\\]"
                     ]
@@ -11339,13 +11339,13 @@
                     ]
                   },
                   {
-                    "html": "<a href=\"/products/aiden-precision-coffee-maker\" class=\"\n              product-hero__cta pointer-events-auto\n              \n              \n            \">\n            Shop Now\n          </a>",
+                    "html": "<a href=\"/products/aiden-precision-coffee-maker\" class=\"\n              product-hero__cta pointer-events-auto\n              \n              \n            \"> Shop Now </a>",
                     "target": [
                       ".product-hero__cta"
                     ]
                   },
                   {
-                    "html": "<button class=\"swiper-button-next m-0 inset-auto relative text-black disabled:text-subdued !opacity-100 w-[29px] h-[29px] bg-transparent p-0 !z-[1] after:content-none\" tabindex=\"0\" aria-label=\"Next slide\" aria-controls=\"swiper-wrapper-5557a63959154c99\" aria-disabled=\"false\">",
+                    "html": "<button class=\"swiper-button-next m-0 inset-auto relative text-black disabled:text-subdued !opacity-100 w-[29px] h-[29px] bg-transparent p-0 !z-[1] after:content-none\" tabindex=\"0\" aria-label=\"Next slide\" aria-controls=\"swiper-wrapper-d6f4b57036a18f50\" aria-disabled=\"false\">",
                     "target": [
                       ".swiper-button-next.inset-auto.disabled\\:text-subdued"
                     ]
@@ -11426,7 +11426,7 @@
                     ]
                   },
                   {
-                    "html": "<a id=\"rating\" part=\"rating\" href=\"/products/the-aiden-grinder-kit\">\n        <!--?lit$310077223$--> <sl-rating label=\"Rating\" max=\"5\" precision=\"0\" readonly=\"\" value=\"4.440184049079755\"></sl-rating><span>(<!--?lit$310077223$-->652)</span>\n      </a>",
+                    "html": "<a id=\"rating\" part=\"rating\" href=\"/products/the-aiden-grinder-kit\">\n        <!--?lit$171349341$--> <sl-rating label=\"Rating\" max=\"5\" precision=\"0\" readonly=\"\" value=\"4.440184049079755\"></sl-rating><span>(<!--?lit$171349341$-->652)</span>\n      </a>",
                     "target": [
                       [
                         ".w-\\[calc\\(50\\%-5px\\)\\].lg\\:hidden:nth-child(9) > hh-product-card[compare-at-price=\"56000\"][price=\"47600\"][handle=\"the-aiden-grinder-kit\"]",
@@ -11445,7 +11445,7 @@
                     ]
                   },
                   {
-                    "html": "<a href=\"/products/the-aiden-grinder-kit\" aria-label=\"The Aiden + Grinder Kit\">\n              <h1 class=\"h1\" part=\"title\"><!--?lit$310077223$-->The Aiden + Grinder Kit</h1>\n            </a>",
+                    "html": "<a href=\"/products/the-aiden-grinder-kit\" aria-label=\"The Aiden + Grinder Kit\">\n              <h1 class=\"h1\" part=\"title\"><!--?lit$171349341$-->The Aiden + Grinder Kit</h1>\n            </a>",
                     "target": [
                       [
                         ".w-\\[calc\\(50\\%-5px\\)\\].lg\\:hidden:nth-child(9) > hh-product-card[compare-at-price=\"56000\"][price=\"47600\"][handle=\"the-aiden-grinder-kit\"]",
@@ -11463,7 +11463,7 @@
                     ]
                   },
                   {
-                    "html": "<a id=\"rating\" part=\"rating\" href=\"/products/stagg-ekg-pro-electric-kettle\">\n        <!--?lit$310077223$--> <sl-rating label=\"Rating\" max=\"5\" precision=\"0\" readonly=\"\" value=\"4.443556443556443\"></sl-rating><span>(<!--?lit$310077223$-->2002)</span>\n      </a>",
+                    "html": "<a id=\"rating\" part=\"rating\" href=\"/products/stagg-ekg-pro-electric-kettle\">\n        <!--?lit$171349341$--> <sl-rating label=\"Rating\" max=\"5\" precision=\"0\" readonly=\"\" value=\"4.443556443556443\"></sl-rating><span>(<!--?lit$171349341$-->2002)</span>\n      </a>",
                     "target": [
                       [
                         ".w-\\[calc\\(50\\%-5px\\)\\].lg\\:hidden:nth-child(10) > hh-product-card[handle=\"stagg-ekg-pro-electric-kettle\"][title=\"Stagg EKG Pro Electric Kettle\"][data-id=\"6973225271396\"]",
@@ -11482,7 +11482,7 @@
                     ]
                   },
                   {
-                    "html": "<a href=\"/products/stagg-ekg-pro-electric-kettle\" aria-label=\"Stagg EKG Pro Electric Kettle\">\n              <h1 class=\"h1\" part=\"title\"><!--?lit$310077223$-->Stagg EKG Pro Electric Kettle</h1>\n            </a>",
+                    "html": "<a href=\"/products/stagg-ekg-pro-electric-kettle\" aria-label=\"Stagg EKG Pro Electric Kettle\">\n              <h1 class=\"h1\" part=\"title\"><!--?lit$171349341$-->Stagg EKG Pro Electric Kettle</h1>\n            </a>",
                     "target": [
                       [
                         ".w-\\[calc\\(50\\%-5px\\)\\].lg\\:hidden:nth-child(10) > hh-product-card[handle=\"stagg-ekg-pro-electric-kettle\"][title=\"Stagg EKG Pro Electric Kettle\"][data-id=\"6973225271396\"]",
@@ -11500,7 +11500,7 @@
                     ]
                   },
                   {
-                    "html": "<a id=\"rating\" part=\"rating\" href=\"/products/carter-3-in-1-lid-system\">\n        <!--?lit$310077223$--> <sl-rating label=\"Rating\" max=\"5\" precision=\"0\" readonly=\"\" value=\"4.584070796460177\"></sl-rating><span>(<!--?lit$310077223$-->113)</span>\n      </a>",
+                    "html": "<a id=\"rating\" part=\"rating\" href=\"/products/carter-3-in-1-lid-system\">\n        <!--?lit$171349341$--> <sl-rating label=\"Rating\" max=\"5\" precision=\"0\" readonly=\"\" value=\"4.584070796460177\"></sl-rating><span>(<!--?lit$171349341$-->113)</span>\n      </a>",
                     "target": [
                       [
                         ".w-\\[calc\\(50\\%-5px\\)\\].lg\\:hidden:nth-child(11) > hh-product-card[handle=\"carter-3-in-1-lid-system\"][title=\"Carter 3-in-1 Lid System\"][compare-at-price=\"5700\"]",
@@ -11519,7 +11519,7 @@
                     ]
                   },
                   {
-                    "html": "<a href=\"/products/carter-3-in-1-lid-system\" aria-label=\"Carter 3-in-1 Lid System\">\n              <h1 class=\"h1\" part=\"title\"><!--?lit$310077223$-->Carter 3-in-1 Lid System</h1>\n            </a>",
+                    "html": "<a href=\"/products/carter-3-in-1-lid-system\" aria-label=\"Carter 3-in-1 Lid System\">\n              <h1 class=\"h1\" part=\"title\"><!--?lit$171349341$-->Carter 3-in-1 Lid System</h1>\n            </a>",
                     "target": [
                       [
                         ".w-\\[calc\\(50\\%-5px\\)\\].lg\\:hidden:nth-child(11) > hh-product-card[handle=\"carter-3-in-1-lid-system\"][title=\"Carter 3-in-1 Lid System\"][compare-at-price=\"5700\"]",
@@ -11537,7 +11537,7 @@
                     ]
                   },
                   {
-                    "html": "<a id=\"rating\" part=\"rating\" href=\"/products/ode-brew-grinder-gen-2\">\n        <!--?lit$310077223$--> <sl-rating label=\"Rating\" max=\"5\" precision=\"0\" readonly=\"\" value=\"4.522029372496662\"></sl-rating><span>(<!--?lit$310077223$-->749)</span>\n      </a>",
+                    "html": "<a id=\"rating\" part=\"rating\" href=\"/products/ode-brew-grinder-gen-2\">\n        <!--?lit$171349341$--> <sl-rating label=\"Rating\" max=\"5\" precision=\"0\" readonly=\"\" value=\"4.522029372496662\"></sl-rating><span>(<!--?lit$171349341$-->749)</span>\n      </a>",
                     "target": [
                       [
                         ".w-\\[calc\\(50\\%-5px\\)\\].lg\\:hidden:nth-child(12) > hh-product-card[price=\"34500\"][handle=\"ode-brew-grinder-gen-2\"][title=\"Ode Brew Grinder Gen 2\"]",
@@ -11556,7 +11556,7 @@
                     ]
                   },
                   {
-                    "html": "<a href=\"/products/ode-brew-grinder-gen-2\" aria-label=\"Ode Brew Grinder Gen 2\">\n              <h1 class=\"h1\" part=\"title\"><!--?lit$310077223$-->Ode Brew Grinder Gen 2</h1>\n            </a>",
+                    "html": "<a href=\"/products/ode-brew-grinder-gen-2\" aria-label=\"Ode Brew Grinder Gen 2\">\n              <h1 class=\"h1\" part=\"title\"><!--?lit$171349341$-->Ode Brew Grinder Gen 2</h1>\n            </a>",
                     "target": [
                       [
                         ".w-\\[calc\\(50\\%-5px\\)\\].lg\\:hidden:nth-child(12) > hh-product-card[price=\"34500\"][handle=\"ode-brew-grinder-gen-2\"][title=\"Ode Brew Grinder Gen 2\"]",
@@ -11583,19 +11583,19 @@
                     ]
                   },
                   {
-                    "html": "<a class=\"btn btn--lg btn--light\" href=\"/blogs/learn\" title=\"Explore The Fellow Blog - \" role=\"button\">\n                    Explore The Fellow Blog\n                  </a>",
+                    "html": "<a class=\"btn btn--lg btn--light\" href=\"/blogs/learn\" title=\"Explore The Fellow Blog - \" role=\"button\"> Explore The Fellow Blog </a>",
                     "target": [
                       ".BlogSection__InfoButton > a[href$=\"learn\"]"
                     ]
                   },
                   {
-                    "html": "<div class=\"slick-slide slick-current slick-center\" style=\"width: 682px;\" data-slick-index=\"0\" aria-hidden=\"true\" tabindex=\"0\" role=\"tabpanel\" id=\"slick-slide00\" aria-describedby=\"slick-slide-control00\">",
+                    "html": "<div class=\"slick-slide slick-current slick-center\" style=\"width: 668px;\" data-slick-index=\"0\" aria-hidden=\"true\" tabindex=\"0\" role=\"tabpanel\" id=\"slick-slide00\" aria-describedby=\"slick-slide-control00\">",
                     "target": [
                       "#slick-slide00"
                     ]
                   },
                   {
-                    "html": "<div class=\"slick-slide\" style=\"width: 682px;\" data-slick-index=\"1\" aria-hidden=\"true\" tabindex=\"0\" role=\"tabpanel\" id=\"slick-slide01\" aria-describedby=\"slick-slide-control01\">",
+                    "html": "<div class=\"slick-slide\" style=\"width: 668px;\" data-slick-index=\"1\" aria-hidden=\"true\" tabindex=\"0\" role=\"tabpanel\" id=\"slick-slide01\" aria-describedby=\"slick-slide-control01\">",
                     "target": [
                       "#slick-slide01"
                     ]
@@ -11825,7 +11825,7 @@
                     ]
                   },
                   {
-                    "html": "<a id=\"ot-sdk-btn\" class=\"ot-sdk-show-settings\" href=\"javascript:void(0)\" role=\"link\" aria-label=\"OneTrust settings\" title=\"Open OneTrust settings\">Do Not Sell or Share My Personal Information</a>",
+                    "html": "<a id=\"ot-sdk-btn\" class=\"ot-sdk-show-settings\" href=\"javascript:void(0)\" role=\"link\" aria-label=\"OneTrust settings\" title=\"Open OneTrust settings\">Cookies Settings</a>",
                     "target": [
                       "#ot-sdk-btn"
                     ]
@@ -11875,9 +11875,9 @@
                 },
                 "relatedNodes": [
                   {
-                    "html": "<img class=\"w-full h-full object-cover lg:hidden\" srcset=\"\n    //fellowproducts.com/cdn/shop/files/031725_Web_AidenRefresh_Mobile_288x.png?v=1741897860 288w,\n    //fellowproducts.com/cdn/shop/files/031725_Web_AidenRefresh_Mobile_576x.png?v=1741897860 576w,\n    //fellowproducts.com/cdn/shop/files/031725_Web_AidenRefresh_Mobile_750x.png?v=1741897860 750w,\n    \n    \n    //fellowproducts.com/cdn/shop/files/031725_Web_AidenRefresh_Mobile.png?v=1741897860 750w\n  \" src=\"//fellowproducts.com/cdn/shop/files/031725_Web_AidenRefresh_Mobile_1x1.png?v=1741897860\" sizes=\"100vw\" loading=\"lazy\" width=\"100%\" height=\"100%\" alt=\"\">",
+                    "html": "<img class=\"w-full h-full object-cover lg:hidden\" srcset=\"\n    //fellowproducts.com/cdn/shop/files/031725_Web_AidenRefresh_Mobile_288x.png?v=1741897860 288w,\n    //fellowproducts.com/cdn/shop/files/031725_Web_AidenRefresh_Mobile_576x.png?v=1741897860 576w,\n    //fellowproducts.com/cdn/shop/files/031725_Web_AidenRefresh_Mobile_750x.png?v=1741897860 750w,\n    \n    \n    //fellowproducts.com/cdn/shop/files/031725_Web_AidenRefresh_Mobile.png?v=1741897860 750w\n  \" src=\"//fellowproducts.com/cdn/shop/files/031725_Web_AidenRefresh_Mobile_1x1.png?v=1741897860\" sizes=\"100vw\" loading=\"eager\" width=\"100%\" height=\"100%\" alt=\"\" fetchpriority=\"high\">",
                     "target": [
-                      ".lg\\:hidden.object-cover[sizes=\"100vw\"]"
+                      "img[loading=\"eager\"]"
                     ]
                   }
                 ],
@@ -11888,7 +11888,7 @@
             "all": [],
             "none": [],
             "impact": "serious",
-            "html": "<h1 class=\"\n              product-hero__headline headline-1\n              \n            \">\n            Good design,  better coffee\n          </h1>",
+            "html": "<h1 class=\"\n              product-hero__headline headline-1\n              \n            \"> Good design, better coffee </h1>",
             "target": [
               ".product-hero__headline"
             ],
