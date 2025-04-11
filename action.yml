@@ -73,6 +73,16 @@ runs:
         echo "Installing axe CLI..."
         npm install -g @axe-core/cli
 
+    - name: Get branch name
+      id: branch_name
+      shell: bash
+      run: |
+        if [[ "${{ github.event_name }}" == "pull_request" ]]; then
+          echo "name=${{ github.head_ref }}" >> $GITHUB_OUTPUT
+        else
+          echo "name=${{ github.ref_name }}" >> $GITHUB_OUTPUT
+        fi
+
     - name: Run axe test
       id: run_test
       shell: bash
@@ -93,11 +103,11 @@ runs:
         fi
 
         echo "Running axe on $URL"
-        axe $URL --save _axe-a11y-reports/${{ github.ref_name }}.json
+        axe $URL --save _axe-a11y-reports/${{ steps.branch_name.outputs.name }}-branch-report.json
 
         node <<'EOF'
         const fs = require('fs');
-        const report = JSON.parse(fs.readFileSync('./_axe-a11y-reports/${{ github.ref_name }}.json', 'utf8'));
+        const report = JSON.parse(fs.readFileSync('./_axe-a11y-reports/${{ steps.branch_name.outputs.name }}-branch-report.json', 'utf8'));
         const violations = report?.[0]?.violations || [];
 
         if (violations.length === 0) {
@@ -187,7 +197,7 @@ runs:
           });
 
     - name: Commit and push reports
-      if: always()
+      if: always() && github.event_name == 'push'
       shell: bash
       run: |
         git config --global user.name "github-actions[bot]"
