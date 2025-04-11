@@ -120,7 +120,10 @@ runs:
         fi
 
         echo "Running axe on $URL"
-        axe "$URL" --chromedriver-path "$CHROMEDRIVER_PATH" --save "_axe-a11y-reports/${{ steps.branch_name.outputs.name }}-branch-report.json"
+        axe "$URL" \
+          --chromedriver-path "$CHROMEDRIVER_PATH" \
+          --chrome-arg="--user-data-dir=$(mktemp -d)" \
+          --save "_axe-a11y-reports/${{ steps.branch_name.outputs.name }}-branch-report.json"
         echo "axe report saved to _axe-a11y-reports/${{ steps.branch_name.outputs.name }}-branch-report.json"
 
         node <<'EOF'
