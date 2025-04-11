@@ -93,11 +93,11 @@ runs:
         fi
 
         echo "Running axe on $URL"
-        axe $URL --save _axe-a11y-reports/axe-report.json
+        axe $URL --save _axe-a11y-reports/${{ github.head_ref }}.json
 
         node <<'EOF'
         const fs = require('fs');
-        const report = JSON.parse(fs.readFileSync('./_axe-a11y-reports/axe-report.json', 'utf8'));
+        const report = JSON.parse(fs.readFileSync('./_axe-a11y-reports/${{ github.head_ref }}.json', 'utf8'));
         const violations = report?.[0]?.violations || [];
 
         if (violations.length === 0) {
@@ -121,20 +121,12 @@ runs:
         fs.writeFileSync('_axe-a11y-reports/axe-summary.md', table);
         EOF
 
-    - name: Path debug
-      shell: bash
-      run: |
-        echo "== DEBUG FILES WRITTEN =="
-        echo "summary: _axe-a11y-reports/axe-summary.md"
-        echo "report:  _axe-a11y-reports/axe-report.json"
-        ls -la _axe-a11y-reports
-
     - name: Process Violations from Target Branch Report (if available)
       id: process_violations
       shell: bash
       run: |
         BASE_BRANCH="${{ github.base_ref }}"
-        TARGET_REPORT="_axe-a11y-reports/axe-report-${BASE_BRANCH}.json"
+        TARGET_REPORT="_axe-a11y-reports/axe-report-${{ github.base_ref }}.json"
         echo "Checking for file: $TARGET_REPORT"
 
         if [ -f "$TARGET_REPORT" ]; then
