@@ -126,7 +126,7 @@ runs:
       shell: bash
       run: |
         BASE_BRANCH="${{ github.base_ref }}"
-        TARGET_REPORT="_axe-a11y-reports/axe-report-${{ github.base_ref }}.json"
+        TARGET_REPORT="_axe-a11y-reports/${{ github.base_ref }}-branch-report.json"
         echo "Checking for file: $TARGET_REPORT"
 
         if [ -f "$TARGET_REPORT" ]; then
