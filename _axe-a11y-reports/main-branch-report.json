@@ -14,7 +14,7 @@
       "orientationAngle": 0,
       "orientationType": "landscape-primary"
     },
-    "timestamp": "2025-04-11T15:30:32.215Z",
+    "timestamp": "2025-04-11T16:04:32.546Z",
     "url": "https://fellowproducts.com/",
     "toolOptions": {
       "reporter": "v1"
@@ -2686,7 +2686,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<div class=\"py-[30px] px-[20px] bg-primary\" role=\"navigation\"> <ul class=\"text-center\"> <li class=\"mb-[17px] last:mb-0\"> <a class=\"text-light h6 font-primary leading-[19.2px]\" href=\"https://fellowproducts.com/collections/grinder\">Accessories</a> </li> </ul> </div>",
+            "html": "<div class=\"py-[30px] px-[20px] bg-primary\" role=\"navigation\">",
             "target": [
               "div[aria-label=\"Grinders drawer\"] > .py-\\[30px\\].bg-primary[role=\"navigation\"]"
             ]
@@ -2830,7 +2830,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<div class=\"py-[30px] px-[20px] bg-primary\" role=\"navigation\"> <ul class=\"text-center\"> <li class=\"mb-[17px] last:mb-0\"> <a class=\"text-light h6 font-primary leading-[19.2px]\" href=\"https://fellowproducts.com/collections/refurbished-gear\">Refurbished Kettles</a> </li> </ul> </div>",
+            "html": "<div class=\"py-[30px] px-[20px] bg-primary\" role=\"navigation\">",
             "target": [
               "div[aria-label=\"Kettles drawer\"] > .py-\\[30px\\].bg-primary[role=\"navigation\"]"
             ]
@@ -3010,7 +3010,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<div class=\"py-[30px] px-[20px] bg-primary\" role=\"navigation\"> <ul class=\"text-center\"> <li class=\"mb-[17px] last:mb-0\"> <a class=\"text-light h6 font-primary leading-[19.2px]\" href=\"https://fellowproducts.com/collections/carter-lids-accessories\">Accessories &amp; Lids</a> </li> </ul> </div>",
+            "html": "<div class=\"py-[30px] px-[20px] bg-primary\" role=\"navigation\">",
             "target": [
               "div[aria-label=\"Drinkware drawer\"] > .py-\\[30px\\].bg-primary[role=\"navigation\"]"
             ]
@@ -4130,7 +4130,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$649804616$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$476228565$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".lg\\:w-\\[calc\\(25\\%-30px\\)\\].lg\\:block.hidden:nth-child(1) > hh-product-card[compare-at-price=\"56000\"][price=\"47600\"][handle=\"the-aiden-grinder-kit\"]",
@@ -4152,7 +4152,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$649804616$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$476228565$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".lg\\:w-\\[calc\\(25\\%-30px\\)\\].lg\\:block.hidden:nth-child(1) > hh-product-card[compare-at-price=\"56000\"][price=\"47600\"][handle=\"the-aiden-grinder-kit\"]",
@@ -4174,7 +4174,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$649804616$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$476228565$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".lg\\:w-\\[calc\\(25\\%-30px\\)\\].lg\\:block.hidden:nth-child(1) > hh-product-card[compare-at-price=\"56000\"][price=\"47600\"][handle=\"the-aiden-grinder-kit\"]",
@@ -4196,7 +4196,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$649804616$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$476228565$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".lg\\:w-\\[calc\\(25\\%-30px\\)\\].lg\\:block.hidden:nth-child(1) > hh-product-card[compare-at-price=\"56000\"][price=\"47600\"][handle=\"the-aiden-grinder-kit\"]",
@@ -4262,7 +4262,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$649804616$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$476228565$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".lg\\:w-\\[calc\\(25\\%-30px\\)\\].lg\\:block.hidden:nth-child(2) > hh-product-card[handle=\"carter-3-in-1-lid-system\"][title=\"Carter 3-in-1 Lid System\"][compare-at-price=\"5700\"]",
@@ -4284,7 +4284,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$649804616$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$476228565$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".lg\\:w-\\[calc\\(25\\%-30px\\)\\].lg\\:block.hidden:nth-child(2) > hh-product-card[handle=\"carter-3-in-1-lid-system\"][title=\"Carter 3-in-1 Lid System\"][compare-at-price=\"5700\"]",
@@ -4306,7 +4306,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$649804616$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$476228565$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".lg\\:w-\\[calc\\(25\\%-30px\\)\\].lg\\:block.hidden:nth-child(2) > hh-product-card[handle=\"carter-3-in-1-lid-system\"][title=\"Carter 3-in-1 Lid System\"][compare-at-price=\"5700\"]",
@@ -4328,7 +4328,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$649804616$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$476228565$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".lg\\:w-\\[calc\\(25\\%-30px\\)\\].lg\\:block.hidden:nth-child(2) > hh-product-card[handle=\"carter-3-in-1-lid-system\"][title=\"Carter 3-in-1 Lid System\"][compare-at-price=\"5700\"]",
@@ -4394,7 +4394,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$649804616$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$476228565$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".lg\\:w-\\[calc\\(25\\%-30px\\)\\].lg\\:block.hidden:nth-child(3) > hh-product-card[price=\"34500\"][handle=\"ode-brew-grinder-gen-2\"][title=\"Ode Brew Grinder Gen 2\"]",
@@ -4416,7 +4416,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$649804616$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$476228565$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".lg\\:w-\\[calc\\(25\\%-30px\\)\\].lg\\:block.hidden:nth-child(3) > hh-product-card[price=\"34500\"][handle=\"ode-brew-grinder-gen-2\"][title=\"Ode Brew Grinder Gen 2\"]",
@@ -4438,7 +4438,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$649804616$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$476228565$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".lg\\:w-\\[calc\\(25\\%-30px\\)\\].lg\\:block.hidden:nth-child(3) > hh-product-card[price=\"34500\"][handle=\"ode-brew-grinder-gen-2\"][title=\"Ode Brew Grinder Gen 2\"]",
@@ -4460,7 +4460,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$649804616$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$476228565$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".lg\\:w-\\[calc\\(25\\%-30px\\)\\].lg\\:block.hidden:nth-child(3) > hh-product-card[price=\"34500\"][handle=\"ode-brew-grinder-gen-2\"][title=\"Ode Brew Grinder Gen 2\"]",
@@ -4526,7 +4526,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$649804616$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$476228565$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".lg\\:w-\\[calc\\(25\\%-30px\\)\\].lg\\:block.hidden:nth-child(4) > hh-product-card[handle=\"rocky-lowball-tumbler\"][title=\"Rocky Lowball Tumbler\"][data-id=\"7653245812836\"]",
@@ -4548,7 +4548,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$649804616$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$476228565$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".lg\\:w-\\[calc\\(25\\%-30px\\)\\].lg\\:block.hidden:nth-child(4) > hh-product-card[handle=\"rocky-lowball-tumbler\"][title=\"Rocky Lowball Tumbler\"][data-id=\"7653245812836\"]",
@@ -4570,7 +4570,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$649804616$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$476228565$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".lg\\:w-\\[calc\\(25\\%-30px\\)\\].lg\\:block.hidden:nth-child(4) > hh-product-card[handle=\"rocky-lowball-tumbler\"][title=\"Rocky Lowball Tumbler\"][data-id=\"7653245812836\"]",
@@ -4592,7 +4592,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$649804616$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$476228565$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".lg\\:w-\\[calc\\(25\\%-30px\\)\\].lg\\:block.hidden:nth-child(4) > hh-product-card[handle=\"rocky-lowball-tumbler\"][title=\"Rocky Lowball Tumbler\"][data-id=\"7653245812836\"]",
@@ -4658,7 +4658,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$649804616$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$476228565$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".lg\\:w-\\[calc\\(25\\%-30px\\)\\].lg\\:block.hidden:nth-child(5) > hh-product-card[handle=\"stagg-ekg-pro-electric-kettle\"][title=\"Stagg EKG Pro Electric Kettle\"][data-id=\"6973225271396\"]",
@@ -4680,7 +4680,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$649804616$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$476228565$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".lg\\:w-\\[calc\\(25\\%-30px\\)\\].lg\\:block.hidden:nth-child(5) > hh-product-card[handle=\"stagg-ekg-pro-electric-kettle\"][title=\"Stagg EKG Pro Electric Kettle\"][data-id=\"6973225271396\"]",
@@ -4702,7 +4702,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$649804616$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$476228565$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".lg\\:w-\\[calc\\(25\\%-30px\\)\\].lg\\:block.hidden:nth-child(5) > hh-product-card[handle=\"stagg-ekg-pro-electric-kettle\"][title=\"Stagg EKG Pro Electric Kettle\"][data-id=\"6973225271396\"]",
@@ -4724,7 +4724,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$649804616$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$476228565$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".lg\\:w-\\[calc\\(25\\%-30px\\)\\].lg\\:block.hidden:nth-child(5) > hh-product-card[handle=\"stagg-ekg-pro-electric-kettle\"][title=\"Stagg EKG Pro Electric Kettle\"][data-id=\"6973225271396\"]",
@@ -4790,7 +4790,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$649804616$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$476228565$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".lg\\:w-\\[calc\\(25\\%-30px\\)\\].lg\\:block.hidden:nth-child(6) > hh-product-card[handle=\"tally-coffee-scale\"][url=\"/products/tally-coffee-scale\"][price=\"18500\"]",
@@ -4812,7 +4812,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$649804616$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$476228565$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".lg\\:w-\\[calc\\(25\\%-30px\\)\\].lg\\:block.hidden:nth-child(6) > hh-product-card[handle=\"tally-coffee-scale\"][url=\"/products/tally-coffee-scale\"][price=\"18500\"]",
@@ -4834,7 +4834,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$649804616$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$476228565$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".lg\\:w-\\[calc\\(25\\%-30px\\)\\].lg\\:block.hidden:nth-child(6) > hh-product-card[handle=\"tally-coffee-scale\"][url=\"/products/tally-coffee-scale\"][price=\"18500\"]",
@@ -4856,7 +4856,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$649804616$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$476228565$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".lg\\:w-\\[calc\\(25\\%-30px\\)\\].lg\\:block.hidden:nth-child(6) > hh-product-card[handle=\"tally-coffee-scale\"][url=\"/products/tally-coffee-scale\"][price=\"18500\"]",
@@ -4922,7 +4922,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$649804616$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$476228565$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".lg\\:w-\\[calc\\(25\\%-30px\\)\\].lg\\:block.hidden:nth-child(7) > hh-product-card[compare-at-price=\"10500\"][price=\"9450\"][handle=\"atmos-3-pack\"]",
@@ -4944,7 +4944,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$649804616$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$476228565$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".lg\\:w-\\[calc\\(25\\%-30px\\)\\].lg\\:block.hidden:nth-child(7) > hh-product-card[compare-at-price=\"10500\"][price=\"9450\"][handle=\"atmos-3-pack\"]",
@@ -4966,7 +4966,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$649804616$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$476228565$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".lg\\:w-\\[calc\\(25\\%-30px\\)\\].lg\\:block.hidden:nth-child(7) > hh-product-card[compare-at-price=\"10500\"][price=\"9450\"][handle=\"atmos-3-pack\"]",
@@ -4988,7 +4988,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$649804616$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$476228565$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".lg\\:w-\\[calc\\(25\\%-30px\\)\\].lg\\:block.hidden:nth-child(7) > hh-product-card[compare-at-price=\"10500\"][price=\"9450\"][handle=\"atmos-3-pack\"]",
@@ -5054,7 +5054,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$649804616$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$476228565$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".lg\\:w-\\[calc\\(25\\%-30px\\)\\].lg\\:block.hidden:nth-child(8) > hh-product-card[price=\"19500\"][handle=\"opus-coffee-grinder\"][url=\"/products/opus-coffee-grinder\"]",
@@ -5076,7 +5076,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$649804616$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$476228565$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".lg\\:w-\\[calc\\(25\\%-30px\\)\\].lg\\:block.hidden:nth-child(8) > hh-product-card[price=\"19500\"][handle=\"opus-coffee-grinder\"][url=\"/products/opus-coffee-grinder\"]",
@@ -5098,7 +5098,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$649804616$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$476228565$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".lg\\:w-\\[calc\\(25\\%-30px\\)\\].lg\\:block.hidden:nth-child(8) > hh-product-card[price=\"19500\"][handle=\"opus-coffee-grinder\"][url=\"/products/opus-coffee-grinder\"]",
@@ -5120,7 +5120,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$649804616$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$476228565$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".lg\\:w-\\[calc\\(25\\%-30px\\)\\].lg\\:block.hidden:nth-child(8) > hh-product-card[price=\"19500\"][handle=\"opus-coffee-grinder\"][url=\"/products/opus-coffee-grinder\"]",
@@ -5186,7 +5186,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$649804616$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$476228565$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".w-\\[calc\\(50\\%-5px\\)\\].lg\\:hidden:nth-child(9) > hh-product-card[compare-at-price=\"56000\"][price=\"47600\"][handle=\"the-aiden-grinder-kit\"]",
@@ -5208,7 +5208,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$649804616$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$476228565$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".w-\\[calc\\(50\\%-5px\\)\\].lg\\:hidden:nth-child(9) > hh-product-card[compare-at-price=\"56000\"][price=\"47600\"][handle=\"the-aiden-grinder-kit\"]",
@@ -5230,7 +5230,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$649804616$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$476228565$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".w-\\[calc\\(50\\%-5px\\)\\].lg\\:hidden:nth-child(9) > hh-product-card[compare-at-price=\"56000\"][price=\"47600\"][handle=\"the-aiden-grinder-kit\"]",
@@ -5252,7 +5252,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$649804616$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$476228565$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".w-\\[calc\\(50\\%-5px\\)\\].lg\\:hidden:nth-child(9) > hh-product-card[compare-at-price=\"56000\"][price=\"47600\"][handle=\"the-aiden-grinder-kit\"]",
@@ -5318,7 +5318,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$649804616$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$476228565$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".w-\\[calc\\(50\\%-5px\\)\\].lg\\:hidden:nth-child(10) > hh-product-card[handle=\"stagg-ekg-pro-electric-kettle\"][title=\"Stagg EKG Pro Electric Kettle\"][data-id=\"6973225271396\"]",
@@ -5340,7 +5340,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$649804616$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$476228565$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".w-\\[calc\\(50\\%-5px\\)\\].lg\\:hidden:nth-child(10) > hh-product-card[handle=\"stagg-ekg-pro-electric-kettle\"][title=\"Stagg EKG Pro Electric Kettle\"][data-id=\"6973225271396\"]",
@@ -5362,7 +5362,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$649804616$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$476228565$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".w-\\[calc\\(50\\%-5px\\)\\].lg\\:hidden:nth-child(10) > hh-product-card[handle=\"stagg-ekg-pro-electric-kettle\"][title=\"Stagg EKG Pro Electric Kettle\"][data-id=\"6973225271396\"]",
@@ -5384,7 +5384,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$649804616$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$476228565$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".w-\\[calc\\(50\\%-5px\\)\\].lg\\:hidden:nth-child(10) > hh-product-card[handle=\"stagg-ekg-pro-electric-kettle\"][title=\"Stagg EKG Pro Electric Kettle\"][data-id=\"6973225271396\"]",
@@ -5450,7 +5450,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$649804616$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$476228565$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".w-\\[calc\\(50\\%-5px\\)\\].lg\\:hidden:nth-child(11) > hh-product-card[handle=\"carter-3-in-1-lid-system\"][title=\"Carter 3-in-1 Lid System\"][compare-at-price=\"5700\"]",
@@ -5472,7 +5472,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$649804616$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$476228565$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".w-\\[calc\\(50\\%-5px\\)\\].lg\\:hidden:nth-child(11) > hh-product-card[handle=\"carter-3-in-1-lid-system\"][title=\"Carter 3-in-1 Lid System\"][compare-at-price=\"5700\"]",
@@ -5494,7 +5494,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$649804616$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$476228565$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".w-\\[calc\\(50\\%-5px\\)\\].lg\\:hidden:nth-child(11) > hh-product-card[handle=\"carter-3-in-1-lid-system\"][title=\"Carter 3-in-1 Lid System\"][compare-at-price=\"5700\"]",
@@ -5516,7 +5516,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$649804616$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$476228565$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".w-\\[calc\\(50\\%-5px\\)\\].lg\\:hidden:nth-child(11) > hh-product-card[handle=\"carter-3-in-1-lid-system\"][title=\"Carter 3-in-1 Lid System\"][compare-at-price=\"5700\"]",
@@ -5582,7 +5582,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$649804616$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$476228565$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".w-\\[calc\\(50\\%-5px\\)\\].lg\\:hidden:nth-child(12) > hh-product-card[price=\"34500\"][handle=\"ode-brew-grinder-gen-2\"][title=\"Ode Brew Grinder Gen 2\"]",
@@ -5604,7 +5604,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$649804616$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$476228565$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".w-\\[calc\\(50\\%-5px\\)\\].lg\\:hidden:nth-child(12) > hh-product-card[price=\"34500\"][handle=\"ode-brew-grinder-gen-2\"][title=\"Ode Brew Grinder Gen 2\"]",
@@ -5626,7 +5626,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$649804616$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$476228565$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".w-\\[calc\\(50\\%-5px\\)\\].lg\\:hidden:nth-child(12) > hh-product-card[price=\"34500\"][handle=\"ode-brew-grinder-gen-2\"][title=\"Ode Brew Grinder Gen 2\"]",
@@ -5648,7 +5648,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$649804616$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
+            "html": "<span role=\"presentation\" class=\" rating__symbol rating__symbol--active \">\n                <!--?lit$476228565$--><sl-icon name=\"star-fill\" aria-hidden=\"true\" library=\"default\"></sl-icon>\n              </span>",
             "target": [
               [
                 ".w-\\[calc\\(50\\%-5px\\)\\].lg\\:hidden:nth-child(12) > hh-product-card[price=\"34500\"][handle=\"ode-brew-grinder-gen-2\"][title=\"Ode Brew Grinder Gen 2\"]",
@@ -5692,7 +5692,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<a class=\"btn btn--lg btn--light\" href=\"/blogs/learn\" title=\"Explore The Fellow Blog - \" role=\"button\"> Explore The Fellow Blog </a>",
+            "html": "<a class=\"btn btn--lg btn--light\" href=\"/blogs/learn\" title=\"Explore The Fellow Blog - \" role=\"button\">\n                    Explore The Fellow Blog\n                  </a>",
             "target": [
               ".BlogSection__InfoButton > a[href$=\"learn\"]"
             ]
@@ -5746,7 +5746,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<a class=\"BlogSectionArticle__Button btn btn--lg btn--light\" href=\"/blogs/learn/coffee-brewing-techniques-an-intro\" aria-label=\"Read more\" role=\"button\" title=\"Coffee Brewing Techniques: An Intro\" tabindex=\"-1\"> Read more </a>",
+            "html": "<a class=\"BlogSectionArticle__Button btn btn--lg btn--light\" href=\"/blogs/learn/coffee-brewing-techniques-an-intro\" aria-label=\"Read more\" role=\"button\" title=\"Coffee Brewing Techniques: An Intro\" tabindex=\"-1\">\n                          Read more\n                        </a>",
             "target": [
               "#slick-slide00 > .BlogSection__Article > .BlogSectionArticle__Content > .BlogSectionArticle__Button.btn--light[aria-label=\"Read more\"]"
             ]
@@ -5800,7 +5800,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<a class=\"BlogSectionArticle__Button btn btn--lg btn--light\" href=\"/blogs/learn/the-golden-ratio-for-brewing-coffee\" aria-label=\"Read more\" role=\"button\" title=\"The Golden Ratio For Brewing Coffee\" tabindex=\"-1\"> Read more </a>",
+            "html": "<a class=\"BlogSectionArticle__Button btn btn--lg btn--light\" href=\"/blogs/learn/the-golden-ratio-for-brewing-coffee\" aria-label=\"Read more\" role=\"button\" title=\"The Golden Ratio For Brewing Coffee\" tabindex=\"-1\">\n                          Read more\n                        </a>",
             "target": [
               "#slick-slide01 > .BlogSection__Article > .BlogSectionArticle__Content > .BlogSectionArticle__Button.btn--light[aria-label=\"Read more\"]"
             ]
@@ -5854,7 +5854,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<a class=\"BlogSectionArticle__Button btn btn--lg btn--light\" href=\"/blogs/brew-guides/how-to-make-pour-over-coffee-a-beginners-guide\" aria-label=\"Read more\" role=\"button\" title=\"How to Make Pour-Over Coffee: A Beginners Guide\" tabindex=\"-1\"> Read more </a>",
+            "html": "<a class=\"BlogSectionArticle__Button btn btn--lg btn--light\" href=\"/blogs/brew-guides/how-to-make-pour-over-coffee-a-beginners-guide\" aria-label=\"Read more\" role=\"button\" title=\"How to Make Pour-Over Coffee: A Beginners Guide\" tabindex=\"-1\">",
             "target": [
               "#slick-slide02 > .BlogSection__Article > .BlogSectionArticle__Content > .BlogSectionArticle__Button.btn--light[aria-label=\"Read more\"]"
             ]
@@ -7722,9 +7722,9 @@
             ],
             "none": [],
             "impact": null,
-            "html": "<noscript aria-hidden=\"true\">\n    <img src=\"https://s.amazon-adsystem.com/iu3?pid=37a8f383-4898-407d-a7b8-c08fcc188c61&amp;event=PageView\" width=\"1\" height=\"1\" border=\"0\">\n  </noscript>",
+            "html": "<div tabindex=\"-1\" aria-hidden=\"true\" id=\"web-pixels-manager-sandbox-container\" data-shopify-privacy=\"exclude\" style=\"height: 0px !important; width: 0px !important; position: fixed !important; visibility: hidden !important; overflow: hidden !important; z-index: -100 !important; margin: 0px !important; padding: 0px !important; border: 0px !important;\">",
             "target": [
-              "noscript:nth-child(15)"
+              "#web-pixels-manager-sandbox-container"
             ]
           },
           {
@@ -7754,9 +7754,9 @@
             ],
             "none": [],
             "impact": null,
-            "html": "<iframe height=\"0\" width=\"0\" style=\"display: none; visibility: hidden;\" aria-hidden=\"true\"></iframe>",
+            "html": "<noscript aria-hidden=\"true\">\n    <img src=\"https://s.amazon-adsystem.com/iu3?pid=37a8f383-4898-407d-a7b8-c08fcc188c61&amp;event=PageView\" width=\"1\" height=\"1\" border=\"0\">\n  </noscript>",
             "target": [
-              "iframe[height=\"0\"][width=\"0\"]:nth-child(24)"
+              "noscript:nth-child(16)"
             ]
           },
           {
@@ -7818,73 +7818,41 @@
             ],
             "none": [],
             "impact": null,
+            "html": "<iframe height=\"0\" width=\"0\" style=\"display: none; visibility: hidden;\" aria-hidden=\"true\"></iframe>",
+            "target": [
+              "iframe[height=\"0\"][width=\"0\"]:nth-child(28)"
+            ]
+          },
+          {
+            "any": [],
+            "all": [
+              {
+                "id": "focusable-modal-open",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "No focusable elements while a modal is open"
+              },
+              {
+                "id": "focusable-disabled",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "No focusable elements contained within element"
+              },
+              {
+                "id": "focusable-not-tabbable",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "No focusable elements contained within element"
+              }
+            ],
+            "none": [],
+            "impact": null,
             "html": "<iframe height=\"0\" width=\"0\" frameborder=\"0\" src=\"https://cdn.pbbl.co/i/pp.html\" style=\"display: none;\" aria-hidden=\"true\"></iframe>",
             "target": [
               "iframe[frameborder=\"0\"]"
-            ]
-          },
-          {
-            "any": [],
-            "all": [
-              {
-                "id": "focusable-modal-open",
-                "data": null,
-                "relatedNodes": [],
-                "impact": "serious",
-                "message": "No focusable elements while a modal is open"
-              },
-              {
-                "id": "focusable-disabled",
-                "data": null,
-                "relatedNodes": [],
-                "impact": "serious",
-                "message": "No focusable elements contained within element"
-              },
-              {
-                "id": "focusable-not-tabbable",
-                "data": null,
-                "relatedNodes": [],
-                "impact": "serious",
-                "message": "No focusable elements contained within element"
-              }
-            ],
-            "none": [],
-            "impact": null,
-            "html": "<div id=\"dynamic-react-root\" aria-hidden=\"true\"></div>",
-            "target": [
-              "#dynamic-react-root"
-            ]
-          },
-          {
-            "any": [],
-            "all": [
-              {
-                "id": "focusable-modal-open",
-                "data": null,
-                "relatedNodes": [],
-                "impact": "serious",
-                "message": "No focusable elements while a modal is open"
-              },
-              {
-                "id": "focusable-disabled",
-                "data": null,
-                "relatedNodes": [],
-                "impact": "serious",
-                "message": "No focusable elements contained within element"
-              },
-              {
-                "id": "focusable-not-tabbable",
-                "data": null,
-                "relatedNodes": [],
-                "impact": "serious",
-                "message": "No focusable elements contained within element"
-              }
-            ],
-            "none": [],
-            "impact": null,
-            "html": "<div id=\"batBeacon126307698320\" style=\"width: 0px; height: 0px; display: none; visibility: hidden;\" aria-hidden=\"true\">",
-            "target": [
-              "#batBeacon126307698320"
             ]
           },
           {
@@ -8010,6 +7978,70 @@
             ],
             "none": [],
             "impact": null,
+            "html": "<div id=\"batBeacon44252887495\" style=\"width: 0px; height: 0px; display: none; visibility: hidden;\" aria-hidden=\"true\">",
+            "target": [
+              "#batBeacon44252887495"
+            ]
+          },
+          {
+            "any": [],
+            "all": [
+              {
+                "id": "focusable-modal-open",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "No focusable elements while a modal is open"
+              },
+              {
+                "id": "focusable-disabled",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "No focusable elements contained within element"
+              },
+              {
+                "id": "focusable-not-tabbable",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "No focusable elements contained within element"
+              }
+            ],
+            "none": [],
+            "impact": null,
+            "html": "<div id=\"dynamic-react-root\" aria-hidden=\"true\"></div>",
+            "target": [
+              "#dynamic-react-root"
+            ]
+          },
+          {
+            "any": [],
+            "all": [
+              {
+                "id": "focusable-modal-open",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "No focusable elements while a modal is open"
+              },
+              {
+                "id": "focusable-disabled",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "No focusable elements contained within element"
+              },
+              {
+                "id": "focusable-not-tabbable",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "No focusable elements contained within element"
+              }
+            ],
+            "none": [],
+            "impact": null,
             "html": "<div id=\"onetrust-consent-sdk\" aria-hidden=\"true\">",
             "target": [
               "#onetrust-consent-sdk"
@@ -8042,41 +8074,9 @@
             ],
             "none": [],
             "impact": null,
-            "html": "<div tabindex=\"-1\" aria-hidden=\"true\" id=\"web-pixels-manager-sandbox-container\" data-shopify-privacy=\"exclude\" style=\"height: 0px !important; width: 0px !important; position: fixed !important; visibility: hidden !important; overflow: hidden !important; z-index: -100 !important; margin: 0px !important; padding: 0px !important; border: 0px !important;\">",
-            "target": [
-              "#web-pixels-manager-sandbox-container"
-            ]
-          },
-          {
-            "any": [],
-            "all": [
-              {
-                "id": "focusable-modal-open",
-                "data": null,
-                "relatedNodes": [],
-                "impact": "serious",
-                "message": "No focusable elements while a modal is open"
-              },
-              {
-                "id": "focusable-disabled",
-                "data": null,
-                "relatedNodes": [],
-                "impact": "serious",
-                "message": "No focusable elements contained within element"
-              },
-              {
-                "id": "focusable-not-tabbable",
-                "data": null,
-                "relatedNodes": [],
-                "impact": "serious",
-                "message": "No focusable elements contained within element"
-              }
-            ],
-            "none": [],
-            "impact": null,
             "html": "<iframe height=\"0\" width=\"0\" style=\"display: none; visibility: hidden;\" aria-hidden=\"true\"></iframe>",
             "target": [
-              "iframe[height=\"0\"][width=\"0\"]:nth-child(53)"
+              "iframe[height=\"0\"][width=\"0\"]:nth-child(52)"
             ]
           },
           {
@@ -8171,9 +8171,9 @@
             ],
             "none": [],
             "impact": null,
-            "html": "<div id=\"floating-ui-f12v6\" data-floating-ui-portal=\"\" aria-hidden=\"true\"><div class=\"HubLauncherWidget__FloatingWidget-sc-1cgcsir-0 itYCKI\" style=\"opacity: 1; transform: scale(1); transition-property: opacity, transform; transition-duration: 250ms;\"></div></div>",
+            "html": "<div id=\"floating-ui-fnk36\" data-floating-ui-portal=\"\" aria-hidden=\"true\"><div class=\"HubLauncherWidget__FloatingWidget-sc-1cgcsir-0 itYCKI\" style=\"opacity: 1; transform: scale(1); transition-property: opacity, transform; transition-duration: 250ms;\"></div></div>",
             "target": [
-              "#floating-ui-f12v6"
+              "#floating-ui-fnk36"
             ]
           },
           {
@@ -8526,7 +8526,7 @@
             ],
             "none": [],
             "impact": null,
-            "html": "<html lang=\"en\" style=\"--header-height: 122px; --cart-header-height: 97px; overflow: hidden; position: absolute; inset: 0px;\">",
+            "html": "<html lang=\"en\" style=\"--cart-header-height: 97px; --header-height: 122px; overflow: hidden; position: absolute; inset: 0px;\">",
             "target": [
               "html"
             ]
@@ -8841,7 +8841,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<html lang=\"en\" style=\"--header-height: 122px; --cart-header-height: 97px; overflow: hidden; position: absolute; inset: 0px;\">",
+            "html": "<html lang=\"en\" style=\"--cart-header-height: 97px; --header-height: 122px; overflow: hidden; position: absolute; inset: 0px;\">",
             "target": [
               "html"
             ]
@@ -9055,7 +9055,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<html lang=\"en\" style=\"--header-height: 122px; --cart-header-height: 97px; overflow: hidden; position: absolute; inset: 0px;\">",
+            "html": "<html lang=\"en\" style=\"--cart-header-height: 97px; --header-height: 122px; overflow: hidden; position: absolute; inset: 0px;\">",
             "target": [
               "html"
             ]
@@ -9080,7 +9080,7 @@
             "any": [
               {
                 "id": "duplicate-id-aria",
-                "data": "swiper-wrapper-71084bcd73f09bb87",
+                "data": "swiper-wrapper-15bcaaa0feae31ec",
                 "relatedNodes": [],
                 "impact": "critical",
                 "message": "Document has no elements referenced with ARIA or labels that share the same id attribute"
@@ -9089,9 +9089,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<div class=\"swiper-wrapper\" id=\"swiper-wrapper-71084bcd73f09bb87\" aria-live=\"off\">",
+            "html": "<div class=\"swiper-wrapper\" id=\"swiper-wrapper-15bcaaa0feae31ec\" aria-live=\"off\">",
             "target": [
-              "#swiper-wrapper-71084bcd73f09bb87"
+              "#swiper-wrapper-15bcaaa0feae31ec"
             ]
           },
           {
@@ -9458,7 +9458,7 @@
             "any": [
               {
                 "id": "duplicate-id-aria",
-                "data": "swiper-wrapper-34a7ef76c10f6c5d4",
+                "data": "swiper-wrapper-1c8d11e731fc9eaa",
                 "relatedNodes": [],
                 "impact": "critical",
                 "message": "Document has no elements referenced with ARIA or labels that share the same id attribute"
@@ -9467,9 +9467,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<div class=\"swiper-wrapper\" id=\"swiper-wrapper-34a7ef76c10f6c5d4\" aria-live=\"polite\">",
+            "html": "<div class=\"swiper-wrapper\" id=\"swiper-wrapper-1c8d11e731fc9eaa\" aria-live=\"polite\">",
             "target": [
-              "#swiper-wrapper-34a7ef76c10f6c5d4"
+              "#swiper-wrapper-1c8d11e731fc9eaa"
             ]
           },
           {
@@ -10043,7 +10043,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<html lang=\"en\" style=\"--header-height: 122px; --cart-header-height: 97px; overflow: hidden; position: absolute; inset: 0px;\">",
+            "html": "<html lang=\"en\" style=\"--cart-header-height: 97px; --header-height: 122px; overflow: hidden; position: absolute; inset: 0px;\">",
             "target": [
               "html"
             ]
@@ -10080,7 +10080,7 @@
               }
             ],
             "impact": null,
-            "html": "<html lang=\"en\" style=\"--header-height: 122px; --cart-header-height: 97px; overflow: hidden; position: absolute; inset: 0px;\">",
+            "html": "<html lang=\"en\" style=\"--cart-header-height: 97px; --header-height: 122px; overflow: hidden; position: absolute; inset: 0px;\">",
             "target": [
               "html"
             ]
@@ -10277,7 +10277,7 @@
             ],
             "none": [],
             "impact": null,
-            "html": "<html lang=\"en\" style=\"--header-height: 122px; --cart-header-height: 97px; overflow: hidden; position: absolute; inset: 0px;\">",
+            "html": "<html lang=\"en\" style=\"--cart-header-height: 97px; --header-height: 122px; overflow: hidden; position: absolute; inset: 0px;\">",
             "target": [
               "html"
             ]
@@ -10487,7 +10487,7 @@
             ],
             "none": [],
             "impact": null,
-            "html": "<html lang=\"en\" style=\"--header-height: 122px; --cart-header-height: 97px; overflow: hidden; position: absolute; inset: 0px;\">",
+            "html": "<html lang=\"en\" style=\"--cart-header-height: 97px; --header-height: 122px; overflow: hidden; position: absolute; inset: 0px;\">",
             "target": [
               "html"
             ]
@@ -11147,7 +11147,7 @@
                 "data": null,
                 "relatedNodes": [
                   {
-                    "html": "<a class=\"skip-to-content-link button visually-hidden btn btn--lg btn--light\" href=\"#root\" aria-hidden=\"true\"> Skip to content </a>",
+                    "html": "<a class=\"skip-to-content-link button visually-hidden btn btn--lg btn--light\" href=\"#root\" aria-hidden=\"true\">\n      Skip to content\n    </a>",
                     "target": [
                       ".skip-to-content-link"
                     ]
@@ -11159,7 +11159,7 @@
             ],
             "none": [],
             "impact": "serious",
-            "html": "<a class=\"skip-to-content-link button visually-hidden btn btn--lg btn--light\" href=\"#root\" aria-hidden=\"true\"> Skip to content </a>",
+            "html": "<a class=\"skip-to-content-link button visually-hidden btn btn--lg btn--light\" href=\"#root\" aria-hidden=\"true\">\n      Skip to content\n    </a>",
             "target": [
               ".skip-to-content-link"
             ],
@@ -11173,7 +11173,7 @@
                 "data": null,
                 "relatedNodes": [
                   {
-                    "html": "<button class=\"accessibility__opener-btn btn btn--lg btn--dark\" type=\"button\" aria-haspopup=\"dialog\"> Skip to Accessibility Statement </button>",
+                    "html": "<button class=\"accessibility__opener-btn btn btn--lg btn--dark\" type=\"button\" aria-haspopup=\"dialog\">\n      Skip to Accessibility Statement\n    </button>",
                     "target": [
                       ".accessibility__opener-btn"
                     ]
@@ -11199,37 +11199,37 @@
                 "data": null,
                 "relatedNodes": [
                   {
-                    "html": "<a class=\"w-full h-full flex flex-col items-center justify-center\" href=\"/products/the-aiden-grinder-kit\"> <p>Grind, brew, save 🎉 <span style=\"text-decoration:underline\">Get 15% off The Aiden + Grinder Kit</span></p> </a>",
+                    "html": "<a class=\"w-full h-full flex flex-col items-center justify-center\" href=\"/products/the-aiden-grinder-kit\">",
                     "target": [
                       "div[aria-label=\"1 / 4\"] > .justify-center.flex-col.h-full"
                     ]
                   },
                   {
-                    "html": "<a class=\"w-full h-full flex flex-col items-center justify-center\" href=\"/pages/fellow-drops\"> <p>Join our strangely addictive <span style=\"text-decoration:underline\">text-to-order coffee club</span> 👽</p> </a>",
+                    "html": "<a class=\"w-full h-full flex flex-col items-center justify-center\" href=\"/pages/fellow-drops\">\n            \n          \n          <p>Join our strangely addictive <span style=\"text-decoration:underline\">text-to-order coffee club</span> 👽</p>\n          \n          \n            \n              </a>",
                     "target": [
                       ".justify-center.flex-col[href$=\"fellow-drops\"]"
                     ]
                   },
                   {
-                    "html": "<a class=\"w-full h-full flex flex-col items-center justify-center\" href=\"/collections/personalization\"> <p>Engrave your favorite drinkware ✨ <span style=\"text-decoration:underline\">Personalize a mug</span></p> </a>",
+                    "html": "<a class=\"w-full h-full flex flex-col items-center justify-center\" href=\"/collections/personalization\">\n            \n          \n          <p>Engrave your favorite drinkware ✨ <span style=\"text-decoration:underline\">Personalize a mug</span></p>\n          \n          \n            \n              </a>",
                     "target": [
                       "div[aria-label=\"3 / 4\"] > a[href$=\"personalization\"]"
                     ]
                   },
                   {
-                    "html": "<a class=\"w-full h-full flex flex-col items-center justify-center\" href=\"/collections/all-products\"> <p>Get free standard US shipping on orders $75+</p> </a>",
+                    "html": "<a class=\"w-full h-full flex flex-col items-center justify-center\" href=\"/collections/all-products\">\n            \n          \n          <p>Get free standard US shipping on orders $75+</p>\n          \n          \n            \n              </a>",
                     "target": [
                       ".justify-center.flex-col[href$=\"all-products\"]"
                     ]
                   },
                   {
-                    "html": "<button class=\"swiper-button-prev left-[20px] m-0 z-[2] top-1/2 -translate-y-1/2 text-reverse w-[15px] h-[15px] bg-transparent p-0 z-1 after:content-none\" tabindex=\"0\" aria-label=\"Previous slide\" aria-controls=\"swiper-wrapper-71084bcd73f09bb87\">",
+                    "html": "<button class=\"swiper-button-prev left-[20px] m-0 z-[2] top-1/2 -translate-y-1/2 text-reverse w-[15px] h-[15px] bg-transparent p-0 z-1 after:content-none\" tabindex=\"0\" aria-label=\"Previous slide\" aria-controls=\"swiper-wrapper-15bcaaa0feae31ec\">",
                     "target": [
                       ".left-\\[20px\\]"
                     ]
                   },
                   {
-                    "html": "<button class=\"swiper-button-next right-[20px] m-0 z-[2] top-1/2 -translate-y-1/2 text-reverse w-[15px] h-[15px] bg-transparent p-0 z-1 after:content-none\" tabindex=\"0\" aria-label=\"Next slide\" aria-controls=\"swiper-wrapper-71084bcd73f09bb87\">",
+                    "html": "<button class=\"swiper-button-next right-[20px] m-0 z-[2] top-1/2 -translate-y-1/2 text-reverse w-[15px] h-[15px] bg-transparent p-0 z-1 after:content-none\" tabindex=\"0\" aria-label=\"Next slide\" aria-controls=\"swiper-wrapper-15bcaaa0feae31ec\">",
                     "target": [
                       ".swiper-button-next.right-\\[20px\\].w-\\[15px\\]"
                     ]
@@ -11301,7 +11301,7 @@
                     ]
                   },
                   {
-                    "html": "<a class=\"text-xs block p-[6px] text-grey-8 rounded-[12px] bg-lighter-grey whitespace-nowrap\" href=\"https://fellowproducts.com/pages/fellow-drops\">Fellow Drops</a>",
+                    "html": "<a class=\"text-xs block p-[6px] text-grey-8 rounded-[12px] bg-lighter-grey whitespace-nowrap\" href=\"https://fellowproducts.com/pages/fellow-drops\">Our Coffee Club</a>",
                     "target": [
                       "li:nth-child(9) > .text-xs.p-\\[6px\\].rounded-\\[12px\\]"
                     ]
@@ -11339,13 +11339,13 @@
                     ]
                   },
                   {
-                    "html": "<a href=\"/products/aiden-precision-coffee-maker\" class=\"\n              product-hero__cta pointer-events-auto\n              \n              \n            \"> Shop Now </a>",
+                    "html": "<a href=\"/products/aiden-precision-coffee-maker\" class=\"\n              product-hero__cta pointer-events-auto\n              \n              \n            \">\n            Shop Now\n          </a>",
                     "target": [
                       ".product-hero__cta"
                     ]
                   },
                   {
-                    "html": "<button class=\"swiper-button-next m-0 inset-auto relative text-black disabled:text-subdued !opacity-100 w-[29px] h-[29px] bg-transparent p-0 !z-[1] after:content-none\" tabindex=\"0\" aria-label=\"Next slide\" aria-controls=\"swiper-wrapper-34a7ef76c10f6c5d4\" aria-disabled=\"false\">",
+                    "html": "<button class=\"swiper-button-next m-0 inset-auto relative text-black disabled:text-subdued !opacity-100 w-[29px] h-[29px] bg-transparent p-0 !z-[1] after:content-none\" tabindex=\"0\" aria-label=\"Next slide\" aria-controls=\"swiper-wrapper-1c8d11e731fc9eaa\" aria-disabled=\"false\">",
                     "target": [
                       ".swiper-button-next.inset-auto.disabled\\:text-subdued"
                     ]
@@ -11426,7 +11426,7 @@
                     ]
                   },
                   {
-                    "html": "<a id=\"rating\" part=\"rating\" href=\"/products/the-aiden-grinder-kit\">\n        <!--?lit$6602892734$--> <sl-rating label=\"Rating\" max=\"5\" precision=\"0\" readonly=\"\" value=\"4.440184049079755\"></sl-rating><span>(<!--?lit$6602892734$-->652)</span>\n      </a>",
+                    "html": "<a id=\"rating\" part=\"rating\" href=\"/products/the-aiden-grinder-kit\">\n        <!--?lit$600616359$--> <sl-rating label=\"Rating\" max=\"5\" precision=\"0\" readonly=\"\" value=\"4.440184049079755\"></sl-rating><span>(<!--?lit$600616359$-->652)</span>\n      </a>",
                     "target": [
                       [
                         ".w-\\[calc\\(50\\%-5px\\)\\].lg\\:hidden:nth-child(9) > hh-product-card[compare-at-price=\"56000\"][price=\"47600\"][handle=\"the-aiden-grinder-kit\"]",
@@ -11445,7 +11445,7 @@
                     ]
                   },
                   {
-                    "html": "<a href=\"/products/the-aiden-grinder-kit\" aria-label=\"The Aiden + Grinder Kit\">\n              <h1 class=\"h1\" part=\"title\"><!--?lit$6602892734$-->The Aiden + Grinder Kit</h1>\n            </a>",
+                    "html": "<a href=\"/products/the-aiden-grinder-kit\" aria-label=\"The Aiden + Grinder Kit\">\n              <h1 class=\"h1\" part=\"title\"><!--?lit$600616359$-->The Aiden + Grinder Kit</h1>\n            </a>",
                     "target": [
                       [
                         ".w-\\[calc\\(50\\%-5px\\)\\].lg\\:hidden:nth-child(9) > hh-product-card[compare-at-price=\"56000\"][price=\"47600\"][handle=\"the-aiden-grinder-kit\"]",
@@ -11463,7 +11463,7 @@
                     ]
                   },
                   {
-                    "html": "<a id=\"rating\" part=\"rating\" href=\"/products/stagg-ekg-pro-electric-kettle\">\n        <!--?lit$6602892734$--> <sl-rating label=\"Rating\" max=\"5\" precision=\"0\" readonly=\"\" value=\"4.443556443556443\"></sl-rating><span>(<!--?lit$6602892734$-->2002)</span>\n      </a>",
+                    "html": "<a id=\"rating\" part=\"rating\" href=\"/products/stagg-ekg-pro-electric-kettle\">\n        <!--?lit$600616359$--> <sl-rating label=\"Rating\" max=\"5\" precision=\"0\" readonly=\"\" value=\"4.443556443556443\"></sl-rating><span>(<!--?lit$600616359$-->2002)</span>\n      </a>",
                     "target": [
                       [
                         ".w-\\[calc\\(50\\%-5px\\)\\].lg\\:hidden:nth-child(10) > hh-product-card[handle=\"stagg-ekg-pro-electric-kettle\"][title=\"Stagg EKG Pro Electric Kettle\"][data-id=\"6973225271396\"]",
@@ -11482,7 +11482,7 @@
                     ]
                   },
                   {
-                    "html": "<a href=\"/products/stagg-ekg-pro-electric-kettle\" aria-label=\"Stagg EKG Pro Electric Kettle\">\n              <h1 class=\"h1\" part=\"title\"><!--?lit$6602892734$-->Stagg EKG Pro Electric Kettle</h1>\n            </a>",
+                    "html": "<a href=\"/products/stagg-ekg-pro-electric-kettle\" aria-label=\"Stagg EKG Pro Electric Kettle\">\n              <h1 class=\"h1\" part=\"title\"><!--?lit$600616359$-->Stagg EKG Pro Electric Kettle</h1>\n            </a>",
                     "target": [
                       [
                         ".w-\\[calc\\(50\\%-5px\\)\\].lg\\:hidden:nth-child(10) > hh-product-card[handle=\"stagg-ekg-pro-electric-kettle\"][title=\"Stagg EKG Pro Electric Kettle\"][data-id=\"6973225271396\"]",
@@ -11500,7 +11500,7 @@
                     ]
                   },
                   {
-                    "html": "<a id=\"rating\" part=\"rating\" href=\"/products/carter-3-in-1-lid-system\">\n        <!--?lit$6602892734$--> <sl-rating label=\"Rating\" max=\"5\" precision=\"0\" readonly=\"\" value=\"4.584070796460177\"></sl-rating><span>(<!--?lit$6602892734$-->113)</span>\n      </a>",
+                    "html": "<a id=\"rating\" part=\"rating\" href=\"/products/carter-3-in-1-lid-system\">\n        <!--?lit$600616359$--> <sl-rating label=\"Rating\" max=\"5\" precision=\"0\" readonly=\"\" value=\"4.584070796460177\"></sl-rating><span>(<!--?lit$600616359$-->113)</span>\n      </a>",
                     "target": [
                       [
                         ".w-\\[calc\\(50\\%-5px\\)\\].lg\\:hidden:nth-child(11) > hh-product-card[handle=\"carter-3-in-1-lid-system\"][title=\"Carter 3-in-1 Lid System\"][compare-at-price=\"5700\"]",
@@ -11519,7 +11519,7 @@
                     ]
                   },
                   {
-                    "html": "<a href=\"/products/carter-3-in-1-lid-system\" aria-label=\"Carter 3-in-1 Lid System\">\n              <h1 class=\"h1\" part=\"title\"><!--?lit$6602892734$-->Carter 3-in-1 Lid System</h1>\n            </a>",
+                    "html": "<a href=\"/products/carter-3-in-1-lid-system\" aria-label=\"Carter 3-in-1 Lid System\">\n              <h1 class=\"h1\" part=\"title\"><!--?lit$600616359$-->Carter 3-in-1 Lid System</h1>\n            </a>",
                     "target": [
                       [
                         ".w-\\[calc\\(50\\%-5px\\)\\].lg\\:hidden:nth-child(11) > hh-product-card[handle=\"carter-3-in-1-lid-system\"][title=\"Carter 3-in-1 Lid System\"][compare-at-price=\"5700\"]",
@@ -11537,7 +11537,7 @@
                     ]
                   },
                   {
-                    "html": "<a id=\"rating\" part=\"rating\" href=\"/products/ode-brew-grinder-gen-2\">\n        <!--?lit$6602892734$--> <sl-rating label=\"Rating\" max=\"5\" precision=\"0\" readonly=\"\" value=\"4.522029372496662\"></sl-rating><span>(<!--?lit$6602892734$-->749)</span>\n      </a>",
+                    "html": "<a id=\"rating\" part=\"rating\" href=\"/products/ode-brew-grinder-gen-2\">\n        <!--?lit$600616359$--> <sl-rating label=\"Rating\" max=\"5\" precision=\"0\" readonly=\"\" value=\"4.522029372496662\"></sl-rating><span>(<!--?lit$600616359$-->749)</span>\n      </a>",
                     "target": [
                       [
                         ".w-\\[calc\\(50\\%-5px\\)\\].lg\\:hidden:nth-child(12) > hh-product-card[price=\"34500\"][handle=\"ode-brew-grinder-gen-2\"][title=\"Ode Brew Grinder Gen 2\"]",
@@ -11556,7 +11556,7 @@
                     ]
                   },
                   {
-                    "html": "<a href=\"/products/ode-brew-grinder-gen-2\" aria-label=\"Ode Brew Grinder Gen 2\">\n              <h1 class=\"h1\" part=\"title\"><!--?lit$6602892734$-->Ode Brew Grinder Gen 2</h1>\n            </a>",
+                    "html": "<a href=\"/products/ode-brew-grinder-gen-2\" aria-label=\"Ode Brew Grinder Gen 2\">\n              <h1 class=\"h1\" part=\"title\"><!--?lit$600616359$-->Ode Brew Grinder Gen 2</h1>\n            </a>",
                     "target": [
                       [
                         ".w-\\[calc\\(50\\%-5px\\)\\].lg\\:hidden:nth-child(12) > hh-product-card[price=\"34500\"][handle=\"ode-brew-grinder-gen-2\"][title=\"Ode Brew Grinder Gen 2\"]",
@@ -11583,7 +11583,7 @@
                     ]
                   },
                   {
-                    "html": "<a class=\"btn btn--lg btn--light\" href=\"/blogs/learn\" title=\"Explore The Fellow Blog - \" role=\"button\"> Explore The Fellow Blog </a>",
+                    "html": "<a class=\"btn btn--lg btn--light\" href=\"/blogs/learn\" title=\"Explore The Fellow Blog - \" role=\"button\">\n                    Explore The Fellow Blog\n                  </a>",
                     "target": [
                       ".BlogSection__InfoButton > a[href$=\"learn\"]"
                     ]
@@ -11875,9 +11875,9 @@
                 },
                 "relatedNodes": [
                   {
-                    "html": "<img class=\"w-full h-full object-cover lg:hidden\" srcset=\"\n    //fellowproducts.com/cdn/shop/files/031725_Web_AidenRefresh_Mobile_288x.png?v=1741897860 288w,\n    //fellowproducts.com/cdn/shop/files/031725_Web_AidenRefresh_Mobile_576x.png?v=1741897860 576w,\n    //fellowproducts.com/cdn/shop/files/031725_Web_AidenRefresh_Mobile_750x.png?v=1741897860 750w,\n    \n    \n    //fellowproducts.com/cdn/shop/files/031725_Web_AidenRefresh_Mobile.png?v=1741897860 750w\n  \" src=\"//fellowproducts.com/cdn/shop/files/031725_Web_AidenRefresh_Mobile_1x1.png?v=1741897860\" sizes=\"100vw\" loading=\"eager\" width=\"100%\" height=\"100%\" alt=\"\" fetchpriority=\"high\">",
+                    "html": "<img class=\"w-full h-full object-cover lg:hidden\" srcset=\"\n    //fellowproducts.com/cdn/shop/files/031725_Web_AidenRefresh_Mobile_288x.png?v=1741897860 288w,\n    //fellowproducts.com/cdn/shop/files/031725_Web_AidenRefresh_Mobile_576x.png?v=1741897860 576w,\n    //fellowproducts.com/cdn/shop/files/031725_Web_AidenRefresh_Mobile_750x.png?v=1741897860 750w,\n    \n    \n    //fellowproducts.com/cdn/shop/files/031725_Web_AidenRefresh_Mobile.png?v=1741897860 750w\n  \" src=\"//fellowproducts.com/cdn/shop/files/031725_Web_AidenRefresh_Mobile_1x1.png?v=1741897860\" sizes=\"100vw\" loading=\"lazy\" width=\"100%\" height=\"100%\" alt=\"\">",
                     "target": [
-                      "img[loading=\"eager\"]"
+                      ".lg\\:hidden.object-cover[sizes=\"100vw\"]"
                     ]
                   }
                 ],
@@ -11888,7 +11888,7 @@
             "all": [],
             "none": [],
             "impact": "serious",
-            "html": "<h1 class=\"\n              product-hero__headline headline-1\n              \n            \"> Good design, better coffee </h1>",
+            "html": "<h1 class=\"\n              product-hero__headline headline-1\n              \n            \">\n            Good design,  better coffee\n          </h1>",
             "target": [
               ".product-hero__headline"
             ],
