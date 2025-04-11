@@ -21,7 +21,7 @@ output += `- ${previousViolations.length} violations found on the live url.\n\n`
 if (newViolations.length > 0) {
   output += "<details>";
   output +=
-    "<summary>🧪 New violations compared to previous report</summary>\n\n";
+    "<summary>⚠️ New violations compared to previous report</summary>\n\n";
   output += "| Issue | Impact | Target | Help |\n";
   output += "|-------|--------|--------|------|\n";
   newViolations.forEach((v) => {
@@ -36,7 +36,7 @@ if (newViolations.length > 0) {
 }
 
 output += "<details>";
-output += "<summary>🧪 All preview link violations</summary>\n\n";
+output += "<summary>🔗 All preview link violations</summary>\n\n";
 output += "| Issue | Impact | Target | Help |\n";
 output += "|-------|--------|--------|------|\n";
 currentViolations.forEach((v) => {
