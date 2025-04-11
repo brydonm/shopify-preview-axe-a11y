@@ -31,7 +31,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - uses: brydom/shopify-preview-axe-a11y@v1
+      - uses: brydonm/shopify-preview-axe-a11y@v1
         with:
           preview_url_contains: "shopifypreview.com"
           default_url: ""
