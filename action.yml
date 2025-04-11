@@ -73,20 +73,6 @@ runs:
         echo "Installing axe CLI..."
         npm install -g @axe-core/cli
 
-    - name: Restore ChromeDriver from cache
-      id: restore-chromedriver
-      uses: actions/cache@v4
-      with:
-        path: ~/.browser-driver-manager
-        key: chromedriver-v134
-
-    - name: Install matching ChromeDriver if not cached
-      if: steps.restore-chromedriver.outputs.cache-hit != 'true'
-      shell: bash
-      run: |
-        npm install -g browser-driver-manager
-        npx browser-driver-manager install chrome@134
-
     - name: Get branch name
       id: branch_name
       shell: bash
@@ -120,10 +106,7 @@ runs:
         fi
 
         echo "Running axe on $URL"
-        axe "$URL" \
-          --chromedriver-path "$CHROMEDRIVER_PATH" \
-          --chrome-arg="--user-data-dir=$(mktemp -d)" \
-          --save "_axe-a11y-reports/${{ steps.branch_name.outputs.name }}-branch-report.json"
+        axe $URL --save _axe-a11y-reports/${{ steps.branch_name.outputs.name }}-branch-report.json
         echo "axe report saved to _axe-a11y-reports/${{ steps.branch_name.outputs.name }}-branch-report.json"
 
         node <<'EOF'
