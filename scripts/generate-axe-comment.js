@@ -14,25 +14,29 @@ const newViolations = currentViolations.filter(
     )
 );
 
-let output = `### 🧪 Axe Accessibility Report (${newViolations.length} new issues)\n\n`;
+let output = `### 🧪 Axe Accessibility Report\n\n`;
+output += `- ${currentViolations.length} violations found on the preview url.\n`;
+output += `- ${previousViolations.length} violations found on the live url.\n\n`;
 
-output += "<details>";
-output +=
-  "<summary#### 🧪 New violations compared to previous report<summary>\n\n";
-output += "| Issue | Impact | Target | Help |\n";
-output += "|-------|--------|--------|------|\n";
-newViolations.forEach((v) => {
-  const impact = v.impact || "n/a";
-  const help = `[${v.help}](${v.helpUrl})`;
-  v.nodes.forEach((n) => {
-    const target = Array.isArray(n.target) ? n.target.join(", ") : "n/a";
-    output += `| ${v.id} | ${impact} | ${target} | ${help} |\n`;
+if (newViolations.length > 0) {
+  output += "<details>";
+  output +=
+    "<summary>🧪 New violations compared to previous report</summary>\n\n";
+  output += "| Issue | Impact | Target | Help |\n";
+  output += "|-------|--------|--------|------|\n";
+  newViolations.forEach((v) => {
+    const impact = v.impact || "n/a";
+    const help = `[${v.help}](${v.helpUrl})`;
+    v.nodes.forEach((n) => {
+      const target = Array.isArray(n.target) ? n.target.join(", ") : "n/a";
+      output += `| ${v.id} | ${impact} | ${target} | ${help} |\n`;
+    });
   });
-});
-output += "</details>\n\n";
+  output += "</details>\n\n";
+}
 
 output += "<details>";
-output += "<summary>#### 🧪 All preview link violations<summary>\n\n";
+output += "<summary>🧪 All preview link violations</summary>\n\n";
 output += "| Issue | Impact | Target | Help |\n";
 output += "|-------|--------|--------|------|\n";
 currentViolations.forEach((v) => {
@@ -46,7 +50,7 @@ currentViolations.forEach((v) => {
 output += "</details>\n\n";
 
 output += "<details>";
-output += "<summary>#### 🧪 All live violations<summary>\n\n";
+output += "<summary>🧪 All live violations</summary>\n\n";
 output += "| Issue | Impact | Target | Help |\n";
 output += "|-------|--------|--------|------|\n";
 previousViolations.forEach((v) => {
