@@ -91,7 +91,7 @@ runs:
     - name: Generate PR comment markdown
       shell: bash
       run: |
-        node "${{ github.action_path }}/scripts/generate-axe-comment.js" "${{ steps.branch_name.outputs.sanitized_path }}"
+        node "${{ github.action_path }}/scripts/generate-axe-comment.js" "${{ steps.parse_url.outputs.sanitized_path }}"
 
     - name: Comment on PR with results (only if PR is open)
       if: ${{ github.event.pull_request.state == 'open' }}
