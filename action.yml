@@ -10,61 +10,6 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - name: Extract PR Body
-      if: ${{ github.event_name == 'pull_request' }}
-      id: pr_body
-      shell: bash
-      run: |
-        echo "Extracting PR body..."
-        if [ -z "${{ github.event.pull_request.body }}" ]; then
-          echo "PR body is empty, exiting..."
-          exit 1
-        fi
-        echo "PR_BODY<<EOF" >> $GITHUB_ENV
-        echo "${{ github.event.pull_request.body }}" >> $GITHUB_ENV
-        echo "EOF" >> $GITHUB_ENV
-
-    - name: Parse preview URL from PR body
-      if: ${{ github.event_name == 'pull_request' }}
-      id: parse_url
-      shell: bash
-      run: |
-        echo "Extracting URLs from PR body..."
-        ALL_URLS=$(echo "$PR_BODY" | grep -oE 'https?://[^ )\n]+')
-
-        echo "Extracted URLs:"
-        echo "$ALL_URLS"
-
-        # Match URLs that contain '?preview_theme_id=' or 'shopifypreview.com'
-        MATCHING_URL=$(echo "$ALL_URLS" | grep -E '\?preview_theme_id=|shopifypreview\.com' | head -n1)
-
-        echo "==== DEBUG INFO ===="
-        echo "All extracted URLs:"
-        echo "$ALL_URLS"
-        echo "Matched URL:"
-        echo "$MATCHING_URL"
-        echo "===================="
-
-        if [ -z "$MATCHING_URL" ]; then
-          echo "No matching URL found."
-          echo "url=" >> $GITHUB_OUTPUT
-          echo "path=" >> $GITHUB_OUTPUT
-          exit 1
-        fi
-
-        # Strip query string to get just the path
-        # First remove protocol and domain
-        PATH_WITH_QUERY=$(echo "$MATCHING_URL" | sed -E 's|https?://[^/]+||')
-        # Now remove preview_theme_id param (and everything after)
-        CLEAN_PATH=$(echo "$PATH_WITH_QUERY" | sed -E 's/\?.*$//')
-
-        echo "Cleaned path: $CLEAN_PATH"
-
-        echo "url=$MATCHING_URL" >> $GITHUB_OUTPUT
-        echo "path=$CLEAN_PATH" >> $GITHUB_OUTPUT
-        echo "sanitized_path=${CLEAN_PATH//\//-}" >> $GITHUB_OUTPUT
-        echo "axe_branch_path="_axe-a11y-reports/${{ steps.branch_name.outputs.name }}-${{ steps.parse_url.outputs.sanitized_path }}-branch-report.json" >> $GITHUB_OUTPUT
-
     - name: Set up Node.js
       uses: actions/setup-node@v4
       with:
@@ -75,6 +20,15 @@ runs:
       run: |
         echo "Installing axe CLI..."
         npm install -g @axe-core/cli
+
+    - name: Extract and parse preview URL
+      if: ${{ github.event_name == 'pull_request' }}
+      id: parse_url
+      shell: bash
+      env:
+        GITHUB_EVENT_PULL_REQUEST_BODY: "${{ github.event.pull_request.body }}"
+      run: |
+        node "${{ github.action_path }}/scripts/extract-parse-preview-url.js"
 
     - name: Get branch name
       id: branch_name
