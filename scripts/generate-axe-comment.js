@@ -1,6 +1,5 @@
 const fs = require("fs");
 
-const reportPath = process.argv[2];
 const currentReport = JSON.parse(
   fs.readFileSync("axe-current-report.json", "utf8")
 );
@@ -18,7 +17,6 @@ const newViolations = currentViolations.filter(
 );
 
 let output = `### 🧪 Axe Accessibility Report\n\n`;
-output += `Reports generated using path \`${reportPath || "/"}\`.\n\n`;
 output += `- ${newViolations.length} new violations found compared to the previous report\n`;
 output += `- ${currentViolations.length} violations found on the preview url (\`${currentReport[0]?.url}\`)\n`;
 output += `- ${previousViolations.length} violations found on the live url (\`${previousReport[0]?.url}\`)\n`;
