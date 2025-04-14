@@ -48,10 +48,22 @@ runs:
         if [ -z "$MATCHING_URL" ]; then
           echo "No matching URL found."
           echo "url=" >> $GITHUB_OUTPUT
+          echo "path=" >> $GITHUB_OUTPUT
           exit 1
         fi
 
+        # Strip query string to get just the path
+        # First remove protocol and domain
+        PATH_WITH_QUERY=$(echo "$MATCHING_URL" | sed -E 's|https?://[^/]+||')
+        # Now remove preview_theme_id param (and everything after)
+        CLEAN_PATH=$(echo "$PATH_WITH_QUERY" | sed -E 's/\?.*$//')
+
+        echo "Cleaned path: $CLEAN_PATH"
+
         echo "url=$MATCHING_URL" >> $GITHUB_OUTPUT
+        echo "path=$CLEAN_PATH" >> $GITHUB_OUTPUT
+        echo "sanitized_path=${CLEAN_PATH//\//-}" >> $GITHUB_OUTPUT
+        echo "axe_branch_path="_axe-a11y-reports/${{ steps.branch_name.outputs.name }}-${{ steps.parse_url.outputs.sanitized_path }}-branch-report.json" >> $GITHUB_OUTPUT
 
     - name: Set up Node.js
       uses: actions/setup-node@v4
@@ -84,6 +96,7 @@ runs:
         mkdir -p _axe-a11y-reports
         URL="${{ steps.parse_url.outputs.url }}"
         echo "Testing URL: $URL"
+        echo "Testing path: $PATH"
 
         if [ -z "$URL" ]; then
           if [ -z "${{ inputs.default_url }}" ]; then
@@ -91,16 +104,16 @@ runs:
             echo "No URL found." > axe-summary.md
             exit 0
           else
-            echo "No URL provided. Using default URL: ${{ inputs.default_url }}"
-            URL="${{ inputs.default_url }}"
+            echo "No URL provided. Using default URL: ${{ inputs.default_url }} with additional path: ${{ steps.parse_url.outputs.path }}"
+            URL="${{ inputs.default_url }}${{ steps.parse_url.outputs.path }}"
           fi
         fi
 
         echo "Running axe on $URL"
-        axe $URL --save _axe-a11y-reports/${{ steps.branch_name.outputs.name }}-branch-report.json
-        echo "axe report saved to _axe-a11y-reports/${{ steps.branch_name.outputs.name }}-branch-report.json"
+        axe $URL --save ${{ steps.branch_name.outputs.axe_branch_path }}
+        echo "axe report saved to ${{ steps.branch_name.outputs.axe_branch_path }}"
 
-        node "${{ github.action_path }}/scripts/run-axe-test.js" "${{ steps.branch_name.outputs.name }}"
+        node "${{ github.action_path }}/scripts/process-current-violations.js" "${{ steps.branch_name.outputs.name }}"
 
     - name: Process Previous Violations from Target Branch Report (if available)
       id: process_previous_violations
@@ -114,7 +127,8 @@ runs:
 
           node "${{ github.action_path }}/scripts/process-previous-violations.js" "${{ steps.branch_name.outputs.name }}"
         else
-          echo "No axe-report found for target branch. Skipping violation comparison."
+          echo "No axe-report found for target branch. Creating new comparison."
+          axe $URL --save _axe-a11y-reports/${{ steps.branch_name.outputs.name }}-${{ steps.parse_url.outputs.sanitized_path }}-branch-report.json
           exit 0
         fi
       if: success() && github.event_name == 'pull_request'
@@ -122,7 +136,7 @@ runs:
     - name: Generate PR comment markdown
       shell: bash
       run: |
-        node "${{ github.action_path }}/scripts/generate-axe-comment.js"
+        node "${{ github.action_path }}/scripts/generate-axe-comment.js" "${{ steps.parse_url.outputs.sanitized_path }}"
 
     - name: Comment on PR with results (only if PR is open)
       if: ${{ github.event.pull_request.state == 'open' }}
