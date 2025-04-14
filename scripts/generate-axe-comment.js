@@ -1,12 +1,14 @@
 const fs = require("fs");
 
 const reportPath = process.argv[2];
-const currentViolations = JSON.parse(
-  fs.readFileSync("axe-current-violations.json", "utf8")
+const currentReport = JSON.parse(
+  fs.readFileSync("axe-current-report.json", "utf8")
 );
-const previousViolations = fs.existsSync("axe-previous-violations.json")
-  ? JSON.parse(fs.readFileSync("axe-previous-violations.json", "utf8"))
+const currentViolations = currentReport?.[0]?.violations || [];
+const previousReport = fs.existsSync("axe-previous-report.json")
+  ? JSON.parse(fs.readFileSync("axe-previous-report.json", "utf8"))
   : [];
+const previousViolations = previousReport?.[0]?.violations || [];
 
 const newViolations = currentViolations.filter(
   (v) =>
@@ -16,10 +18,10 @@ const newViolations = currentViolations.filter(
 );
 
 let output = `### 🧪 Axe Accessibility Report\n\n`;
-output += `Reports generated using path \`${reportPath}\`.\n\n`;
-output += `- ${newViolations.length} new violations found compared to the previous report.\n`;
-output += `- ${currentViolations.length} violations found on the preview url.\n`;
-output += `- ${previousViolations.length} violations found on the live url.\n\n`;
+output += `Reports generated using path \`${reportPath || "/"}\`.\n\n`;
+output += `- ${newViolations.length} new violations found compared to the previous report\n`;
+output += `- ${currentViolations.length} violations found on the preview url (\`${currentReport[0]?.url}\`)\n`;
+output += `- ${previousViolations.length} violations found on the live url (\`${previousReport[0]?.url}\`)\n`;
 
 if (newViolations.length > 0) {
   output += "<details>";

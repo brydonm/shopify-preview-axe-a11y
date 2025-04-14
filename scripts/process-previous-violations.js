@@ -11,9 +11,8 @@ if (!fs.existsSync(path)) {
 }
 
 const report = JSON.parse(fs.readFileSync(path, "utf8"));
-const violations = report?.[0]?.violations || [];
 
 fs.writeFileSync(
-  "axe-previous-violations.json",
-  JSON.stringify(sortByImpact(violations), null, 2)
+  "axe-previous-report.json",
+  JSON.stringify(sortByImpact(report), null, 2)
 );
