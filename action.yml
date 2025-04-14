@@ -42,6 +42,7 @@ runs:
 
         SANITIZED_NAME="${BRANCH//\//-}"
         echo "name=$SANITIZED_NAME" >> $GITHUB_OUTPUT
+        echo "axe_branch_path=_axe-a11y-reports/${BRANCH}-branch-report.json" >> $GITHUB_OUTPUT
 
     - name: Run axe test
       id: run_test
