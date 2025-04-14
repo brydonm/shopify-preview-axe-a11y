@@ -2,14 +2,9 @@
 const fs = require("fs");
 const { sortByImpact } = require("./utils");
 
-const targetBranch = process.argv[2];
+const axeBranchPath = process.argv[2];
 
-const report = JSON.parse(
-  fs.readFileSync(
-    `./_axe-a11y-reports/${targetBranch}-branch-report.json`,
-    "utf8"
-  )
-);
+const report = JSON.parse(fs.readFileSync(axeBranchPath, "utf8"));
 const violations = report?.[0]?.violations || [];
 
 fs.writeFileSync(

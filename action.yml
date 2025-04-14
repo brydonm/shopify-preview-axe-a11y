@@ -68,7 +68,7 @@ runs:
         axe $URL --save ${{ steps.branch_name.outputs.axe_branch_path }}
         echo "axe report saved to ${{ steps.branch_name.outputs.axe_branch_path }}"
 
-        node "${{ github.action_path }}/scripts/process-current-violations.js" "${{ steps.branch_name.outputs.name }}"
+        node "${{ github.action_path }}/scripts/process-current-violations.js" "${{ steps.branch_name.outputs.axe_branch_path }}"
 
     - name: Process Previous Violations from Target Branch Report (if available)
       id: process_previous_violations
