@@ -13,8 +13,16 @@ const readReport = (filename) => {
 const currentReport = readReport("axe-report-preview.json");
 const previousReport = readReport("axe-report-default.json");
 
-const currentViolations = currentReport?.violations || [];
-const previousViolations = previousReport?.violations || [];
+// const currentViolations = currentReport?.violations || [];
+// const previousViolations = previousReport?.violations || [];
+
+// instead of .violations, build an array of violations.nodes
+const currentViolations = currentReport?.violations
+  ? currentReport.violations.flatMap((v) => v.nodes)
+  : [];
+const previousViolations = previousReport?.violations
+  ? previousReport.violations.flatMap((v) => v.nodes)
+  : [];
 
 const newViolations = currentViolations.filter(
   (v) =>
