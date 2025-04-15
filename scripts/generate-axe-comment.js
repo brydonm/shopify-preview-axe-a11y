@@ -46,13 +46,11 @@ if (newViolations.length > 0) {
     "<summary>⚠️ New violations compared to previous report</summary>\n\n";
   output += "| Issue | Impact | Target | Help |\n";
   output += "|-------|--------|--------|------|\n";
-  newViolations.forEach((v) => {
-    const impact = v.impact || "n/a";
-    const help = `[${v.help}](${v.helpUrl})`;
-    v.nodes.forEach((n) => {
-      const target = Array.isArray(n.target) ? n.target.join(", ") : "n/a";
-      output += `| ${v.id} | ${impact} | ${target} | ${help} |\n`;
-    });
+  newViolations.forEach((n) => {
+    const impact = n.impact || "n/a";
+    const help = `[${n.help}](${n.helpUrl})`;
+    const target = Array.isArray(n.target) ? n.target.join(", ") : "n/a";
+    output += `| ${n.id} | ${impact} | ${target} | ${help} |\n`;
   });
   output += "</details>\n\n";
 }
@@ -62,13 +60,11 @@ if (currentViolations.length > 0) {
   output += "<summary>🔗 All preview link violations</summary>\n\n";
   output += "| Issue | Impact | Target | Help |\n";
   output += "|-------|--------|--------|------|\n";
-  currentViolations.forEach((v) => {
-    const impact = v.impact || "n/a";
-    const help = `[${v.help}](${v.helpUrl})`;
-    v.nodes.forEach((n) => {
-      const target = Array.isArray(n.target) ? n.target.join(", ") : "n/a";
-      output += `| ${v.id} | ${impact} | ${target} | ${help} |\n`;
-    });
+  currentViolations.forEach((n) => {
+    const impact = n.impact || "n/a";
+    const help = `[${n.help}](${n.helpUrl})`;
+    const target = Array.isArray(n.target) ? n.target.join(", ") : "n/a";
+    output += `| ${n.id} | ${impact} | ${target} | ${help} |\n`;
   });
   output += "</details>\n\n";
 }
@@ -78,13 +74,11 @@ if (previousViolations.length > 0) {
   output += "<summary>🧪 All live violations</summary>\n\n";
   output += "| Issue | Impact | Target | Help |\n";
   output += "|-------|--------|--------|------|\n";
-  previousViolations.forEach((v) => {
-    const impact = v.impact || "n/a";
-    const help = `[${v.help}](${v.helpUrl})`;
-    v.nodes.forEach((n) => {
-      const target = Array.isArray(n.target) ? n.target.join(", ") : "n/a";
-      output += `| ${v.id} | ${impact} | ${target} | ${help} |\n`;
-    });
+  previousViolations.forEach((n) => {
+    const impact = n.impact || "n/a";
+    const help = `[${n.help}](${n.helpUrl})`;
+    const target = Array.isArray(n.target) ? n.target.join(", ") : "n/a";
+    output += `| ${n.id} | ${impact} | ${target} | ${help} |\n`;
   });
   output += "</details>\n\n";
 }
