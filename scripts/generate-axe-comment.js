@@ -69,7 +69,7 @@ const buildViolationsTable = ({ title, violations }) => {
     const target = Array.isArray(n.target) ? n.target.join(", ") : "n/a";
     const failureSummary = n.any.map((a) => `- ${a.message}`).join("\n");
 
-    table += `| ${impactEmojis[impact]} ${help} | ${target} | ${failureSummary} |\n`;
+    table += `| ${impactEmojis[impact]} ${help} | \`${target}\` | ${failureSummary} |\n`;
   });
   table += "</details>\n\n";
 
