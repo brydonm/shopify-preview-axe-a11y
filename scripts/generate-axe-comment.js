@@ -45,7 +45,7 @@ const newViolations = currentViolations.filter(
 
 let output = `### 🧪 Axe Accessibility Report\n\n`;
 
-output += `- ${newViolations.length} new violations found compared to the previous report\n`;
+output += `- ${newViolations.length} new violations found compared to live\n`;
 output += `- ${
   currentViolations.length
 } violations found on the preview url (\`${
@@ -77,7 +77,7 @@ const buildViolationsTable = ({ title, violations }) => {
 };
 
 output += buildViolationsTable({
-  title: "⚠️ New violations compared to previous report",
+  title: "⚠️ New violations compared to live",
   violations: sortByImpact(newViolations),
 });
 
