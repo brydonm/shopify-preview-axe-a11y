@@ -26,7 +26,7 @@ if (previewUrl) {
 }
 
 if (DEFAULT_URL) {
-  addUrlToTest(`${DEFAULT_URL}${PATH}`, "default");
+  addUrlToTest(`${DEFAULT_URL}${path}`, "default");
 }
 
 if (urlsToTest.length === 0) {
