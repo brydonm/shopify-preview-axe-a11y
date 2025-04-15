@@ -59,15 +59,15 @@ const buildViolationsTable = ({ title, violations }) => {
 
   let table = "<details>";
   table += `<summary>${title}</summary>\n\n`;
-  table += "| Issue | Target | Help | Summary |\n";
-  table += "|-------|--------|------|---------|\n";
+  table += "| Issue | Target | Summary |\n";
+  table += "|-------|--------|---------|\n";
 
   violations.forEach((n) => {
     const impact = n.impact || "n/a";
     const help = `[${n.help}](${n.helpUrl})`;
     const target = Array.isArray(n.target) ? n.target.join(", ") : "n/a";
 
-    table += `| ${impactEmojis[impact]} ${help} | ${target} | ${n.summary} |\n`;
+    table += `| ${impactEmojis[impact]} ${help} | ${target} | ${n.failureSummary} |\n`;
   });
   table += "</details>\n\n";
 
