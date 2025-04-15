@@ -7,7 +7,7 @@ Automatically run [Axe](https://www.deque.com/axe/) tests on preview URLs mentio
 ## ✅ Features
 
 - 🔍 Extracts Shopify preview URL from PR body (no special formatting needed)
-- 🧪 Runs BrowserStack CLI tests
+- 🧪 Runs Axe CLI tests
 - 💬 Comments the test results directly on the PR
 - 📊 Provides a detailed report of accessibility issues including analysis of net new issues
 
