@@ -3,128 +3,36 @@ description: "Run axe accessibility tests on Shopify preview URLs from PR descri
 
 inputs:
   default_url:
-    description: "Default URL to use if no preview URL is found"
+    description: "Fallback URL if no preview found in PR"
     required: false
     default: ""
 
 runs:
   using: "composite"
   steps:
-    - name: Extract PR Body
-      if: ${{ github.event_name == 'pull_request' }}
-      id: pr_body
-      shell: bash
-      run: |
-        echo "Extracting PR body..."
-        if [ -z "${{ github.event.pull_request.body }}" ]; then
-          echo "PR body is empty, exiting..."
-          exit 1
-        fi
-        echo "PR_BODY<<EOF" >> $GITHUB_ENV
-        echo "${{ github.event.pull_request.body }}" >> $GITHUB_ENV
-        echo "EOF" >> $GITHUB_ENV
-
-    - name: Parse preview URL from PR body
-      if: ${{ github.event_name == 'pull_request' }}
-      id: parse_url
-      shell: bash
-      run: |
-        echo "Extracting URLs from PR body..."
-        ALL_URLS=$(echo "$PR_BODY" | grep -oE 'https?://[^ )\n]+')
-
-        echo "Extracted URLs:"
-        echo "$ALL_URLS"
-
-        # Match URLs that contain '?preview_theme_id=' or 'shopifypreview.com'
-        MATCHING_URL=$(echo "$ALL_URLS" | grep -E '\?preview_theme_id=|shopifypreview\.com' | head -n1)
-
-        echo "==== DEBUG INFO ===="
-        echo "All extracted URLs:"
-        echo "$ALL_URLS"
-        echo "Matched URL:"
-        echo "$MATCHING_URL"
-        echo "===================="
-
-        if [ -z "$MATCHING_URL" ]; then
-          echo "No matching URL found."
-          echo "url=" >> $GITHUB_OUTPUT
-          exit 1
-        fi
-
-        echo "url=$MATCHING_URL" >> $GITHUB_OUTPUT
-
     - name: Set up Node.js
       uses: actions/setup-node@v4
       with:
         node-version: "18"
 
-    - name: Install axe CLI
+    - name: Install dependencies
       shell: bash
       run: |
-        echo "Installing axe CLI..."
         npm install -g @axe-core/cli
 
-    - name: Get branch name
-      id: branch_name
+    - name: Run accessibility checks
       shell: bash
-      run: |
-        if [[ "${{ github.event_name }}" == "pull_request" ]]; then
-          BRANCH="${{ github.head_ref }}"
-        else
-          BRANCH="${{ github.ref_name }}"
-        fi
-
-        SANITIZED_NAME="${BRANCH//\//-}"
-        echo "name=$SANITIZED_NAME" >> $GITHUB_OUTPUT
-
-    - name: Run axe test
-      id: run_test
-      shell: bash
-      run: |
-        mkdir -p _axe-a11y-reports
-        URL="${{ steps.parse_url.outputs.url }}"
-        echo "Testing URL: $URL"
-
-        if [ -z "$URL" ]; then
-          if [ -z "${{ inputs.default_url }}" ]; then
-            echo "No URL provided and no default URL set. No test run."
-            echo "No URL found." > axe-summary.md
-            exit 0
-          else
-            echo "No URL provided. Using default URL: ${{ inputs.default_url }}"
-            URL="${{ inputs.default_url }}"
-          fi
-        fi
-
-        echo "Running axe on $URL"
-        axe $URL --save _axe-a11y-reports/${{ steps.branch_name.outputs.name }}-branch-report.json
-        echo "axe report saved to _axe-a11y-reports/${{ steps.branch_name.outputs.name }}-branch-report.json"
-
-        node "${{ github.action_path }}/scripts/run-axe-test.js" "${{ steps.branch_name.outputs.name }}"
-
-    - name: Process Previous Violations from Target Branch Report (if available)
-      id: process_previous_violations
-      shell: bash
-      run: |
-        TARGET_REPORT="_axe-a11y-reports/${{ github.base_ref }}-branch-report.json"
-        echo "Checking for file: $TARGET_REPORT"
-
-        if [ -f "$TARGET_REPORT" ]; then
-          echo "Processing downloaded report for target branch..."
-
-          node "${{ github.action_path }}/scripts/process-previous-violations.js" "${{ steps.branch_name.outputs.name }}"
-        else
-          echo "No axe-report found for target branch. Skipping violation comparison."
-          exit 0
-        fi
-      if: success() && github.event_name == 'pull_request'
+      run: node "${{ github.action_path }}/scripts/run-axe-tests.js"
+      env:
+        GITHUB_EVENT_NAME: "${{ github.event_name }}"
+        PR_BODY: "${{ github.event.pull_request.body }}"
+        DEFAULT_URL: "${{ inputs.default_url }}"
 
     - name: Generate PR comment markdown
       shell: bash
-      run: |
-        node "${{ github.action_path }}/scripts/generate-axe-comment.js"
+      run: node "${{ github.action_path }}/scripts/generate-axe-comment.js"
 
-    - name: Comment on PR with results (only if PR is open)
+    - name: Comment on PR with results
       if: ${{ github.event.pull_request.state == 'open' }}
       uses: actions/github-script@v7
       with:
@@ -138,17 +46,3 @@ runs:
             issue_number: context.issue.number,
             body: commentBody,
           });
-
-    - name: Commit and push reports
-      if: always() && github.event_name == 'push'
-      shell: bash
-      run: |
-        git config --global user.name "github-actions[bot]"
-        git config --global user.email "github-actions[bot]@users.noreply.github.com"
-
-        git fetch
-        git checkout ${{ github.head_ref }}
-
-        git add _axe-a11y-reports
-        git commit -m "chore: update axe accessibility reports" || echo "No changes to commit"
-        git push
