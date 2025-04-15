@@ -10,8 +10,8 @@ const readReport = (filename) => {
     : null;
 };
 
-const currentReport = readReport("report-0.json");
-const previousReport = readReport("report-1.json");
+const currentReport = readReport("axe-report-preview.json");
+const previousReport = readReport("axe-report-default.json");
 
 const currentViolations = currentReport?.violations || [];
 const previousViolations = previousReport?.violations || [];

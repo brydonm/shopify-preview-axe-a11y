@@ -9,18 +9,24 @@ const match = PR_BODY.match(PATH_REGEX);
 const previewUrl = match?.[1] || "";
 const path = match?.[2] || "";
 
-const urlsToTest = [];
+const urlsToTest = {};
+
+const addUrlToTest = (url, key) => {
+  if (url && !urlsToTest[key]) {
+    urlsToTest[key] = url;
+  }
+};
 
 console.log("Preview URL:", previewUrl);
 console.log("Default URL:", DEFAULT_URL);
 console.log("Path:", path);
 
 if (previewUrl) {
-  urlsToTest.push(previewUrl);
+  addUrlToTest(previewUrl, "preview");
 }
 
 if (DEFAULT_URL) {
-  urlsToTest.push(`${DEFAULT_URL}${path}`);
+  addUrlToTest(`${DEFAULT_URL}${PATH}`, "default");
 }
 
 if (urlsToTest.length === 0) {
@@ -28,17 +34,22 @@ if (urlsToTest.length === 0) {
   process.exit(0);
 }
 
-urlsToTest.forEach((url, idx) => {
-  console.log(`Running axe on ${url}`);
-  const reportPath = `report-${idx}.json`;
-  try {
-    execSync(`axe ${url} --save ${reportPath}`, { stdio: "inherit" });
-    console.log(`Saved: ${reportPath}`);
-  } catch (err) {
-    console.error(`❌ Error running axe on ${url}:`, err.message);
-    fs.writeFileSync(
-      reportPath,
-      JSON.stringify({ error: err.message, url }, null, 2)
-    );
-  }
-});
+Object.entries(urlsToTest)
+  .map(([key, url]) => ({
+    key,
+    url,
+  }))
+  .forEach(({ key, url }) => {
+    console.log(`Running axe on ${key}: ${url}`);
+    const reportPath = `axe-report-${key}.json`;
+    try {
+      execSync(`axe ${url} --save ${reportPath}`, { stdio: "inherit" });
+      console.log(`Saved: ${reportPath}`);
+    } catch (err) {
+      console.error(`❌ Error running axe on ${key}:`, err.message);
+      fs.writeFileSync(
+        reportPath,
+        JSON.stringify({ error: err.message, url }, null, 2)
+      );
+    }
+  });
