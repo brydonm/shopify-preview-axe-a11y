@@ -11,8 +11,12 @@ const path = match?.[2] || "";
 
 const urlsToTest = [];
 
+console.log("Preview URL:", previewUrl);
+console.log("Default URL:", DEFAULT_URL);
+console.log("Path:", path);
+
 if (previewUrl) {
-  urlsToTest.push(`${previewUrl}${path}`);
+  urlsToTest.push(previewUrl);
 }
 
 if (DEFAULT_URL) {
