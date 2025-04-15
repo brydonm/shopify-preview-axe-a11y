@@ -1,4 +1,5 @@
 const fs = require("fs");
+const { sortByImpact } = require("./utils");
 
 const readReport = (filename) => {
   if (!fs.existsSync(filename)) return null;
@@ -66,8 +67,9 @@ const buildViolationsTable = ({ title, violations }) => {
     const impact = n.impact || "n/a";
     const help = `[${n.help}](${n.helpUrl})`;
     const target = Array.isArray(n.target) ? n.target.join(", ") : "n/a";
+    const failureSummary = n.any.map((a) => `- ${a.message}`).join("\n");
 
-    table += `| ${impactEmojis[impact]} ${help} | ${target} | ${n.failureSummary} |\n`;
+    table += `| ${impactEmojis[impact]} ${help} | ${target} | ${failureSummary} |\n`;
   });
   table += "</details>\n\n";
 
@@ -76,17 +78,17 @@ const buildViolationsTable = ({ title, violations }) => {
 
 output += buildViolationsTable({
   title: "⚠️ New violations compared to previous report",
-  violations: newViolations,
+  violations: sortByImpact(newViolations),
 });
 
 output += buildViolationsTable({
   title: "🔗 All preview link violations",
-  violations: currentViolations,
+  violations: sortByImpact(currentViolations),
 });
 
 output += buildViolationsTable({
   title: "🧪 All live violations",
-  violations: previousViolations,
+  violations: sortByImpact(previousViolations),
 });
 
 fs.writeFileSync("axe-comment.md", output);
