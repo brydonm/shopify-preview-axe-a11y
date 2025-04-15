@@ -21,32 +21,20 @@ if (DEFAULT_URL) {
 
 if (urlsToTest.length === 0) {
   console.log("No valid URLs found for accessibility testing.");
-  fs.writeFileSync(
-    "axe-comment.md",
-    "⚠️ No valid preview or default URL found."
-  );
   process.exit(0);
 }
-
-fs.writeFileSync("axe-comment.md", "## 🧪 Axe A11y Report\n\n");
 
 urlsToTest.forEach((url, idx) => {
   console.log(`Running axe on ${url}`);
   const reportPath = `report-${idx}.json`;
   try {
     execSync(`axe ${url} --save ${reportPath}`, { stdio: "inherit" });
-    const result = JSON.parse(fs.readFileSync(reportPath));
-    const violations = result.violations || [];
-
-    fs.appendFileSync(
-      "axe-comment.md",
-      `### [${url}]\n- ${violations.length} violations found\n\n`
-    );
+    console.log(`Saved: ${reportPath}`);
   } catch (err) {
-    console.error(`Failed to run axe on ${url}:`, err.message);
-    fs.appendFileSync(
-      "axe-comment.md",
-      `### [${url}]\n❌ Error running axe.\n\n`
+    console.error(`❌ Error running axe on ${url}:`, err.message);
+    fs.writeFileSync(
+      reportPath,
+      JSON.stringify({ error: err.message, url }, null, 2)
     );
   }
 });

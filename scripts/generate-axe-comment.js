@@ -1,13 +1,20 @@
 const fs = require("fs");
 
-const currentReport = JSON.parse(
-  fs.readFileSync("axe-current-report.json", "utf8")
-);
-const currentViolations = currentReport?.[0]?.violations || [];
-const previousReport = fs.existsSync("axe-previous-report.json")
-  ? JSON.parse(fs.readFileSync("axe-previous-report.json", "utf8"))
-  : [];
-const previousViolations = previousReport?.[0]?.violations || [];
+const readReport = (filename) => {
+  if (!fs.existsSync(filename)) return null;
+  const data = JSON.parse(fs.readFileSync(filename, "utf8"));
+  return Array.isArray(data.violations)
+    ? data
+    : Array.isArray(data)
+    ? data[0]
+    : null;
+};
+
+const currentReport = readReport("report-0.json");
+const previousReport = readReport("report-1.json");
+
+const currentViolations = currentReport?.violations || [];
+const previousViolations = previousReport?.violations || [];
 
 const newViolations = currentViolations.filter(
   (v) =>
@@ -17,9 +24,16 @@ const newViolations = currentViolations.filter(
 );
 
 let output = `### 🧪 Axe Accessibility Report\n\n`;
+
 output += `- ${newViolations.length} new violations found compared to the previous report\n`;
-output += `- ${currentViolations.length} violations found on the preview url (\`${currentReport[0]?.url}\`)\n`;
-output += `- ${previousViolations.length} violations found on the live url (\`${previousReport[0]?.url}\`)\n`;
+output += `- ${
+  currentViolations.length
+} violations found on the preview url (\`${
+  currentReport?.url || "unknown"
+}\`)\n`;
+output += `- ${previousViolations.length} violations found on the live url (\`${
+  previousReport?.url || "unknown"
+}\`)\n`;
 
 if (newViolations.length > 0) {
   output += "<details>";
@@ -38,32 +52,37 @@ if (newViolations.length > 0) {
   output += "</details>\n\n";
 }
 
-output += "<details>";
-output += "<summary>🔗 All preview link violations</summary>\n\n";
-output += "| Issue | Impact | Target | Help |\n";
-output += "|-------|--------|--------|------|\n";
-currentViolations.forEach((v) => {
-  const impact = v.impact || "n/a";
-  const help = `[${v.help}](${v.helpUrl})`;
-  v.nodes.forEach((n) => {
-    const target = Array.isArray(n.target) ? n.target.join(", ") : "n/a";
-    output += `| ${v.id} | ${impact} | ${target} | ${help} |\n`;
+if (currentViolations.length > 0) {
+  output += "<details>";
+  output += "<summary>🔗 All preview link violations</summary>\n\n";
+  output += "| Issue | Impact | Target | Help |\n";
+  output += "|-------|--------|--------|------|\n";
+  currentViolations.forEach((v) => {
+    const impact = v.impact || "n/a";
+    const help = `[${v.help}](${v.helpUrl})`;
+    v.nodes.forEach((n) => {
+      const target = Array.isArray(n.target) ? n.target.join(", ") : "n/a";
+      output += `| ${v.id} | ${impact} | ${target} | ${help} |\n`;
+    });
   });
-});
-output += "</details>\n\n";
+  output += "</details>\n\n";
+}
 
-output += "<details>";
-output += "<summary>🧪 All live violations</summary>\n\n";
-output += "| Issue | Impact | Target | Help |\n";
-output += "|-------|--------|--------|------|\n";
-previousViolations.forEach((v) => {
-  const impact = v.impact || "n/a";
-  const help = `[${v.help}](${v.helpUrl})`;
-  v.nodes.forEach((n) => {
-    const target = Array.isArray(n.target) ? n.target.join(", ") : "n/a";
-    output += `| ${v.id} | ${impact} | ${target} | ${help} |\n`;
+if (previousViolations.length > 0) {
+  output += "<details>";
+  output += "<summary>🧪 All live violations</summary>\n\n";
+  output += "| Issue | Impact | Target | Help |\n";
+  output += "|-------|--------|--------|------|\n";
+  previousViolations.forEach((v) => {
+    const impact = v.impact || "n/a";
+    const help = `[${v.help}](${v.helpUrl})`;
+    v.nodes.forEach((n) => {
+      const target = Array.isArray(n.target) ? n.target.join(", ") : "n/a";
+      output += `| ${v.id} | ${impact} | ${target} | ${help} |\n`;
+    });
   });
-});
-output += "</details>\n\n";
+  output += "</details>\n\n";
+}
 
 fs.writeFileSync("axe-comment.md", output);
+console.log("✅ axe-comment.md generated");
