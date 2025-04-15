@@ -25,10 +25,7 @@ const previousViolations = previousReport?.violations
   : [];
 
 const newViolations = currentViolations.filter(
-  (v) =>
-    !previousViolations.some(
-      (pv) => pv.id === v.id && v.nodes.length === pv.nodes.length
-    )
+  (v) => !previousViolations.some((pv) => pv.id === v.id)
 );
 
 let output = `### 🧪 Axe Accessibility Report\n\n`;
