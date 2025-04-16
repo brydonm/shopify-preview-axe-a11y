@@ -3,10 +3,14 @@ const fs = require("fs");
 
 const PR_BODY = process.env.PR_BODY || "";
 const DEFAULT_URL = process.env.DEFAULT_URL || "";
-const PATH_REGEX = /https:\/\/[^\s]+/;
+const PATH_REGEX = /https:\/\/[^\s]+/g;
 
-const match = PR_BODY.match(PATH_REGEX);
-const previewUrl = match?.[0] || "";
+const allUrls = PR_BODY.match(PATH_REGEX) || [];
+const previewUrl =
+  allUrls.find(
+    (url) =>
+      url.includes("preview_theme_id=") || url.includes("shopifypreview.com")
+  ) || "";
 const path = previewUrl ? new URL(previewUrl).pathname : "";
 
 const urlsToTest = {};
