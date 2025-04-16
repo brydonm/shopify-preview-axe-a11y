@@ -6,12 +6,32 @@ const DEFAULT_URL = process.env.DEFAULT_URL || "";
 const PATH_REGEX = /https:\/\/[^\s]+/g;
 
 const allUrls = PR_BODY.match(PATH_REGEX) || [];
-const previewUrl =
+
+const rawPreviewUrl =
   allUrls.find(
     (url) =>
       url.includes("preview_theme_id=") || url.includes("shopifypreview.com")
   ) || "";
+
+let previewUrl = "";
+if (rawPreviewUrl) {
+  try {
+    const parsed = new URL(rawPreviewUrl);
+    const previewThemeId = parsed.searchParams.get("preview_theme_id");
+
+    if (previewThemeId) {
+      previewUrl = `${parsed.origin}?preview_theme_id=${previewThemeId}`;
+    }
+  } catch (err) {
+    console.warn("Invalid preview URL:", rawPreviewUrl);
+  }
+}
+
 const path = previewUrl ? new URL(previewUrl).pathname : "";
+
+console.log("Preview URL:", previewUrl);
+console.log("Default URL:", DEFAULT_URL);
+console.log("Path:", path);
 
 const urlsToTest = {};
 
@@ -20,10 +40,6 @@ const addUrlToTest = (url, key) => {
     urlsToTest[key] = url;
   }
 };
-
-console.log("Preview URL:", previewUrl);
-console.log("Default URL:", DEFAULT_URL);
-console.log("Path:", path);
 
 if (previewUrl) {
   addUrlToTest(previewUrl, "preview");
