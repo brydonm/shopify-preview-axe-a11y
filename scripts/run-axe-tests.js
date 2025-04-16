@@ -5,7 +5,6 @@ const PR_BODY = process.env.PR_BODY || "";
 const DEFAULT_URL = process.env.DEFAULT_URL || "";
 const PATH_REGEX = /https:\/\/[^\s]+/;
 
-// Match all URLs in the PR body
 const allUrls = PR_BODY.match(PATH_REGEX) || [];
 
 const rawPreviewUrl =
