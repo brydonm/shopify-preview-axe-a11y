@@ -33,6 +33,8 @@ console.log("Preview URL:", previewUrl);
 console.log("Default URL:", DEFAULT_URL);
 console.log("Path:", path);
 
+const urlsToTest = {};
+
 const addUrlToTest = (url, key) => {
   if (url && !urlsToTest[key]) {
     urlsToTest[key] = url;
