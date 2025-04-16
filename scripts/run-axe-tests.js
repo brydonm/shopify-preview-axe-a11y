@@ -3,7 +3,7 @@ const fs = require("fs");
 
 const PR_BODY = process.env.PR_BODY || "";
 const DEFAULT_URL = process.env.DEFAULT_URL || "";
-const PATH_REGEX = /https:\/\/[^\s]+/;
+const PATH_REGEX = /https:\/\/[^\s]+/g;
 
 const allUrls = PR_BODY.match(PATH_REGEX) || [];
 
