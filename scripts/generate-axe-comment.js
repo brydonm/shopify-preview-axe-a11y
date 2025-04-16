@@ -93,12 +93,12 @@ if (!currentReport || !previousReport) {
       const impact = n.impact || "n/a";
       const help = `[${n.help}](${n.helpUrl})`;
       const target = Array.isArray(n.target) ? n.target.join(", ") : "n/a";
-      const failureSummary = n.any.map((a) => `- ${a.message}`).join("\n");
+      const failureSummary = n.any.map((a) => `- ${a.message}`).join("<br>");
 
       table += `| ${impactEmojis[impact]} ${help} | \`${target}\` | ${failureSummary} |\n`;
     });
-    table += "</details>\n\n";
 
+    table += "</details>\n\n";
     return table;
   };
 
